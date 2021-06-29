@@ -3,7 +3,7 @@ Known issues
 
 If your issue is not listed below, please contact us at forge@fire.ly or (for customers) `our premium support desk`_.
 
-*Updated for 26.1 for STU3, R4, R5*
+*Updated for 27.1 for STU3, R4, R5*
 
 .. list-table::
     :widths: 10, 10, 10
