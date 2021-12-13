@@ -22,13 +22,13 @@ Changes
 * The default path value for Discriminator type pattern is now set to $this.
   Added $this and resolve() to the path dropdown list.
 * The Initialize global mappings option is now turned off by default.
-* Removed the shorcut option for adding fixing system and codes.
+* Removed the shortcut option for adding fixing system and codes.
 * Moved release notes to https://docs.fire.ly/.
 
 Bug fixes
 ^^^^^^^^^
-* Various minor UI styling issues.
-* If a logical model violates sdf-1 Forge does not open the file. Illegal slicing elements are now removed.
+* Fixed various minor UI styling issues.
+* If a logical model violates sdf-1, Forge does not open the file. Illegal slicing elements are now removed.
 * Adding Extensions in Forge doesn't show the cardinality.
 * Forge gives errors when creating polymorphic elements in logical models.
 * Derived profile contains wrong Min cardinality even though it was not changed in regards to the base profile.
