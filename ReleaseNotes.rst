@@ -14,25 +14,21 @@ Changes
 * Upgrade to Firely .NET SDK 3.7.0.
 * Added support for synchronizing project files with Simplifier.net.
   Removed Import from/Publish to Simplifer.net/FHIR Server.
-* The default path value for Discriminator type pattern is now set to $this.
-  Added $this and resolve() to the path dropdown list.
-* The Initialize global mappings option is now turned off by default.
-* The creation of modifier extensions is now possible.
-* Removed the shorcut option for adding fixing system and codes.
-* Improved visual feedback for resources that cannot be opened.
 * Improved performance when opening/closing files and switching tabs/documents.
 * Added support for multi selection in the project list for opening multiple files.
 * Added Reload/Save/Close All commands to the project context menu in the session bar.
+* Improved visual feedback for resources that cannot be opened.
+* The creation of modifier extensions is now possible.
+* The default path value for Discriminator type pattern is now set to $this.
+  Added $this and resolve() to the path dropdown list.
+* The Initialize global mappings option is now turned off by default.
+* Removed the shorcut option for adding fixing system and codes.
 * Moved release notes to https://docs.fire.ly/.
 
 Bug fixes
 ^^^^^^^^^
-* Various UI styling issues.
-* **[STU3]** Not possible to create/edit Logical Models in Forge 27.3.1.
-* **[R4-R5]** Forge allows definition of default values in Profiles. 
-  Constraint sdf-21 is now enforced.
-* If a logical model violates sdf-1 Forge does not open the file.
-  Illegal slicing elements are now removed.
+* Various minor UI styling issues.
+* If a logical model violates sdf-1 Forge does not open the file. Illegal slicing elements are now removed.
 * Adding Extensions in Forge doesn't show the cardinality.
 * Forge gives errors when creating polymorphic elements in logical models.
 * Derived profile contains wrong Min cardinality even though it was not changed in regards to the base profile.
@@ -41,6 +37,11 @@ Bug fixes
 * Forge adds unexplainable slicing details in the differential.
 * Snapshot generator removes or ommits an extension when the element type has a custom profile.
 * After slicing a choice element and saving it, the names of the slices are reset to "no name" after reloading.
+* You could open the same project folder multiple times.
+* The project list view was not updated after creating a new Search Parameter or Operation Definition resource.
+* **[STU3]** Not possible to create/edit Logical Models in Forge 27.3.1.
+* **[R4-R5]** Extensions don't show in what context they are supposed to be used
+* **[R4-R5]** Forge allows definition of default values in Profiles. Constraint sdf-21 is now enforced.
 
 Release 27.3.1
 --------------
@@ -69,7 +70,6 @@ Changes
 
 Bug fixes
 ^^^^^^^^^
-* **[R4-R5]** Forge cannot extend choice[x] elements.
 * Faulty slicing behaviour in extension.
 * Extension misplacement.
 * Forge not enforcing slicing rules element.
@@ -79,6 +79,7 @@ Bug fixes
 * Forge now calculates the minimum cardinality for extension arrays.
   Note that in order to update your existing profiles in this regard you need to open and then save a profile again. 
 * Removed "New Implementation Guide" menu option (feature was not supported anyway).
+* **[R4-R5]** Forge cannot extend choice[x] elements.
 
 Release 27.1
 ------------
@@ -120,10 +121,10 @@ Changes
 
 Bug fixes
 ^^^^^^^^^
-* **[R4-R5]** Removed duplicate 'Type(s)' in Element Property
 * Invalid package versions do not lead to unstable behavior anymore
 * Additional slices would inadvertantly copy info from an existing slice
 * The XML order of extension definitions within a slice was wrong and has been corrected
+* **[R4-R5]** Removed duplicate 'Type(s)' in Element Property
 
 Release 24.2
 ------------
@@ -147,11 +148,11 @@ Changes
 Bug fixes
 ^^^^^^^^^
 * Unjustified message 'Cannot further constrain a fixed value that is defined in a base profile' when using an extension in a profile has been removed.
-* **[STU3]** Upon creating a subsequent slice, Forge would inadvertedly copy values from the existing slice .
 * Forge no longer reports an error when FHIR Core extensions are referenced.
 * Selecting particular extension contexts in Forge 24.1 would lead to some nasty errors, which have been corrected.
 * FHIR path expressions in JSON or XML now contain 'or' instead of the faulty '|' as a logical operator.
 * Preview packages now show up again in the package search.
+* **[STU3]** Upon creating a subsequent slice, Forge would inadvertedly copy values from the existing slice .
 
 Release 24.1
 ------------
@@ -164,6 +165,7 @@ Changes
 * **[STU3]** Forge now retains manually added extensions to a profile.
 * **[R4]** Restored the slicing header element for sliced elements of type value[x], since implicit slicing
   is not supported by other tools (yet).
+
 Bug fixes
 ^^^^^^^^^
 * Forge is signed with a renewed certificate.
