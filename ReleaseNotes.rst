@@ -14,7 +14,12 @@ Changes
 * Upgrade to Firely .NET SDK 3.7.0.
 * Added support for synchronizing project files with Simplifier.net.
   Removed Import from/Publish to Simplifer.net/FHIR Server.
-* Improved performance when opening/closing files and switching tabs/documents.
+* Improved performance
+
+  - opening/closing files
+  - switching between tabs/documents
+  - editing with many documents opened
+  - editing profiles with many nested sections
 * Added support for multi selection in the project list for opening multiple files.
 * Added Reload/Save/Close All commands to the project context menu in the session bar.
 * Improved visual feedback for resources that cannot be opened.
