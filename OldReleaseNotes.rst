@@ -9,7 +9,7 @@ This is a stability release that fixes a couple of issues in the previous releas
 We recommend all our customers to install this update.
 
 Dependencies
-^^^^^^^
+^^^^^^^^^^^^
 
 * FHIR API
 
@@ -48,7 +48,7 @@ Changes
 
 
 Bug fixes
-^^^^^^^
+^^^^^^^^^
 
 * FOR-196 Ctrl+C on validation warning may cause freeze
   Some users reported that copying a validation message to the clipboard would freeze the application,
@@ -114,7 +114,7 @@ This release is a major update with new features, improvements and important bug
 We recommend all users to update to this release.
 
 Dependencies
-^^^^^^^
+^^^^^^^^^^^^
 
 * FHIR API
 
@@ -164,7 +164,7 @@ Changes
   The Import from / Publish to Simplifier commands have been updated to support the latest Simplifier API.
 
 Improvements
-^^^^^^^
+^^^^^^^^^^^^
 
 * Improved rendering of named slices
   The rendering of named slices has been updated, similar to the official FHIR website & build tool.
@@ -186,7 +186,7 @@ Improvements
   The package versions are now sorted in descending order, with the highest (latest) version on top.
 
 Bug fixes
-^^^^^^^
+^^^^^^^^^
 
 * Fix application freezes/hangs after Save
   In some circumstances, the application could freeze/hang after saving a profile.
@@ -230,7 +230,7 @@ This release is a major update with important improvements to conformancy,
 including a significant revision of type slicing according to the new R4 behavior.
 
 Dependencies
-^^^^^^^
+^^^^^^^^^^^^
 
 * FHIR API
 
@@ -255,7 +255,7 @@ Dependencies
   - #1101 Handle element constraint without a path
 
 Improvements
-^^^^^^^
+^^^^^^^^^^^^
 
 * Improved rendering of named slices
   The rendering of named slices has been updated, similar to the official FHIR website & build tool.
@@ -293,7 +293,7 @@ Improvements
   The package versions are now sorted in descending order, with the highest (latest) version on top.
 
 Bug fixes
-^^^^^^^
+^^^^^^^^^
 
 * Generate Extension.url element for Extension definitions
   Fixed a bug that caused the Extension.url element definition to be omitted from the generated differential component.
@@ -334,14 +334,14 @@ Forge 22.0 for R4 - Redmond 2019 Edition
 This release is a minor update with some usability & stability improvements.
 
 Dependencies
-^^^^^^^
+^^^^^^^^^^^^
 
 * FHIR API
   Update to FHIR .NET API 1.3.0-alpha-20190604-4
   Provides a number of bug fixes and improvements
 
 Bug fixes
-^^^^^^^
+^^^^^^^^^
 
 * Fix lookup list for Identifier.system and Coding.system
   When moving focus away after change, the drop-down combobox control no longer clears the property value.
@@ -388,14 +388,14 @@ Forge 22.0 for STU3 - Redmond 2019 Edition
 ------------------------------------------
 
 Dependencies
-^^^^^^^
+^^^^^^^^^^^^
 
 * FHIR API
   Update to FHIR .NET API 1.3.0-alpha-20190604-4
   Provides a number of bug fixes and improvements
 
 Bug fixes
-^^^^^^^
+^^^^^^^^^
 
 * Fix lookup list for Identifier.system and Coding.system
   When moving focus away after change, the drop-down combobox control no longer clears the property value.
@@ -429,7 +429,7 @@ A major new release introducing support for FHIR R4!
 Supports the same feature set as earlier Forge releases, updated to support FHIR R4.
 
 Release information
-^^^^^^^
+^^^^^^^^^^^^^^^^^^^
 
 We publish separate Forge releases for FHIR DSTU2, STU3 and R4.
 Each release only supports a single FHIR version and is updated separately.
@@ -437,7 +437,7 @@ Different releases can be installed side-by-side on the same machine.
 Visit http://simplifier.net/forge to download the latest versions.
 
 Dependencies
-^^^^^^^
+^^^^^^^^^^^^
 
 * .NET Framework:
   Forge now requires the .NET Framework 4.7.2 (updated from 4.6).
@@ -447,7 +447,7 @@ Dependencies
   Update to FHIR R4 .NET API 1.3.0-r4forge5 (internal release)
 
 Known limitations
-^^^^^^^
+^^^^^^^^^^^^^^^^^
 
 * Simplifier connectivity for FHIR R4 is almost, but not yet ready and will be made available soon.
   You can manually upload R4 resources to Simplifier by visiting the website.
@@ -462,7 +462,7 @@ Known limitations
   In a future Forge update, we will improve the package manager to display and filter by supported FHIR version.
 
 Important changes
-^^^^^^^
+^^^^^^^^^^^^^^^^^
 
 * Canonical urls
   FHIR R4 introduces a new datatype "Canonical" that represents a reference to a conformance resource.
@@ -519,7 +519,7 @@ Note: this release is compatible with FHIR STU3.
 Visit https://simplifier.net/forge to download a brand new Forge release that supports FHIR R4.
 
 Dependencies
-^^^^^^^
+^^^^^^^^^^^^
 
 * .NET Framework 4.7.2
   Forge now requires .NET Framework 4.7.2 (upgraded from 4.6).
@@ -531,7 +531,7 @@ Dependencies
   e.g. generate summaries for unrecognized/invalid resources
 
 New
-^^^^^^^
+^^^
 
 * Edit SearchParameter
 * Edit OperationDefinition
@@ -539,7 +539,7 @@ New
   Forge performs basic validation of the content, e.g. verify the associated invariants.
 
 Improvements
-^^^^^^^
+^^^^^^^^^^^^
 
 * Edit and validate logical model type
   For logical models, the StructureDefinition.type property is now user-editable.
@@ -558,7 +558,7 @@ Improvements
   (that support multiple distinct type codes) have an element name that ends with "[x]".
 
 User interface & usability
-^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 * Updated file icons
   - New: OperationDefinition (cog wheels)
@@ -662,7 +662,7 @@ User interface & usability
 * New about box
 
 Bug fixes
-^^^^^^^
+^^^^^^^^^
 
 * Refresh list of project dependencies after add/remove
   After adding or removing a package dependency, Forge will redetermine the transitive closure
@@ -720,14 +720,14 @@ This release is a major update that introduces a couple of new features.
 Want to learn more? Join us at FHIR DevDays Amsterdam!
 
 FHIR API
-^^^^^^^
+^^^^^^^^
 
 * Update to FHIR .NET API 1.0.0-alpha6 (internal release)
   Improved access to parser configuration settings, to relax input validation.
   Forge is now fully based on the new flexible API parsing logic based on ISourceNode.
 
 User Interface
-^^^^^^^
+^^^^^^^^^^^^^^
 
 * NEW! Project Dependency Manager
   This release introduces support for FHIR NPM packages, versioned published 
@@ -749,7 +749,7 @@ User Interface
 * NEW! Help menu - Visit Simplifier downloads page @ https://simplifier.net/downloads
 
 Improvements
-^^^^^^^
+^^^^^^^^^^^^
 
 * NEW! JSON Support
   Forge now also supports FHIR resources in JSON format.
@@ -774,7 +774,7 @@ Improvements
   users to open invalid artifacts and correct syntax errors (such as empty values).
 
 Bug fixes
-^^^^^^^
+^^^^^^^^^
 
 * Folder Explorer - show links to intermediate empty subfolders
   When browsing a directory in folder view mode, intermediate subfolders without any artifacts
@@ -813,13 +813,13 @@ Forge 19.4
 This release introduces a revamped main user interface.
 
 FHIR API
-^^^^^^^
+^^^^^^^^
 
 * Update to FHIR .NET API 1.0.0-alpha3 (internal release)
   See below for more details on this major update.
 
 User Interface
-^^^^^^^
+^^^^^^^^^^^^^^
 
 * NEW! Folder Explorer
 
@@ -864,7 +864,7 @@ User Interface
   http://docs.simplifier.net/forge/forgeFeaturesExtensions.html
 
 FHIR API
-^^^^^^^
+^^^^^^^^
 
   Ewout Kramer, maintainer of the FHIR .NET API, has rewritten significant parts of
   the API code base in order to introduce the new ElementModel classes:
@@ -887,7 +887,7 @@ FHIR API
   without preventing access to other resources in the containing folder.
 
 Features
-^^^^^^^
+^^^^^^^^
 
 * New configuration option: UTF-8 Byte Order Mark (BOM)
   Previous versions would always save XML files in UTF-8 encoding with Byte Order Mark (BOM) prefix.
@@ -895,7 +895,7 @@ Features
   Enable this option to include the Byte Order Mark in the output, or disable to suppress.
 
 Bug fixes
-^^^^^^^
+^^^^^^^^^
 
 * Fix memory leaks
   Refactored significant parts of UI chrome to prevent databinding memory leaks.
@@ -911,7 +911,7 @@ Forge 19.3
 Hotfix release with bug fixes for issues reported by customers.
 
 Bug fixes
-^^^^^^^
+^^^^^^^^^
 
 * Fix "Add" extension element toolbar button for complex extensions
   In the previous release, Forge would generate a runtime exception when trying
@@ -924,7 +924,7 @@ Bug fixes
   (e.g. Careplan.activity.detail). This has now been fixed.
 
 Improvements
-^^^^^^^
+^^^^^^^^^^^^
 
 * Implement support for Google Analytics
   Hyperlinks to Firely websites (such as Simplifier, Profiling Academy and our company website)
@@ -938,7 +938,7 @@ Forge 19.2
 Hotfix release that fixes broken Simplifier integration
 
 FHIR API
-^^^^^^^
+^^^^^^^^
 
 * Update to FHIR .NET API 0.96.1-alpha2 (custom Forge release)
   Provides a number of bug fixes and improvements, including:  
@@ -947,7 +947,7 @@ FHIR API
   - Generated summaries of StructureDefinition resources now include the root element definition property value
 
 New
-^^^^^^^
+^^^
 
 * New configuration option: "Show child elements when sliced"
   According to FHIR, constraints on regular child elements of a slice group represent common
@@ -963,7 +963,7 @@ New
   Advanced users can toggle this option to manage profiles with global slicing constraints.
 
 Improvements
-^^^^^^^
+^^^^^^^^^^^^
 
 * Prevent conflicting canonical urls for newly created profiles
   When the user creates a new StructureDefinition, Forge verifies if the specified canonical url is unique.
@@ -1005,7 +1005,7 @@ Improvements
   You can toggle Http Compression via the Options menu.
 
 Bug fixes
-^^^^^^^
+^^^^^^^^^
 
 * Restore broken Simplifier integration
   Sometimes the Publish to / Import from Simplifier commands in Forge are broken,
@@ -1037,7 +1037,7 @@ Forge 19.1 - DevDays Boston 2018 Edition
 ----------------------------------------
 
 FHIR API
-^^^^^^^
+^^^^^^^^
 
 * Update to FHIR .NET API 0.96.1-alpha1 (custom Forge release)
   Release notes: http://docs.simplifier.net/fhirnetapi/releasenotes.html
@@ -1050,13 +1050,13 @@ FHIR API
     https://github.com/ewoutkramer/fhir-net-api/pull/620
   
 Features
-^^^^^^^
+^^^^^^^^
 
 * Add HAPI FHIR STU3 server address to list of default servers
   http://hapi.fhir.org/baseDstu3
 
 Improvements
-^^^^^^^
+^^^^^^^^^^^^
 
 * Suppress SimpleQuantity error
   The FHIR STU3 core specification contains a bug in the official definition of the SimpleQuantity datatype;
@@ -1083,7 +1083,7 @@ Improvements
   a friendly error message when unable to connect using the specified credentials.
 
 Bug fixes
-^^^^^^^
+^^^^^^^^^
 
 * Fix root element type corruption
   Forge 18.6 introduced a bug where any change to a root element would also cause the root element
@@ -1143,7 +1143,7 @@ We recommend that you update your local Forge installation(s) to the new 18.6 re
 at your earliest convenience.
 
 FHIR API
-^^^^^^^
+^^^^^^^^
 
 * Update to FHIR .NET API 0.95.1-alpha2 (local development build)
   Release notes: http://docs.simplifier.net/fhirnetapi/releasenotes.html
@@ -1167,7 +1167,7 @@ Editing
   - Dosage
 
 User Interface
-^^^^^^^
+^^^^^^^^^^^^^^
 
 * Create New Structure
   Finally, the New Profile page received an overhaul that was long overdue.
@@ -1178,6 +1178,7 @@ User Interface
   - Extension Definition
   - Derived profile
   - Logical Model
+
   Select a base type from the listview control.
   You can toggle the listview mode between tiles and rows.
   For creating a Derived Profile, open a base profile from disk.
@@ -1213,7 +1214,7 @@ User Interface
   on MacOS, then Forge will automatically disable hardware rendering for the application.
   
 Validation
-^^^^^^^
+^^^^^^^^^^
 
 * Clean up and improve validation logic
 
@@ -1242,7 +1243,7 @@ Validation
   textbox control will be enabled to allow you to correct the invalid value.
 
 Performance
-^^^^^^^
+^^^^^^^^^^^
 
 * Optimized indexing of resources on disk
   Forge now leverages a new technology in the FHIR .NET API that allows for quick and efficient
@@ -1254,7 +1255,7 @@ Performance
   The new optimized resource indexing mechanism also decreases application memory consumption.
 
 Bug fixes
-^^^^^^^
+^^^^^^^^^
 
 * Fix memory leaks
   Windows provides a built-in accessibility layer called "UI Automation".
@@ -1281,6 +1282,7 @@ Bug fixes
 
   - Reference.identifier <=> Identifier.assigner
   - Questionnaire.item[...].item
+
   Expansion automatically terminates at elements with a recursive type or contentReference.
   The new logic also fixes an issue with derived profiles, where previous Forge releases would
   sometimes fail to expand some unconstrained elements in a derived profile.
@@ -1371,7 +1373,7 @@ Forge 18.2.1 - HIMSS 2018 Edition
 This is a hotfix release that solves a single issue reported by the community.
 
 Bug fixes
-^^^^^^^
+^^^^^^^^^
 
 * Clear dirty flag after saving with snapshot
   The previous release introduced a bug where after saving a profile with snapshot component,
@@ -1386,7 +1388,7 @@ Forge 18.2 - HIMSS 2018 Edition
 This release is a minor update with some improvements and bug fixes.
 
 New
-^^^^^^^
+^^^
 
 * Profiling Academy
   The header bar now displays a toolbar button (with square academic cap) to visit
@@ -1408,7 +1410,7 @@ New
   Textbox controls provide unconstrained access to the actual Min / Max property values.
 
 Bug fixes
-^^^^^^^
+^^^^^^^^^
 
 * Improved import/publish commands
   We've made some improvements to the import/publish commands, to try and encourage you to always work
@@ -1475,7 +1477,7 @@ It also provides some stability improvements and bug fixes.
 If you find any issues, then please submit a bug report to forge@fire.ly
 
 New
-^^^^^^^
+^^^
 
 * NEW! Firely rebranding
 
@@ -1504,7 +1506,9 @@ New
 * NEW! Support command line arguments
 
   You can now specify one or more file paths on the command line (surrounded with quotes if necessary):
+
     Forge.exe [file] [file] [file] ...
+
   After startup, Forge will try to open all the specified files one by one.
 
 * Auto-generate slice names for complex extension child elements
@@ -1521,13 +1525,13 @@ New
   Forge now validates slice names of sibling slice elements and generates a warning in case of duplicate slice names.
 
 FHIR API
-^^^^^^^
+^^^^^^^^
 
 * Update FHIR API library to 0.95.0-alpha1
   Stability update that provides some bugfixes for the snapshot generator.
 
 UI Improvements
-^^^^^^^
+^^^^^^^^^^^^^^^
 
 * Derived profiles based on a logical model are not supported.
   Forge now detects if you try to derive from a logical model and aborts the operation with an error message.
@@ -1536,7 +1540,7 @@ UI Improvements
   Forge now automatically remembers and restores the window position and state
 
 Bug fixes
-^^^^^^^
+^^^^^^^^^
 
 * Faster loading
   When opening a profile, Forge will first (re-)generate the snapshot component and then perform
@@ -1625,7 +1629,7 @@ Bug fixes
   Forge will not expand elements with abstract type Resource or DomainResource.
 
 Known bugs
-^^^^^^^
+^^^^^^^^^^
 
 * BUG: Cannot handle complex extension definitions that contain child element definitions without a slice name.
   (with a path of the form "Extension[.extension[...]].extension")
@@ -1651,7 +1655,7 @@ This release is a minor update that fixes some bugs reported by the community.
   Except for System.ValueTuple, these external dependencies proved to be unnecessary and have been removed.
 
 FHIR API
-^^^^^^^
+^^^^^^^^
 
 * Update FHIR API library to 0.93.6-alpha2
 
@@ -1666,7 +1670,7 @@ FHIR API
   "ArgumentNullException in Hl7.Fhir.STU3.Specification: Value cannot be null. Parameter name: resourceType"
 
 Bug fixes
-^^^^^^^
+^^^^^^^^^
 
 * Generate element id for extension slicing entries
   The previous release would generate extension slicing entries without an element id.
@@ -1701,7 +1705,7 @@ and also introduces a couple of usability improvements.
 As always, users are encouraged to update to the current version.
 
 FHIR API
-^^^^^^^
+^^^^^^^^
 
 * Update FHIR API library to 0.93.5-beta6
   Provides improvements for the directory source and snapshot generator.
@@ -1742,7 +1746,7 @@ Feature
   The Options menu provides a new application configuration setting to enable/disable this feature.
 
 Bug fixes
-^^^^^^^
+^^^^^^^^^
 
 * EXPERIMENTAL! Improved matching of base element types
   For each element type in a profile, Forge needs to determine the associated element type in the base profile.
@@ -1783,7 +1787,7 @@ Forge 16.4.1
 This release is a small patch with some additional bug fixes.
 
 Features
-^^^^^^^
+^^^^^^^^
 
 * Validate constraint sdf-19: Custom types can only be used in logical models
 
@@ -1791,8 +1795,8 @@ Features
 
 * Save some memory by packing viewmodel boolean states into bit flags
 
-Bugfixes
-^^^^^^^
+Bug fixes
+^^^^^^^^^
 
 * Fix extension context selection dialog
   The dialog window would not close when trying to select a resource.
@@ -1810,7 +1814,7 @@ Forge 16.4 for HL7 FHIR STU3
 This release brings additional compatibility/stability updates and also a couple of UI improvements.
 
 Improvements
-^^^^^^^
+^^^^^^^^^^^^
 
 * Update FHIR API library to 0.93.5-beta2
   Includes bug fixes for the snapshot generator and element id generator
@@ -1894,7 +1898,7 @@ Improvements
   Click on the logo to visit http://simplifier.net
 
 Bug fixes
-^^^^^^^
+^^^^^^^^^
 
 * Generate correct element ids for child elements of slices
   In some circumstances, the previous release would generate incorrect element ids (esp. for children of slice elements).
@@ -1909,7 +1913,9 @@ Bug fixes
 * Handle constraints on inherited slice entry
   Previously, Forge would not allow a derived profile to further constrain a slice entry defined in the base profile.
   When opening the profile, Forge would discard the slice entry constraints and display a warning message:
-    "Element ... defines a slice without a name. Individual slices must always have a unique name, except extensions."
+
+  - "Element ... defines a slice without a name. Individual slices must always have a unique name, except extensions."
+
   This issue has been fixed.
   Forge now allows a derived profile to further constrain a slice entry inherited from the base profile.
 
@@ -1978,7 +1984,7 @@ any further. We'll try to fix any remaining issues in the next update.
 If you find any more issues, then please submit a bug report to forge@furore.com.
 
 Improvements
-^^^^^^^
+^^^^^^^^^^^^
 
 * Update FHIR API library to 0.93.5-alpha1
   Provides updated logic for generating element ids (see below)
@@ -1986,8 +1992,8 @@ Improvements
 * New command Options / Reset application settings
   This command allows you to revert the application configuration settings to the default values.
 
-Bugfixes
-^^^^^^^
+Bug fixes
+^^^^^^^^^
 
 * Fix support for ElementDefinition.Id
   In FHIR STU3, the ElementDefinition.Id property is required and the value should conform to specific rules.
@@ -2002,6 +2008,7 @@ Bugfixes
     elementName[:sliceName].elementName[:sliceName]...
   - User cannot override the generated element ids
   - Forge automatically updates element ids when necessary, e.g. if you rename a parent slice
+
   Note: there is a known issue in the current API element id generation logic concerning sliced elements.
   In some circumstances, the slice name may not be included in the generated element id.
   Unfortunately we couldn't fix this issue in time for this release.
@@ -2051,7 +2058,7 @@ However from now on, we will focus our development efforts towards Forge for STU
 Forge for DSTU2 will no longer be actively developed.
 
 Improvements
-^^^^^^^
+^^^^^^^^^^^^
 
 * Using FHIR .NET API STU3 library version 0.93.4-alpha3
   The new API release introduces support for FHIR STU3.
@@ -2110,8 +2117,8 @@ Improvements
 
 * Change default addres of Grahame Grieve's FHIR server to http://test.fhir.org/r3
 
-Bugfixes
-^^^^^^^
+Bug fixes
+^^^^^^^^^
 
 * More precise handling and serialization of specialized integer types: Integer | UnsignedInt | PositiveInt
   Sanitize input, (dis)allow negative values
@@ -2175,7 +2182,7 @@ Release 15.4 for HL7 FHIR DSTU2
 This release introduces some new profiling features and also brings a large number of improvements and bug fixes.
 
 Renewed code signing certificate
-^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The Forge binaries and installer are signed using PKI technology in order to securely identify Furore as the original publisher.
 The code signing certificate has been renewed, as the previous certificate is now expired.
@@ -2184,7 +2191,7 @@ You can safely click on More information... / Run Anyway to continue, after veri
 Eventually the warning should eventually disappear, as the application has gained sufficient Smartscreen "reputation".
 
 Update FHIR .NET API library to 0.91.2-alpha6
-^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The API update provides a number of bug fixes:
 
@@ -2222,7 +2229,7 @@ The API update provides a number of bug fixes:
 - Snapshot Generator: Performance improvements
 
 Features & Improvements
-^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^
 
 - NEW! Dynamically re-generate children after element type change
   If you modify an element type, Forge now dynamically re-generates the child elements.
@@ -2265,7 +2272,7 @@ Features & Improvements
   An Extension Definition is not allowed to constrain this property.
 
 Usability improvements
-^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^
 
 - Show tooltips on treeview elements & property labels
   Forge now displays a helpful tooltip on elements in the treeview and on property labels.
@@ -2317,7 +2324,7 @@ Usability improvements
   In the current release, the about box should always stay on top of the main window.
 
 Stability improvements
-^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^
 
 - Improved cleanup after unexpected errors while opening a profile
   If an error occurs while loading a profile, Forge now properly cleans up the invalid application state.
@@ -2332,7 +2339,7 @@ Stability improvements
   If you encounter a Null Reference exception, then please report it so we can improve application stability.
 
 Bug fixes
-^^^^^^^
+^^^^^^^^^
 
 - Force serialization of StructureDefinition.fhirVersion
   The fhirVersion property was no longer serialized, as the value is always equal to the base (per definition).
@@ -2411,7 +2418,7 @@ Release 14.7 for DSTU2 1.02 - San Antonio 2017 Edition
 This release introduces new advanced profiling features and fixes a number of issues.
 
 Update FHIR .NET API library to 0.91.1
-^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The updated FHIR API library provides improved quality and standards compliance of snapshot generation,
 mainly concerning advanced use cases such as (re-)slicing, type slicing and complex extensions.
@@ -2420,7 +2427,7 @@ issues for certain invalid inputs that previously generated runtime exceptions.
 Forthcoming Forge updates will bring incremental UI improvements to unlock all the new advanced API features.
 
 New features
-^^^^^^^
+^^^^^^^^^^^^
 
 - Resolve and merge external datatype and extension profiles on load
   When opening a profile, Forge now tries to resolve all referenced external element type profiles and extension definitions.
@@ -2453,7 +2460,7 @@ New features
 - Support cardinality constraints on the root element of an Extension definition
 
 UI improvements
-^^^^^^^
+^^^^^^^^^^^^^^^
 
 - File Menu - Reload command (Ctrl+L)
   Reload the selected item from disk.
@@ -2474,7 +2481,7 @@ UI improvements
   Generated e-mail message template now includes some additional version information about FHIR API, .NET platform and OS (for debugging purposes)
 
 Bugfixes
-^^^^^^^
+^^^^^^^^
 
 - Improved overall stability and correctness due to various bugfixes in the FHIR API
 - Fix incorrect validation warnings for valueset bindings
@@ -2505,13 +2512,13 @@ Release 14.4.1 for DSTU2 1.02 - FHIR DevDays 2016 Edition (hotfix)
 This is a minor update with a couple of bug fixes.
 
 Usability
-^^^^^^^
+^^^^^^^^^
 
 - When creating a new profile or logical model, initialize the StructureDefinition.Date property (publishing date) to the current date
 - slicing discriminator: initialize drop-down combobox with valid candidate element paths (elements with primitive or coded type)
 
-Bugfixes
-^^^^^^^
+Bug fixes
+^^^^^^^^^
 
 - Command New Logical Model was broken, is now fixed
 - Discern actual FHIR core profiles from custom profiles published on same hl7.org domain (e.g. DAF)
@@ -2585,7 +2592,7 @@ If you encounter such an error, then please move the duplicates to a different f
   This command will open an Explorer window on the cache folder.
 
 Know bugs
-^^^^^^^
+^^^^^^^^^
 
 - Type slicing
   When loading a profile with a type slice (e.g. constraints on Patient.deceased[x] and Patient.deceasedDateTime),
@@ -2598,12 +2605,12 @@ Release 13.4 for DSTU2 1.02 (for SLA customers only)
 ----------------------------------------------------
 
 Updated online documentation
-^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 We've updated the online Forge documentation at: http://docs.simplifier.net/projects/forge-docs/
 
 Features
-^^^^^^^
+^^^^^^^^
 
 - Upgrade FHIR .NET API to v0.90.6-alpha6 (internal release)
   The new API version supports flexible deserialization of unknown enum values.
@@ -2622,9 +2629,14 @@ Features
     Snapshot expansion is disabled by default, as it increases the file size.
 
   - "Expand external profiles on demand"
-    enabled:  automatically expand the snapshot of any referenced external profiles, if it is missing (in memory, not persisted).
-    disabled: abort upon encountering an external profile without a snapshot component.
-              The user must ensure that all referenced external profiles contain a valid snapshot component.
+
+    - enabled:
+
+      automatically expand the snapshot of any referenced external profiles, if it is missing (in memory, not persisted).
+    - disabled:
+
+      abort upon encountering an external profile without a snapshot component.
+      The user must ensure that all referenced external profiles contain a valid snapshot component.
 
   IMPORTANT!!!
   A profile may introduce element type constraints with external profile references.
@@ -2642,7 +2654,7 @@ Features
   - the folder structure contains multiple conformance resources with the same canonical url
 
 User Interface
-^^^^^^^
+^^^^^^^^^^^^^^
 
 - Gracefully handle profiles for unknown/invalid base resource types
   Forge now displays a friendly error message when opening a profile with an unknown base resource type (e.g. for STU3)
@@ -2653,8 +2665,8 @@ User Interface
 - Slightly tweaked the design of the news feed
   Click the feed title to open the Furore news page on simplifier.net
 
-Bugfixes
-^^^^^^^
+Bug fixes
+^^^^^^^^^
 
 - Application would hang when opening online help on typed child elements
 
@@ -2694,7 +2706,7 @@ Release 13.2 for DSTU2 1.02 Official version
 This update represents a minor release with lots of bugfixes and small functional improvements.
 
 Functional improvements
-^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^
 
 - Validate extension element type
   Ensure that element type equals 'Extension'.
@@ -2720,19 +2732,19 @@ Functional improvements
   Otherwise open the file as a stand-alone resource within the session root.
 
 Validation
-^^^^^^^
+^^^^^^^^^^
 - New: Forge now validates that each StructureDefinition.mapping component has a unique identity value
 - New: Forge now validates extension elements by verifying the context type and context path(s) of the underlying extension definition
 
 User Interface
-^^^^^^^
+^^^^^^^^^^^^^^
 - New command: show official documentation for the selected element
   The profile elements tree now provides a new toolbar command (with question mark "?" icon)
   to visit the official online FHIR documentation page for the selected profile element.
 - The element grid view now highlights the current row header, to facilitate navigation while scrolling horizontally
 
 Optimizations
-^^^^^^^
+^^^^^^^^^^^^^
 - Optimized differential component for size
   Serialization logic has been further improved in order to suppress the serialization
   of nodes with empty/default Integer or Boolean values (e.g. Min, MustSupport).
@@ -2744,8 +2756,8 @@ Optimizations
   This optimization improves the performance of change tracking, e.g. when loading a package
   or editing the canonical url of a profile that is referenced by other loaded profiles.
 
-Bugfixes
-^^^^^^^
+Bug fixes
+^^^^^^^^^
 - Fix incorrect element type validation warnings on extension elements
 - Fix incorrect element type validation warnings on official derived profiles from hl7.org (e.g. DAF)
 - Fix custom profile url on extension elements (user-specified profile url value was not memorized and not persisted to XML)
@@ -2772,8 +2784,8 @@ Bugfixes
 - Don't overwrite any existing document title when assigning/updating the location (Url)
 - Dynamically revalidate extension context when the user updates the context of the referenced extension definition.
 
-Bugfixes on Logical Models
-^^^^^^^
+Bug fixes on Logical Models
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 - Derive logical model from base type Element, not from DomainResource
 - Serialize logical models to a snapshot component
   Note: in the previous release, logical models were incorrectly serialized to a differential component.
@@ -2787,7 +2799,7 @@ Release 12.5 for DSTU2 DSTU2 1.02 Official version
 HL7 WGM Montreal edition
 
 Notes
-^^^^^^^
+^^^^^
 
 * This release still supports FHIR DSTU2 1.02 (Official version) from Oct. 24th, 2015
   After the HL7 WGM ballots in Montreal, we will upgrade all our FHIR tooling to support the new STU3 specification.
@@ -2799,7 +2811,7 @@ Notes
   to allow Forge to support working with/designing future FHIR STU releases.
 
 Functional improvements
-^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^
 
 * NEW! Logical modelling
   Forge now supports the authoring of logical models, based on the FHIR StructureDefinition resource.
@@ -2835,7 +2847,7 @@ Functional improvements
   (Blue = info, Orange = warning, Red = error)
 
 User interface
-^^^^^^^
+^^^^^^^^^^^^^^
 
 * New start page
   The application start page now displays a news feed from https://simplifier.net/feed/organizationnews/furore
@@ -2853,8 +2865,8 @@ User interface
 
 * Tweaked the night theme to improve panel header contrast
 
-Bugfixes
-^^^^^^^
+Bug fixes
+^^^^^^^^^
 
 * Bugfix: restore lookup lists on identifier.system.fixed and code.coding.system.fixed properties
 
@@ -2864,7 +2876,7 @@ Release 12.4 for DSTU2 DSTU2 1.02 Official version
 --------------------------------------------------
 
 Updated dependencies
-^^^^^^^
+^^^^^^^^^^^^^^^^^^^^
 
 * Upgrade to FHIR.NET API v0.95-alpha1 for DSTU2 1.0.2 (Official version)
   The new library fixes an issue with publishing profiles to a FHIR server.
@@ -2874,6 +2886,7 @@ Updated dependencies
   - ElementDefinition.Type.Code : FHIRDefinedType
   - Conformance.resource.type : ResourceType
   - ... etcetera ...
+
   Previously, most coded values were deserialized to a simple string variable. This allows a client such as
   Forge to try and handle invalid values. The new API release however is more strict and will fail to
   deserialize resources with invalid enum values (runtime Parse exception).
@@ -2888,12 +2901,13 @@ Updated dependencies
   - Bundles and search results
     A Search operation (e.g. Browse FHIR server) that returns an invalid resource will abort with a deserialization
     exception and cannot be completed, i.e. any remaing results are not accessible.
+
   Currently, the strict deserialization behavior is not configurable. Invalid source data cannot be processed and
   should first be corrected and/or cleaned up. We are looking at alternative strategies that will allow the API and
   consuming client applications to process invalid/incompliant source data.
 
 Functional improvements
-^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^
 
 * New online help
   The Help menu command (F1) now opens the online documentation at http://docs.simplifier.net/projects/forge-docs/
@@ -2973,7 +2987,7 @@ Functional improvements
   - ... etc ...
 
 UI Improvements
-^^^^^^^
+^^^^^^^^^^^^^^^
 
 * Limit minimum window dimensions to 640x480 pixels
 
@@ -2985,7 +2999,7 @@ UI Improvements
 * Support for clickable hyperlinks in (error) dialog messages.
 
 Optimizations & bugfixes
-^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 * Bugfix: FGR307 - Toggle visibility of common elements derived from (Domain)Resource
   (Reported by Jonny Rylands)
@@ -3025,7 +3039,7 @@ Release 12.2.1 for DSTU2 1.0
 This is a minor update that fixes some small issues in the previous version.
 
 Features
-^^^^^^^
+^^^^^^^^
 
 * Expansion of Element.Id is now also controlled by the global application setting "Expand Common Elements" (Options menu).
   Release 12.2 introduced support for common elements derived from Resource & DomainResource.
@@ -3036,7 +3050,7 @@ Features
   On ElementDefinition.slicing: If there are no discriminators, there must be a definition
 
 UI Improvements
-^^^^^^^
+^^^^^^^^^^^^^^^
 
 * New command: File / Open as Copy
   Open a new, in-memory copy of an existing resource file.
@@ -3047,8 +3061,8 @@ UI Improvements
   Create a new duplicate instance of the selected item.
   Forge automatically assigns a unique name and canonical url to the new instance (via auto-numbering).
 
-Bugfixes
-^^^^^^^
+Bug fixes
+^^^^^^^^^
 
 * Properly dispose of resource instances in case of unhandled exceptions during initialization
 
@@ -3068,11 +3082,12 @@ Release 12.2 for DSTU2 1.0
 --------------------------
 
 * New product versioning scheme
-^^^^^^^
+
   From now on, all public releases will be identified by a friendly product version number (major.minor).
 
   - The major version number represents the HL7 WGM Connectathon index (currently 12).
   - The minor version number represents the sprint index (currently 2).
+
   The new versioning scheme improves the identification of interim hotfix releases.
   Note: The official product version is maintained manually. Internal Assembly file versions are auto-generated from a timestamp.
 
@@ -3108,6 +3123,7 @@ Release 12.2 for DSTU2 1.0
   - Resource.implicitRules
   - Resource.language
   - DomainResource.text
+
   Forge can now display the inherited elements in the profile element tree and grid views
   (prior to the resource specific elements), so you can specify constraints on them.
   This feature is controlled by an application-wide configuration setting that you can toggle
@@ -3202,33 +3218,29 @@ Release 12.2 for DSTU2 1.0
   - The FHIR Skype chat groups have been deprecated and replaced by Zulip.
     You can visit the new FHIR discussion groups at chat.fhir.org.
     The hyperlinks in the Help menu and the About box have been updated accordingly.
-
   - StructureDefinition commands are now hosted on a ToolBar control (cf. Session Explorer command buttons)
-
   - When opening or creating a StructureDefinition resource, the Element Tree tab page is now activated by default.
-
   - When saving a new resource, initialize file name from resource title (Label) and type
-
   - New link (chain) icon to indicate items that represent a reference to an external resource (i.e. ImplementationGuide package entries)
-
   - Validation status icons now indicate the maximum validation error severity
-      Blue = informational
-      Orange = warning
-      Red = error
+
+    - Blue = informational
+    - Orange = warning
+    - Red = error
 
   - Improved element cardinality hints for tree elements, e.g. (0...*)
     You can toggle the display of element cardinality hints via the Options menu, item "Show element cardinality"
 
     Cardinality	Hint
-    ------------------------
-      0...0       (0)
-      0...1		<none> (default)
-      0...*       (*)
-      1...1       (1)
-      1...*       (1+)
-      N...N       (N)
-      N...*       (N+)
-      X...Y       (X...Y)
+
+    - 0...0 = (0)
+    - 0...1 = <none> (default)
+    - 0...* = (*)
+    - 1...1 = (1)
+    - 1...* = (1+)
+    - N...N = (N)
+    - N...* = (N+)
+    - X...Y = (X...Y)
 
   - Show instruction tooltips & labels for tab items
 
