@@ -9,10 +9,12 @@ click `Open FHIR Project Folder...` and select your working directory.
 ![Open a folder in Forge](../images/OpenFolder.png)
 
 Note that although Forge allows you to select any folder, it would be a
-very bad idea to select a general folder like "C:\Documents" as your
-project folder. If you don't have a specific folder for your project,
+very bad idea to select a general folder like ***C:\Documents*** as your
+project folder. If you are managing multiple projects it is good practice to 
+organize all of your projects under the same parent folder: for example ***FHIR***. 
+If you don't have a specific folder for your project,
 please create one. For example, let's open my project folder called
-*MyForgeProject*. By default subdirectories are not included. Select this
+***MyForgeProject***. By default subdirectories are not included. Select this
 option to include all subdirectories of the selected folder. This may be
 convenient if you want to organize your profiles in separate folders,
 but still want to be able to edit them in the same project. On the other

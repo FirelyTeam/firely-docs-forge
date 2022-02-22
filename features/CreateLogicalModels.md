@@ -10,7 +10,8 @@ based on FHIR resources. FHIR provides a StructureMap resource and a
 mapping language that allow you to define and implement the actual
 mapping operations.
 
-To create Logical Models in Forge select the `New Logical Model` command.
+From your project folder, go to `New...` and click `New Logical Model` 
+(or **Ctrl+M**) to create a new logical model.
 Enter a name for your logical model and click `OK`.
 
 ![Creating a Logical Model in Forge](../images/LogicalModel-Create.png)

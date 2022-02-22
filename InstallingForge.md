@@ -9,21 +9,23 @@ Forge is deployed using a
 installer. You can download and install the application without
 requiring administrator permissions (except .NET, see below). The
 application automatically detects and installs updates when you start
-the application. After installation of a new release, you will again
-receive automatic update notifications on application startup.
+the application. After installation of a new release, you will
+receive automatic update notifications when you start the application.
 
-Forge is based [Microsoft .NET Framework 4.7.2, .NET 5](https://dotnet.microsoft.com/learn/dotnet/what-is-dotnet)
+Forge is built with the [Microsoft .NET Framework 4.7.2, .NET 5](https://dotnet.microsoft.com/learn/dotnet/what-is-dotnet)
 and [WPF](https://visualstudio.microsoft.com/vs/features/wpf/). The
 ClickOnce installer will download and install the .NET Framework 4.7.2
 if necessary. Forge itself will download and install .NET 5 if necessary.
 
-> **Warning\!**  
-> Installing or updating the .NET Framework or .NET 5 requires administrator permissions. 
-> If you have insufficient permissions, please contact your system administrator.
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Installing or updating the .NET Framework or .NET 5 requires administrator permissions.
+If you have insufficient permissions, please contact your system administrator.</p>
+</div>
 
 ## Installing on other operating systems
 
-The .NET Framework, .NET 5 and WPF, on which Forge is built, only support the Windows operating system. For users using other platforms, generally the best solution is to **run Windows in a Virtual Machine**, on your own machine or in the cloud, and install Forge on that. [VirtualBox](https://www.virtualbox.org/) is an example of a great, free application to run virtual machines on your computer. Example instructions for [installing Windows on MacOS with VirtualBox can be found here](https://www.howtogeek.com/657464/how-to-install-a-windows-10-virtualbox-vm-on-macos/).
+The .NET Framework and WPF are only supported on the Windows operating system. For users using other platforms, generally the best solution is to **run Windows in a Virtual Machine**, on your own machine or in the cloud, and install Forge on that. [VirtualBox](https://www.virtualbox.org/) is an example of a great, free application to run virtual machines on your computer. Example instructions for [installing Windows on MacOS with VirtualBox can be found here](https://www.howtogeek.com/657464/how-to-install-a-windows-10-virtualbox-vm-on-macos/).
 <!--
 In some cases it is also possible to run Forge on Linux or MacOS using [Wine](https://www.winehq.org/). While we do not officially support this, the steps to get you started are below.
 

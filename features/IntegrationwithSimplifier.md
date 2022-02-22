@@ -3,51 +3,103 @@
 [Simplifier.net](https://simplifier.net/) is a FHIR specification development, collaboration and publishing platform. 
 The documentation for the platform can be found [here](https://docs.fire.ly/projects/Simplifier/).
 
-Forge has an option to connect to a project on Simplifier. This will allow you to 
-keep all project files synchronized between Forge and Simplifier.
+Forge can synchronize the project files in your local folder with the files in your project on Simplifier.
 
 ## Create a FHIR Project on Simplifer
 
 When starting a new project, you first have to create a project on Simplifier.
-Clicking the button  
-`Create FHIR Project on Simplifier.net...` will open your 
-browser to the **Create project** page on Simplifier.net using your Simplifier account.
+At the moment you can only do that via the Simplifier website. In Forge you can browse
+to the Simplifier **Create project** page using one of the following options:
+* Click `Create FHIR Project on Simplifier.net...` in one of the following places:
+
+  - File menu
+  - Start panel
+  - Session panel
+* Click `Create...` in the Simplifier toolbar in the Project tab:  
+![Simplifier toolbar commands](../images/LinkToolbar.png)
+
+Enter you project details on Simplifier and click `Create`.
 
 ![Create a project on Simplifier](../images/SyncCreateProject.png)
 
-Enter you project details and click `Create`.
+## Open a FHIR Project from Simplifer
 
-## Connect to a FHIR Project on Simplifer
+* Click `Open FHIR Project from Simplifier.net...` in one of the following places:
 
-Click `Connect to FHIR Project on Simplifer.net...`. This will open a dialog
-listing all the available projects on Simplifier you can connect with.
+  - File menu
+  - Start panel
+  - Session panel
 
-![Connect to a project on Simplifier](../images/SyncConnect.png)
+This will open a dialog listing all the available projects on Simplifier you can open.
 
-The project folder is set to your **Documents** folder by default. However you can
-change the project folder by clicking `...`. Forge will remember the project 
-folder you selected.
+The first time you do this you have to select the parent folder for your FHIR projects.
+Forge will remember the parent folder you selected but you can change it at any time.
 
-![Connect to a project on Simplifier](../images/SyncConnectProjectFolder.png)
+![Select FHIR parent folder](../images/SyncParentFolderSelection.png)
 
 When you select a different project from the list, the project folder name is updated 
 automatically. Note that you can still manually change the project folder name if you want.
-Project folders that are already connected to Simplifier are disabled for selection.
+
+![Open a project from Simplifier](../images/SyncConnect.png)
+
+The project item tooltip displays the project title, description, ![URL Key](../images/UrlKey.png) URL Key
+and folder icon information:
+
+* ![Folder is empty](../images/FolderEmpty.png)	
+An empty folder icon indicates that the project folder does not exist or is empty.
+* ![Folder is not empty](../images/FolderFull.png)	
+A full folder icon indicates that the project folder already contains files and/or subfolders.
+* ![Folder already linked](../images/FolderSimplifier.png)
+Project folders that are already linked to Simplifier are disabled for selection.
 
 The `Filter` button hides projects that are not compatible with the FHIR version of Forge. 
-Turn the filter off to list project from all FHIR versions.
+Turn the filter off to list project for all FHIR versions.
 
-Click `Connect` to create the project folder and download all project files from Simplifier.
+Click `Open` to create the project folder and download all project files from Simplifier.
 
 ![Connected to a project on Simplifier](../images/SyncConnected.png)
 
-If you select an existing project folder that already contains resource files, you have 
-to confirm to overwrite the existing files before you can continue.
+### Open a FHIR Project from Simplifer when you already have a local project folder with files
 
-When your project folder is connected with Simplifier, the project toolbar
-contains an additional section.
+If you select a project folder that already contains resource files and one or
+more files do not match up with the files already on Simplifier, the following dialog will open.
 
-![Simplifier toolbar buttons](../images/SyncToolbar.png)
+![Options when open a project from Simplifier](../images/SyncConnectOptions.png)
+
+You have three options to specify what you would like to do:
+
+* **Keep project folder files:**  
+If a file exists both in your local folder and on Simplifier, then your local file will be taken.
+Files that exist only on Simplifier will be deleted.
+* **Keep Simplifier project files:**  
+If a file exists both in your local folder and on Simplifier, then the Simplifier file will be taken.
+Files that exist only in your local folder will be deleted.
+* **Let me choose which files to keep**
+
+Click `Advanced view` to show a list of all conflicting file changes. 
+When you have selected the option  
+`Let me choose which files to keep` you can 
+choose to keep either your local file change or the file change on Simplifier.
+
+![Advanced optionsSimplifier](../images/SyncConnectOptionsAdvanced.png)
+
+Click `Continue` to create a backup of your local project folder and 
+download the relevant project files from Simplifier.
+
+## Link to FHIR Project on Simplifer
+
+If you have opened a project folder but you have not yet setup a link with an existing 
+Simplifier project, you can do so by clicking `Link` in the Simplifier toolbar.
+
+![Linking to project on Simplifier](../images/SyncLinking.png)
+
+This will open a dialog listing all the available projects on Simplifier you can open.
+
+![Link to project on Simplifier](../images/SyncLink.png)
+
+You cannot change the project folder here because you are linking a Simplifier project to 
+your current project folder. Select the correct Simplifier project from the list and click `Link` 
+to continue.
 
 ## Status of project files
 
@@ -95,12 +147,12 @@ synchronized.
 
 To resolve conflicts you have to switch to the Advanced view by clicking `Advanced view`.
 For each listed file conflict you have 3 choices:
-- Accept yours
-- Accept theirs
-- Leave unresolved
+- **Take yours:**  
+The file from your local project folder will be uploaded to Simplifier and replaces the file on Simplifier.
+- **Take theirs:**  
+The file from Simplifier is downloaded and replaces the file in your project folder.
+- **Leave unresolved:**  
+The conflict remains unresolved therefor no file upload or download will take place.
 
 ![Summary conflicts Advanced view](../images/SyncConflictsAdvancedView.png)
 
-If you click `Accept yours` then your file will be uploaded to Simplifier 
-and their version is overwritten. If you click `Accept theirs` then their file 
-is downloaded from Simplifier and your version is overwritten.
