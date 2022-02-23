@@ -30,15 +30,16 @@ Enter you project details on Simplifier and click `Create`.
   - Start panel
   - Session panel
 
-This will open a dialog listing all the available projects on Simplifier you can open.
 
 The first time you do this you have to select the parent folder for your FHIR projects.
 Forge will remember the parent folder you selected but you can change it at any time.
 
 ![Select FHIR parent folder](../images/SyncParentFolderSelection.png)
 
-When you select a different project from the list, the project folder name is updated 
-automatically. Note that you can still manually change the project folder name if you want.
+Select the parent folder and click `Select Folder`. A dialog is opened listing all the available 
+projects on Simplifier you can open. When you select a different project from the list,
+the project folder name is updated automatically. Note that you can still manually change 
+the project folder name if you want.
 
 ![Open a project from Simplifier](../images/SyncConnect.png)
 
