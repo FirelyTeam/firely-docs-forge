@@ -124,7 +124,7 @@ opens a browser to your project on Simplifier.
 
 ![Simplifier synchronize options](../images/SyncToolbarDropdown.png)
 
-When you click a synchronize button a dialog is opened showing you what will be synchronized.
+When you click a synchronize button a dialog is opened showing you a summary of what will be synchronized.
 
 ![Summary Normal view](../images/SyncSummaryNormalView.png)
 
