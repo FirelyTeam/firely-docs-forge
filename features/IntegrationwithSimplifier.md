@@ -49,7 +49,7 @@ Enter you project details on Simplifier and click `Create`.
 
 The first time you do this you have to select the parent folder for your FHIR projects.
 Forge will remember the parent folder you selected but you can change it at any time by opening 
-the `Options` and selecting the menu item `Select parent folder FHIR projects...`.
+the `Options` menu and selecting the menu item `Select parent folder FHIR projects...`.
 
 ![Select FHIR parent folder](../images/SyncParentFolderSelection.png)
 
@@ -70,6 +70,7 @@ A full folder icon indicates that the project folder already contains files and/
 * ![Folder already linked](../images/FolderSimplifier.png)
 Project folders that are already linked to Simplifier are disabled for selection.
 
+The `Select parent folder FHIR projects...` button allows you to change the parent folder for your FHIR projects..
 The `Filter` button hides projects that are not compatible with the FHIR version of Forge. 
 Turn the filter off to list project for all FHIR versions.
 
