@@ -5,6 +5,22 @@ The documentation for the platform can be found [here](https://docs.fire.ly/proj
 
 Forge can synchronize the project files in your local folder with the files in your project on Simplifier.
 
+![Start panel](../images/SyncStartPanel.png)
+
+The following menu and toolbar options have been added:
+* ![Create a FHIR Project on Simplifier](../images/SyncIconCreate.png)
+Create a FHIR Project on Simplifier
+* ![Open a FHIR Project from Simplifier](../images/SyncIconOpen.png)
+Open a FHIR Project from Simplifier / Link to a FHIR Project on Simplifier
+* ![Synchronize a FHIR Project with Simplifier](../images/SyncIconSync.png)
+Synchronize a FHIR Project with Simplifier
+
+The `Project` tab contains a new toolbar with additional Simplifier options.
+
+![Project tab](../images/SyncProjectToolbar.png)
+
+The following paragraphs describe the options in more detail.
+
 ## Create a FHIR Project on Simplifer
 
 When starting a new project, you first have to create a project on Simplifier.
@@ -13,8 +29,8 @@ to the Simplifier **Create project** page using one of the following options:
 * Click `Create FHIR Project on Simplifier.net...` in one of the following places:
 
   - File menu
-  - Start panel
-  - Session panel
+  - Start panel  
+  - Session panel  
 * Click `Create...` in the Simplifier toolbar in the Project tab:  
 ![Simplifier toolbar commands](../images/LinkToolbar.png)
 
@@ -32,7 +48,8 @@ Enter you project details on Simplifier and click `Create`.
 
 
 The first time you do this you have to select the parent folder for your FHIR projects.
-Forge will remember the parent folder you selected but you can change it at any time.
+Forge will remember the parent folder you selected but you can change it at any time by opening 
+the `Options` and selecting the menu item `Select parent folder FHIR projects...`.
 
 ![Select FHIR parent folder](../images/SyncParentFolderSelection.png)
 
