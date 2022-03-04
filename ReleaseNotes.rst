@@ -11,7 +11,7 @@ Release 28.0
 ------------
 Changes
 ^^^^^^^
-* Upgrade to Firely .NET SDK 3.7.0.
+* Upgrade to Firely .NET SDK 3.8.1.
 * Added support for synchronizing project files with Simplifier.net.
   Removed Import from/Publish to Simplifer.net/FHIR Server.
 * Improved performance
