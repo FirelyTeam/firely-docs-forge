@@ -87,13 +87,13 @@ more files do not match up with the files already on Simplifier, the following d
 
 You have three options to specify what you would like to do:
 
-* **Keep project folder files:**  
-If a file exists both in your local folder and on Simplifier, then your local file will be taken.
+* **Take the files from your project folder:**  
+If a file exists both in your project folder and on Simplifier, then your local file will be taken.
 Files that exist only on Simplifier will be deleted.
-* **Keep Simplifier project files:**  
-If a file exists both in your local folder and on Simplifier, then the Simplifier file will be taken.
-Files that exist only in your local folder will be deleted.
-* **Let me choose which files to keep**
+* **Take the files from Simplifier:**  
+If a file exists both in your project folder and on Simplifier, then the Simplifier file will be taken.
+Files that exist only in your project folder will be deleted.
+* **Let me choose which file changes to keep**
 
 Click `Advanced view` to show a list of all conflicting file changes. 
 When you have selected the option  
