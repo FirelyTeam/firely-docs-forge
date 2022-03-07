@@ -89,10 +89,11 @@ You have three options to specify what you would like to do:
 
 * **Take the files from your project folder:**  
 If a file exists both in your project folder and on Simplifier, then your local file will be taken.
-Files that exist only on Simplifier will be deleted.
+Files on Simplifier that do not exist in your project folder will be deleted the next time you 
+synchronize with Simplifier.
 * **Take the files from Simplifier:**  
 If a file exists both in your project folder and on Simplifier, then the Simplifier file will be taken.
-Files that exist only in your project folder will be deleted.
+Files in your project folder that do not exist on Simplifier will be deleted.
 * **Let me choose which file changes to keep**
 
 Click `Advanced view` to show a list of all conflicting file changes. 
