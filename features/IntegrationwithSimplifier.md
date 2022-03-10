@@ -172,7 +172,7 @@ The file from your local project folder will be uploaded to Simplifier and repla
 - **Take theirs:**  
 The file from Simplifier is downloaded and replaces the file in your project folder.
 - **Leave unresolved:**  
-The conflict remains unresolved therefor no file upload or download will take place.
+The conflict remains unresolved therefore no file upload or download will take place.
 
 ![Summary conflicts Advanced view](../images/SyncConflictsAdvancedView.png)
 
