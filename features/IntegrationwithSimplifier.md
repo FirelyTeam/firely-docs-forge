@@ -98,8 +98,11 @@ Files in your project folder that do not exist on Simplifier will be deleted.
 
 Click `Advanced view` to show a list of all conflicting file changes. 
 When you have selected the option  
-`Let me choose which files to keep` you can 
-choose to keep either your local file change or the file change on Simplifier.
+`Let me choose which files to keep` you have 2 choices for each listed file conflict:
+- **Select the file change from your project folder:**  
+The file from your local project folder will be taken. The file will be uploaded to Simplifier the next time you synchronize.
+- **Select the file change from Simplfier:**  
+The file from Simplifier is downloaded and replaces the file in your project folder.
 
 ![Advanced optionsSimplifier](../images/SyncConnectOptionsAdvanced.png)
 
@@ -145,15 +148,15 @@ opens a browser to your project on Simplifier.
 
 When you click a synchronize button a dialog is opened showing you a summary of what will be synchronized.
 
-![Summary Normal view](../images/SyncSummaryNormalView.png)
+![Summary Basic view](../images/SyncSummaryBasicView.png)
 
-By default, the Normal view is displayed. This view will simply describe what will happen 
+By default, the Basic view is displayed. This view will simply describe what will happen 
 without details. If you want to see more details you can switch to the Advanced view by clicking
 `Advanced view`.
 
 ![Summary Advanced view](../images/SyncSummaryAdvancedView.png)
 
-You can return to the Normal view by clicking `Normal view`. Click `Continue` to
+You can return to the Basic view by clicking `Basic view`. Click `Continue` to
 synchronize with Simplifier.
 
 ## Conflicting file changes
@@ -163,13 +166,13 @@ Forge can detect this but it has limited options to resolve a conflict.
 You are not required to resolve conflicts but then these resources will not be 
 synchronized.
 
-![Summary conflicts Normal view](../images/SyncConflictsNormalView.png)
+![Summary conflicts Basic view](../images/SyncConflictsBasicView.png)
 
 To resolve conflicts you have to switch to the Advanced view by clicking `Advanced view`.
 For each listed file conflict you have 3 choices:
-- **Take yours:**  
+- **Select the file change from your project folder:**  
 The file from your local project folder will be uploaded to Simplifier and replaces the file on Simplifier.
-- **Take theirs:**  
+- **Select the file change from Simplfier:**  
 The file from Simplifier is downloaded and replaces the file in your project folder.
 - **Leave unresolved:**  
 The conflict remains unresolved therefore no file upload or download will take place.
