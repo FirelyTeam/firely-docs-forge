@@ -10,7 +10,7 @@ With Forge you can:
 .. toctree::
    :maxdepth: 1
 
-   features/OpenaProfilefolder
+   features/OpenaProjectFolder
    features/CreatenewProfiles
    features/EditProfiles
    features/DefineConstraints
@@ -19,6 +19,6 @@ With Forge you can:
    features/CreateDerivedProfiles
    features/CreateLogicalModels
    features/SetForgeOptions
-
+   features/IntegrationwithSimplifier
 
 All these features will be described in more detail in the above linked sections.

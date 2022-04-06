@@ -11,24 +11,30 @@ to as slices.
 
 ## Slicing in Forge
 
-Select the element that you want to slice and click on the scissor icon.
+Select the element that you want to slice and click on `Slice`.
+
+![Slicing an element in Forge](../images/SliceCreate.png)
+
 The element is now 'Sliced' and it is possible to add slices by clicking
-the scissor icon with a little plus. You can create as many slices as
-necessary by selecting the sliced element and clicking the Add Slice
-icon again. The added slices can be defined and constrained as any other
+`Add Slice`. You can create as many slices as
+necessary by selecting the sliced element and clicking `Add Slice`
+again. The added slices can be defined and constrained as any other
 element. 
 
 ## Discriminator
 
-After adding slices, Forge shows a warning message containing the
+After adding slices, Forge shows a validation message containing the
 message that there is no discriminator defined for the sliced elements.
+
+![Slicing an element in Forge](../images/SliceCreated.png)
+
 The discriminator is used to distinguish the sliced elements from one
 another. The discriminators in their sum should allow applications to
 easily determine which slice belong to each section. The discriminator
-information can be provided in the Element Properties of the sliced
-element under Slicing Details.
+information can be provided in the **Element Properties** of the sliced
+element under **Slicing Details**.
 
-![Slicing an element in Forge](../images/Slicing01.jpg)
+![Slicing an element in Forge](../images/SlicingDetails.png)
 
 More information concerning slicing and discriminators can be found
 here: <http://hl7.org/fhir/profiling.html>. 

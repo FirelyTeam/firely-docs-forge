@@ -1,7 +1,6 @@
 # Create Derived Profiles
 
-
-With the new release of Forge 14.7 you now have the ability to create a
+With Forge you have the ability to create a
 profile on top of another, existing profile, a.k.a. "derived" profile.
 This will enable you and your organization to benefit from the existing
 profiles and to further customize those profiles to your specific needs.
@@ -9,8 +8,8 @@ For example, take an organization that would like to begin working with
 a national profile that is derived from a Core Resource. That
 organization would like to utilize the changes that were made to the
 Core Resource, the national profile, and then further customize that
-profile to reflect organization specific needs. With the new version of
-Forge you can now begin work directly on that national profile! This
+profile to reflect organization specific needs. With Forge you can begin 
+work directly on that national profile! This
 saves time and effort that you would spend recreating all the changes to
 the Core Resource to reflect the changes to the national profile and
 then further adding your organizational constraints.
@@ -31,14 +30,35 @@ profile.
 
 ![The hierarchy between FHIR profiles](../images/Profilehierarchy2.png)
 
-To do this in Forge you need to select the New Derived Profile command.
-Once you do you will be brought to your local drive to enable you to
-select your base profile. In the future we you will have the ability to
-access your own and/or shared profiles, via your Simplifier account. For
-now, users have to visit <http://simplifier.net/> to search and download
-relevant Core Resources.
+To do this in Forge you first need to add one or more Core Packages.
+The following example adds the **hl7.fhir.us.core** package to the project.
+Select the `Dependencies` tab, then click `Simplifier`, then type *hl7.fhir.us*
+in the **Search** field and finally click `Search`. Select **hl7.fhir.us.core**
+in the list and then select package version **4.1.0**. Finally click `Add` to
+add the package to the project. 
 
-![The hierarchy and conformance between FHIR profiles](../images/Profilehierarchy.png)
+![Add a core package](../images/DerivedAddPackage.png)
+
+Click the `Project` tab to see what packages are installed. Notice that dependent 
+packages are installed too.
+
+![Installed packages](../images/DerivedPackagesInstalled.png)
+
+To create a derived profile for the US Core Patient, open the package 
+**hl7.fhir.us.core#4.1.0** by selecting it from the list and clicking
+`Open`. Then select **package** in the list and click `Open`. In the **Filter** toolbar
+select **Patient** as Structure Type to filter on.
+
+![Derive profile](../images/DerivedUSCorePatient.png)
+
+Select the US Core Patient in the list and click `Derive`.
+
+![Derive profile properties](../images/DerivedUSCorePatientProperties.png)
+
+Enter the name for the profile and click `OK`. A new derived profile is created
+and opened. You can now make your own modifications.
+
+![US Core Patient profile](../images/DerivedUSCorePatientProfile.png)
 
 Things to keep in mind are that you can only further constrain (or add
 extensions to) profiles. This means that each derived profile is more
@@ -49,3 +69,5 @@ as a Core Resource, then the differential will reflect all constraints
 with respect to that Core Resource. If the base profile is a derived
 profile, e.g. a national profile like in the example above, then the
 differential will reflect constraints on the national profile.
+
+![The hierarchy and conformance between FHIR profiles](../images/Profilehierarchy.png)

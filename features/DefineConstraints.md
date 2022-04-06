@@ -18,7 +18,7 @@ not allowed to make the maximum cardianlity greater than the base
 Resource\'s maximum cardinality. Forge shows a warning message when this
 happens.
 
-![Set element cardinality in Forge](../images/ConstraintsCardinality.jpg)
+![Set element cardinality in Forge](../images/ConstraintsCardinality.png)
 
 ## Element Type
 
@@ -36,10 +36,10 @@ opened in the session explorer and the profile\'s base Resource fits the
 element.
 
 *Setting Observation.value[x] types in Forge*
-![Setting Observation.value[x] types in Forge](../images/ConstraintsType.jpg)
+![Setting Observation.value[x] types in Forge](../images/ConstraintsType.png)
 
 *Setting Observation.subject reference type in Forge*
-![Setting Observation.subject reference type in Forge](../images/ConstraintsTypeReference.jpg)
+![Setting Observation.subject reference type in Forge](../images/ConstraintsTypeReference.png)
 
 ## Valueset binding
 
@@ -50,7 +50,7 @@ description and the reference to the valueset. Note that you cannot
 relax the base Resource binding strength. The value must be equal to or
 strichter than the base value.
 
-![Setting valueset binding in Forge](../images/ConstraintsValueSetBinding.jpg)
+![Setting valueset binding in Forge](../images/ConstraintsValueSetBinding.png)
 
 ## Inline constraints
 
@@ -71,6 +71,10 @@ elements defined by external type profiles.
 ![Setting an inline constraint on an element in Forge](../images/Inlineconstraintontypeslice.png)
 
 This behavior also applies to Extension Definitions, as technically they
-are also external type profiles. Suppose you author a profile with an extension element. The profile extension element is mapped to a common Extension definition. Now when you open the profile in Forge 14.7, the application will try to resolve the target extension definition and merge it into your profile. Now you can define inline constraints on child elements of the extension in your profile to override constraints in the underlying extension definition.
+are also external type profiles. Suppose you author a profile with an extension element.
+The profile extension element is mapped to a common Extension definition. Now when you open the profile in Forge,
+the application will try to resolve the target extension definition and merge it into your profile.
+Now you can define inline constraints on child elements of the extension in your profile to override constraints
+in the underlying extension definition.
 
 ![Setting an inline constraint on an extension in Forge](../images/Inlineconstraintonprofileextension.png)

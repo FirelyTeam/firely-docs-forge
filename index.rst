@@ -31,6 +31,7 @@ Forge is the user-friendly editor for creating and editing profiles that enables
    LicenseAgreement
    ManagingForgelicenses
    Knownissues
+   ReleaseNotes
 
 For questions or feedback on Forge, go to the Help menu in Forge and
 select 'Feedback & Support' or send an E-mail to forge@fire.ly.

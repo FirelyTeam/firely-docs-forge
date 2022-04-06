@@ -7,25 +7,26 @@ Go to the [Forge download page](https://simplifier.net/forge) to download Forge.
 Forge is deployed using a
 [ClickOnce](https://docs.microsoft.com/en-us/visualstudio/deployment/clickonce-security-and-deployment)
 installer. You can download and install the application without
-requiring administrator permissions (except .NET FW, see below). The
+requiring administrator permissions (except .NET, see below). The
 application automatically detects and installs updates when you start
-the application. After installation of a new release, you will again
-receive automatic update notifications on application startup.
+the application. After installation of a new release, you will
+receive automatic update notifications when you start the application.
 
-Forge is based on the [Microsoft .NET
-Framework](https://dotnet.microsoft.com/learn/dotnet/what-is-dotnet)
-version 4.7.2 and
-[WPF](https://visualstudio.microsoft.com/vs/features/wpf/). The
+Forge is built with the [Microsoft .NET Framework 4.7.2, .NET 5](https://dotnet.microsoft.com/learn/dotnet/what-is-dotnet)
+and [WPF](https://visualstudio.microsoft.com/vs/features/wpf/). The
 ClickOnce installer will download and install the .NET Framework 4.7.2
-on demand, if not already available.  
-**Warning\!** Installing or updating the .NET Framework requires
-administrator permissions. If you have insufficient permissions, please
-contact your system administrator.
+if necessary. Forge itself will download and install .NET 5 if necessary.
+
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Installing or updating the .NET Framework or .NET 5 requires administrator permissions.
+If you have insufficient permissions, please contact your system administrator.</p>
+</div>
 
 ## Installing on other operating systems
 
-The .NET Framework and WPF, on which Forge is built, only support the Windows operating system. For users using other platforms, generally the best solution is to **run Windows in a Virtual Machine**, on your own machine or in the cloud, and install Forge on that. [VirtualBox](https://www.virtualbox.org/) is an example of a great, free application to run virtual machines on your computer. Example instructions for [installing Windows on MacOS with VirtualBox can be found here](https://www.howtogeek.com/657464/how-to-install-a-windows-10-virtualbox-vm-on-macos/).
-
+The .NET Framework and WPF are only supported on the Windows operating system. For users using other platforms, generally the best solution is to **run Windows in a Virtual Machine**, on your own machine or in the cloud, and install Forge on that. [VirtualBox](https://www.virtualbox.org/) is an example of a great, free application to run virtual machines on your computer. Example instructions for [installing Windows on MacOS with VirtualBox can be found here](https://www.howtogeek.com/657464/how-to-install-a-windows-10-virtualbox-vm-on-macos/).
+<!--
 In some cases it is also possible to run Forge on Linux or MacOS using [Wine](https://www.winehq.org/). While we do not officially support this, the steps to get you started are below.
 
 ### Forge on Linux with Wine
@@ -125,12 +126,12 @@ unsupported by MacOS Catalina. Please install Windows in a Virtual Machine inste
     again. Just click through and it will realise it is already there
     and continue to open Forge.
 
-### Known issues
+## Known issues
 
 1.  On some systems, having an active secondary display will cause
     application rendering issues (e.g. gray window). Please try to
     detach/disable secondary screen before starting the application.
-
+    -->
 ## Resolving installation Security Warning
 
 In some cases users find that when installing or updating Forge the following security warning appears:
@@ -149,7 +150,7 @@ Users installing and using Forge behind a Proxy can run into issues. Your organi
         simplifier.net 		IP 40.68.205.178
         downloads.simplifier.net 	IP 40.114.243.70 
 
-2. Allow applications using port 443 (https)
+2. Allow applications using port 443 (https)  
 3. Your administrator should allow your Proxy to support Websocket.
 
 Additionally some users found that they had to do one extra switch to the local users’ IE proxy settings. Although “Bypass proxy server for local addresses” was checked, entering the IP address and/or domain name (whichever the local users are using) into the proxy exceptions list fixed the problem.

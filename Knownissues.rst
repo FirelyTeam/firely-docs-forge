@@ -1,9 +1,11 @@
+.. _known-issues:
+
 Known issues
 ============
 
 If your issue is not listed below, please contact us at forge@fire.ly or (for customers) `our premium support desk`_.
 
-*Updated for 27.1 for STU3, R4, R5*
+*Updated for 28.0 for STU3, R4, R4B, R5*
 
 .. list-table::
     :widths: 10, 10, 10
@@ -12,9 +14,6 @@ If your issue is not listed below, please contact us at forge@fire.ly or (for cu
     * - Status
       - Category
       - Description
-    * - Open
-      - Extensions
-      - | Forge R4 can not extend value[x] elements (FOR-479)
     * - Parked
       - Navigation
       - | When adding an extension, refresh might be necessary for showing and 

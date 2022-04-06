@@ -1,6 +1,7 @@
 # Set Forge Options
 
-Forge provides several options regarding rendering and saving. 
+Forge provides several options regarding rendering and saving in the
+`Options` menu.
 
 ![The options menu in Forge](../images/OptionsForge.png)
 
@@ -19,7 +20,4 @@ On default Forge saves your work as a differential. Forge is capable of
 saving your work as a snaphot. The Options menu provides a set of
 configuration settings that control the behavior of snapshot expansion
 
-
 Want more information on the options in Forge? Feel free to reach out to <forge@fire.ly>.
-
-
