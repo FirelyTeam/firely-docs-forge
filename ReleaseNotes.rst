@@ -7,6 +7,36 @@
 
    OldReleaseNotes
 
+Release 28.1
+------------
+Changes
+^^^^^^^
+* Logical model: the **Add element** button now features a drop down list to add an element with a default type already selected (only for most frequent used types).
+* Synchronizing with Simplifier.net: more elegant handling of the **Not Found** response. Possible causes for this response are:
+
+  - The project url key has changed
+  - The project no longer exists on Simplifier
+  - You no longer have access to the project
+* Files with the extension **.fsh** and **.ico** can now be synchronized with Simplifier as well.
+
+Bug fixes
+^^^^^^^^^
+* Fixed various minor UI styling issues
+
+  - Some labels were shown double since version 28.0
+* When opening a bundle with a constrained **entry.resource**, the resource is not shown in the element tree.
+* The **Save** button is now always available and the save operation is always executed. This solves: 
+
+  - not being able to click the **Save** button while editing a text field
+  - after toggling the **Save snapshot component** option and clicking **Save** the file is not saved unless there are pending changes
+* Fixed incorrect calculation of the minimum cardinality for extension arrays where an extension already has a minimum cardinality set.
+* Fixed inherited example values being allowed to be edited or deleted. They are now disabled for editing.
+* When creating a new profile and the file has not been saved yet and Forge detected a file change outside of Forge, Forge would incorrectly show a message that the profile was deleted outside of Forge.
+* **[R4B-R5]** Fixed inablity to create new profiles in version 28.0. Now using the most recent FHIR version:
+
+  - R4B - 4.3.0-snapshot1
+  - R5 - 5.0.0-snapshot1
+
 Release 28.0
 ------------
 Changes
