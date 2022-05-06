@@ -18,6 +18,7 @@ Changes
   - The project no longer exists on Simplifier
   - You no longer have access to the project
 * Files with the extension **.fsh** and **.ico** can now be synchronized with Simplifier as well.
+* Forge bootstrapper now detects Windows Arm64 for the installation of the correct .NET 5 Desktop Runtime
 
 Bug fixes
 ^^^^^^^^^
@@ -32,6 +33,10 @@ Bug fixes
 * Fixed incorrect calculation of the minimum cardinality for extension arrays where an extension already has a minimum cardinality value set.
 * Fixed inherited example values being allowed to be edited or deleted. They are now disabled for editing.
 * When creating a new profile and the file has not been saved yet and Forge detected a file change outside of Forge, Forge would incorrectly show a message that the profile was deleted outside of Forge.
+* Fixed not being able to open a resource with duplicate element ids since version 28.0 
+* Logical model: content reference field could not be edited
+* Logical model: type property was not visible after (re)loading the resource when no type was selected
+* Logical model: an added type could not be removed after (re)loading the resource.
 * **[R4B-R5]** Fixed inability to create new profiles in version 28.0. Now using the most recent FHIR version:
 
   - R4B - 4.3.0-snapshot1
