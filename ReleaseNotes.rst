@@ -40,7 +40,7 @@ Bug fixes
   - type property was not visible after (re)loading the resource when no type was selected
   - an added type could not be removed after (re)loading the resource
   - type emptiness validation did not evaluate properly after (re)loading the resource
-* **[STU3]** Not possible to save Logical Models in version 28.0
+* **[STU3]** Not possible to save logical models in version 28.0
 * **[R4B-R5]** Fixed inability to create new profiles in version 28.0. Now using the most recent FHIR version:
 
   - R4B - 4.3.0-snapshot1
