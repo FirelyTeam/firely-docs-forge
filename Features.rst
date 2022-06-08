@@ -20,5 +20,6 @@ With Forge you can:
    features/CreateLogicalModels
    features/SetForgeOptions
    features/IntegrationwithSimplifier
+   features/QualityControl
 
 All these features will be described in more detail in the above linked sections.

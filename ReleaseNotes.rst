@@ -7,6 +7,21 @@
 
    OldReleaseNotes
 
+Release 29.0
+------------
+Changes
+^^^^^^^
+* Upgrade to Firely .NET SDK 4.0.0.
+* Upgrade to .NET 6.
+* Added project quality control similar to the functionality found on Simplifier.
+* Added project filter option to switch between viewing only FHIR documents and viewing all document types supported by Simplifier.
+* Added **Open in external application** menu item in the project list context menu. The **Refresh** command has been moved from the project toolbar to the context menu.
+
+Bug fixes
+^^^^^^^^^
+* Improved message when trying to sign in with an unverified user account
+* Fixed various minor UI styling issues
+
 Release 28.1
 ------------
 Changes

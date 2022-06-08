@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Forge'
-copyright = '2021, Firely'
+copyright = '2022, Firely'
 author = 'Firely'
 
 

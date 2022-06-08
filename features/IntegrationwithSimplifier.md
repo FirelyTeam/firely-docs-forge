@@ -141,7 +141,8 @@ synchronizing with Simplifier even though Forge does not list them.
 
 By clicking the `Synchronize...` button Forge will first download updated files from Simplifier 
 and then upload updated files from your folder to Simplifier. You can also download or upload 
-separately by clicking the drop-down arrow and clicking the desired option. The `Open...` button
+separately by clicking the drop-down arrow and clicking the desired option. The `Remove link...` button
+allows you to remove the link between your project folder and Simplfiier. The `Open...` button 
 opens a browser to your project on Simplifier.
 
 ![Simplifier synchronize options](../images/SyncToolbarDropdown.png)
