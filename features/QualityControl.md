@@ -25,7 +25,7 @@ Clicking on the button wil open a drop down menu with the available validation r
 
 ![QualityControl_Menu](../images/QualityControl_Menu.png)
 
-When you run a ruleset, a window will open displaying the individual rules for the current progress.
+When you run a ruleset, a window will open displaying the individual rules and the current progress.
 
 ![QualityControl_Progress](../images/QualityControl_Progress.png)
 
