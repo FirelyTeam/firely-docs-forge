@@ -21,6 +21,11 @@ Bug fixes
 ^^^^^^^^^
 * Improved message when trying to sign in with an unverified user account
 * Fixed various minor UI styling issues
+* Fixed Forge hanging when trying to synchronize with Simplifier
+* **[R4B-R5]** Added support for CI build version:
+
+  - R4B - 4.3.0-cibuild
+  - R5 - 5.0.0-cibuild
 
 Release 28.1
 ------------
