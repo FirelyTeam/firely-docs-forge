@@ -14,7 +14,7 @@ Changes
 * Upgrade to Firely .NET SDK 4.0.0.
 * Upgrade to .NET 6.
 * Added project quality control similar to the functionality found on Simplifier.
-* Added project filter option to switch between viewing only FHIR documents and viewing all document types supported by Simplifier.
+* The project list view now lists all document types supported by Simplifier.
 * Added **Open in external application** menu item in the project list context menu. The **Refresh** command has been moved from the project toolbar to the context menu.
 
 Bug fixes
