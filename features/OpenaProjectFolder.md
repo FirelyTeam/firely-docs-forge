@@ -24,14 +24,13 @@ profiles, it would be better to ignore the subdirectory.
 ![Select a folder in Forge](../images/SelectFolder.png)
 
 Click `Select Folder` to open your folder. Now Forge will show you all
-profiles and extensions contained in your folder.
+files contained in your folder.
 
 ![The session explorer in Forge](../images/SessionExplorer.png)
 
 When there's a lot of content in your folder, you may want to use one of
 the available filters:
 
-- Document type (FHIR documents only or all documents supported by Simplifier)
 - Resource type (e.g. StructureDefinition)
 - Structure category (e.g. profile or extension)
 - Structure type (e.g. Patient).

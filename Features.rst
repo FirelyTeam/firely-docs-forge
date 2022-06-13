@@ -5,6 +5,9 @@ Forge is the user-friendly editor for creating and editing profiles that
 enables modellers to create and manage profiles using a graphical
 user-interface.
 
+.. image:: images/ForgeProject.png
+   :alt: Forge
+
 With Forge you can:
 
 .. toctree::

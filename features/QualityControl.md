@@ -14,12 +14,9 @@ to Quality Control: Validating FHIR Projects.
 
 ## Running rules in Forge
 
+You can access Quality Control from the Quality Control Messages toolbar located at the right bottom of Forge.
+
 ![QualityControl](../images/QualityControl.png)
-
-In Forge you can access Quality Control in one of the following places:
-
-* Project toolbar
-* Quality Control Messages toolbar
 
 Clicking on the button wil open a drop down menu with the available validation rulesets you can run on your project.
 

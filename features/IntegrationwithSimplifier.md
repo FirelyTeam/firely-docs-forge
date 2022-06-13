@@ -3,17 +3,16 @@
 [Simplifier.net](https://simplifier.net/) is a FHIR specification development, collaboration and publishing platform. 
 The documentation for the platform can be found [here](https://docs.fire.ly/projects/Simplifier/).
 
-Forge can synchronize the project files in your local folder with the files in your project on Simplifier.
+Forge can synchronize the project files in your local folder with the files in your project on Simplifier. The following menu and toolbar options have been added:
 
-![Start panel](../images/SyncStartPanel.png)
-
-The following menu and toolbar options have been added:
 * ![Create a FHIR Project on Simplifier](../images/SyncIconCreate.png)
 Create a FHIR Project on Simplifier
 * ![Open a FHIR Project from Simplifier](../images/SyncIconOpen.png)
 Open a FHIR Project from Simplifier / Link to a FHIR Project on Simplifier
 * ![Synchronize a FHIR Project with Simplifier](../images/SyncIconSync.png)
 Synchronize a FHIR Project with Simplifier
+
+![Start panel](../images/SyncStartPanel.png)
 
 The `Project` tab contains a new toolbar with additional Simplifier options.
 
