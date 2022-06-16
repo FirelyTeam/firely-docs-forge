@@ -14,7 +14,7 @@ to Quality Control: Validating FHIR Projects.
 
 ## Running rules in Forge
 
-You can access Quality Control from the Quality Control Messages toolbar located at the right bottom of Forge.
+You can access Quality Control from the **Quality Control** toolbar located at the right bottom of Forge.
 
 ![QualityControl](../images/QualityControl.png)
 
@@ -28,9 +28,9 @@ When you run a ruleset, a window will open displaying the individual rules and t
 
 If the Quality Control process takes a very long time you can click `Cancel` to abort the operation.
 
-## Quality Control Messages
+## Quality Control messages
 
-The result of the Quality Control is presented in the **Quality Control Messages** panel.
+The result of the Quality Control is presented in the **Quality Control** panel.
 
 ![QualityControl_Messages](../images/QualityControl_Messages.png)
 
