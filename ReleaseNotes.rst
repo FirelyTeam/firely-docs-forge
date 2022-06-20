@@ -19,9 +19,9 @@ Changes
 
 Bug fixes
 ^^^^^^^^^
-* Improved message when trying to sign in with an unverified user account
-* Fixed various minor UI styling issues
-* Fixed Forge hanging sometimes when trying to synchronize with Simplifier
+* Improved message when trying to sign in with an unverified user account.
+* Fixed not being able to link a project folder with a Simplifier project when the project folder has subfolders with files in it.
+* Fixed various minor UI styling issues.
 * **[R4B-R5]** Added support for CI build version:
 
   - R4B - 4.3.0-cibuild

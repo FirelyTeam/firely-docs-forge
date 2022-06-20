@@ -30,8 +30,7 @@ to the Simplifier **Create project** page using one of the following options:
   - File menu
   - Start panel  
   - Session panel  
-* Click `Create...` in the Simplifier toolbar in the Project tab:  
-![Simplifier toolbar commands](../images/LinkToolbar.png)
+* Click `Create...` in the Simplifier toolbar in the Project tab.
 
 Enter you project details on Simplifier and click `Create`.
 
