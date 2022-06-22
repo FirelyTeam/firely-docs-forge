@@ -12,14 +12,14 @@ application automatically detects and installs updates when you start
 the application. After installation of a new release, you will
 receive automatic update notifications when you start the application.
 
-Forge is built with the [Microsoft .NET Framework 4.7.2, .NET 5](https://dotnet.microsoft.com/learn/dotnet/what-is-dotnet)
+Forge is built with the [Microsoft .NET Framework 4.7.2, .NET 6](https://dotnet.microsoft.com/learn/dotnet/what-is-dotnet)
 and [WPF](https://visualstudio.microsoft.com/vs/features/wpf/). The
 ClickOnce installer will download and install the .NET Framework 4.7.2
-if necessary. Forge itself will download and install .NET 5 if necessary.
+if necessary. Forge itself will download and install .NET 6 if necessary.
 
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
-<p>Installing or updating the .NET Framework or .NET 5 requires administrator permissions.
+<p>Installing or updating the .NET Framework or .NET 6 requires administrator permissions.
 If you have insufficient permissions, please contact your system administrator.</p>
 </div>
 

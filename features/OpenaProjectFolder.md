@@ -24,14 +24,16 @@ profiles, it would be better to ignore the subdirectory.
 ![Select a folder in Forge](../images/SelectFolder.png)
 
 Click `Select Folder` to open your folder. Now Forge will show you all
-profiles and extensions contained in your folder.
+files contained in your folder.
 
 ![The session explorer in Forge](../images/SessionExplorer.png)
 
 When there's a lot of content in your folder, you may want to use one of
-the available filters to filter on resource type (e.g.
-StructureDefinition), structure category (e.g. profile or extension) or structure
-type (e.g. Patient).
+the available filters:
+
+- Resource type (e.g. StructureDefinition)
+- Structure category (e.g. profile or extension)
+- Structure type (e.g. Patient).
 
 ![The project filter in Forge](../images/ProjectFilter.png)
 

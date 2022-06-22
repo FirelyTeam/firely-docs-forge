@@ -7,6 +7,26 @@
 
    OldReleaseNotes
 
+Release 29.0
+------------
+Changes
+^^^^^^^
+* Upgrade to Firely .NET SDK 4.0.0.
+* Upgrade to .NET 6.
+* Added project quality control similar to the functionality found on Simplifier.
+* The project list view now lists all document types supported by Simplifier.
+* Added **Open in external application** menu item in the project list context menu. The **Refresh** command has been moved from the project toolbar to the context menu.
+
+Bug fixes
+^^^^^^^^^
+* Improved message when trying to sign in with an unverified user account.
+* Fixed not being able to link a project folder with a Simplifier project when the project folder has subfolders with files in it.
+* Fixed various minor UI styling issues.
+* **[R4B-R5]** Added support for CI build version:
+
+  - R4B - 4.3.0-cibuild
+  - R5 - 5.0.0-cibuild
+
 Release 28.1
 ------------
 Changes

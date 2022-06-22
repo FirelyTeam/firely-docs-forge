@@ -3,17 +3,16 @@
 [Simplifier.net](https://simplifier.net/) is a FHIR specification development, collaboration and publishing platform. 
 The documentation for the platform can be found [here](https://docs.fire.ly/projects/Simplifier/).
 
-Forge can synchronize the project files in your local folder with the files in your project on Simplifier.
+Forge can synchronize the project files in your local folder with the files in your project on Simplifier. The following menu and toolbar options have been added:
 
-![Start panel](../images/SyncStartPanel.png)
-
-The following menu and toolbar options have been added:
 * ![Create a FHIR Project on Simplifier](../images/SyncIconCreate.png)
 Create a FHIR Project on Simplifier
 * ![Open a FHIR Project from Simplifier](../images/SyncIconOpen.png)
 Open a FHIR Project from Simplifier / Link to a FHIR Project on Simplifier
 * ![Synchronize a FHIR Project with Simplifier](../images/SyncIconSync.png)
 Synchronize a FHIR Project with Simplifier
+
+![Start panel](../images/SyncStartPanel.png)
 
 The `Project` tab contains a new toolbar with additional Simplifier options.
 
@@ -31,8 +30,7 @@ to the Simplifier **Create project** page using one of the following options:
   - File menu
   - Start panel  
   - Session panel  
-* Click `Create...` in the Simplifier toolbar in the Project tab:  
-![Simplifier toolbar commands](../images/LinkToolbar.png)
+* Click `Create...` in the Simplifier toolbar in the Project tab.
 
 Enter you project details on Simplifier and click `Create`.
 
@@ -141,7 +139,8 @@ synchronizing with Simplifier even though Forge does not list them.
 
 By clicking the `Synchronize...` button Forge will first download updated files from Simplifier 
 and then upload updated files from your folder to Simplifier. You can also download or upload 
-separately by clicking the drop-down arrow and clicking the desired option. The `Open...` button
+separately by clicking the drop-down arrow and clicking the desired option. The `Remove link...` button
+allows you to remove the link between your project folder and Simplfiier. The `Open...` button 
 opens a browser to your project on Simplifier.
 
 ![Simplifier synchronize options](../images/SyncToolbarDropdown.png)
