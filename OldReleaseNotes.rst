@@ -3,6 +3,69 @@
 Old release notes
 =================
 
+Release 24.2
+------------
+
+R5 Support
+^^^^^^^^^^
+The first release of Forge for FHIR R5 on April 7, 2020. This alpha release is 
+based on FHIR preview release 4.2.0, which is part of the FHIR R5 version range
+
+.. note::
+  Please note that as both the FHIR version and this Forge alpha version are 
+  far from definitive, Forge 24.2 alpha may or may not contain unexpected errors 
+  and missing functionality.
+
+Changes
+^^^^^^^
+* A link has been added pointing to your portal page on Simplifier.net (in the menu under your profile picture)
+* **[R4]** Forge would inherit normative extensions from the FHIR specification. Although formally correct, inheritance has been disabled for now
+  Extensions in existing profiles can be removed by opening and then saving the profile.
+
+Bug fixes
+^^^^^^^^^
+* Unjustified message 'Cannot further constrain a fixed value that is defined in a base profile' when using an extension in a profile has been removed.
+* Forge no longer reports an error when FHIR Core extensions are referenced.
+* Selecting particular extension contexts in Forge 24.1 would lead to some nasty errors, which have been corrected.
+* FHIR path expressions in JSON or XML now contain 'or' instead of the faulty '|' as a logical operator.
+* Preview packages now show up again in the package search.
+* **[STU3]** Upon creating a subsequent slice, Forge would inadvertedly copy values from the existing slice .
+
+Release 24.1
+------------
+Updating to .NET API 1.5, which incorporates the technical correction in FHIR release 4.0.1 (R4) or 3.0.2 (STU3).
+
+Changes
+^^^^^^^
+* Opening and editing FHIR 4.0.1 (R4) and 3.0.2 (STU3) profiles is now possible.
+* New profiles are automatically FHIR 4.0.1 (R4) and 3.0.2 (STU3) profiles.
+* **[STU3]** Forge now retains manually added extensions to a profile.
+* **[R4]** Restored the slicing header element for sliced elements of type value[x], since implicit slicing
+  is not supported by other tools (yet).
+
+Bug fixes
+^^^^^^^^^
+* Forge is signed with a renewed certificate.
+* Edited cardinality on a type slice would not be loaded from a profile correctly.
+* Any overridden slicing detail would remove all remaining slicing details.
+
+Release 24.0 
+------------
+This Sydney 2020 Edition release introduces a tighter coupling with Simplifier.net, simplifying the way Forge integrates with Simplifier.net.
+
+Changes
+^^^^^^^
+* The new Forge license makes the new pricing model official, differentiating between paid license plans 
+  and Forge Community Edition, which remains free for non-commercial use.
+* You now log in to Simplifier.net when you start Forge. The separate logins for import/export from/to
+  Simplifier.net are removed.
+* Incompatible packages are omitted from the package result list. Package versions implementing a FHIR 
+  version not supported by Forge can not be added anymore.
+* A package search without results now clears the result list.
+* Clickthrough on resource warnings (bottom pane) is restored.
+
+
+
 Forge 23.0 for R4 - Fall 2019 Edition
 -------------------------------------
 This is a stability release that fixes a couple of issues in the previous release.

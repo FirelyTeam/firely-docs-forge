@@ -7,6 +7,29 @@
 
    OldReleaseNotes
 
+Release 29.1
+------------
+Changes
+^^^^^^^
+* Added a **File format settings** menu option for specifying the indent size used in Xml and Json files.
+* The **Create a new StructureDefinition** dialog now checks for an already existing canonical url and/or file name in your project.
+* You can now run Forge for a limited time if your internet connection is down.
+* The **Resolve resources from subdirectories** option is now turned on by default.
+
+Bug fixes
+^^^^^^^^^
+* User settings were not retained when updating to a new version of Forge.
+* The **Save As...** option now works as expected (the document properties are updated to the new file name).
+* When selecting the **Extension** type in the **Select Extension Context** dialog, the element tree was not rendered correctly.
+* Slice naming checks were incorrectly applied to element names for logical models.
+* When the source of an element constraint is empty it is no longer initialized to the canonical url of profile itself when it is opened in Forge.
+* Forge now suggests **extension.value** for *slicing.discriminator.path* instead of **extension.value[x]**.
+* When linking a project folder to a project on Simplifier, double clicking a disabled item would still allow you to continue.
+* The project list view was not updated correctly after installing a package in an empty project folder.
+* Columns of list views can no longer be collapsed completely.
+* Fixed various minor UI styling issues.
+* **[R4B-R5]** Added support for opening files with an unknown FHIR version. The unknown FHIR version must be a variant of a known published FHIR versions (e.g. "4.3.0-unknown" or "4.3.0"). The version in the resource is updated to the latest version known by Forge.
+
 Release 29.0
 ------------
 Changes
@@ -190,65 +213,6 @@ Bug fixes
 * The XML order of extension definitions within a slice was wrong and has been corrected
 * **[R4-R5]** Removed duplicate 'Type(s)' in Element Property
 
-Release 24.2
-------------
 
-R5 Support
-^^^^^^^^^^
-The first release of Forge for FHIR R5 on April 7, 2020. This alpha release is 
-based on FHIR preview release 4.2.0, which is part of the FHIR R5 version range
 
-.. note::
-  Please note that as both the FHIR version and this Forge alpha version are 
-  far from definitive, Forge 24.2 alpha may or may not contain unexpected errors 
-  and missing functionality.
 
-Changes
-^^^^^^^
-* A link has been added pointing to your portal page on Simplifier.net (in the menu under your profile picture)
-* **[R4]** Forge would inherit normative extensions from the FHIR specification. Although formally correct, inheritance has been disabled for now
-  Extensions in existing profiles can be removed by opening and then saving the profile.
-
-Bug fixes
-^^^^^^^^^
-* Unjustified message 'Cannot further constrain a fixed value that is defined in a base profile' when using an extension in a profile has been removed.
-* Forge no longer reports an error when FHIR Core extensions are referenced.
-* Selecting particular extension contexts in Forge 24.1 would lead to some nasty errors, which have been corrected.
-* FHIR path expressions in JSON or XML now contain 'or' instead of the faulty '|' as a logical operator.
-* Preview packages now show up again in the package search.
-* **[STU3]** Upon creating a subsequent slice, Forge would inadvertedly copy values from the existing slice .
-
-Release 24.1
-------------
-Updating to .NET API 1.5, which incorporates the technical correction in FHIR release 4.0.1 (R4) or 3.0.2 (STU3).
-
-Changes
-^^^^^^^
-* Opening and editing FHIR 4.0.1 (R4) and 3.0.2 (STU3) profiles is now possible.
-* New profiles are automatically FHIR 4.0.1 (R4) and 3.0.2 (STU3) profiles.
-* **[STU3]** Forge now retains manually added extensions to a profile.
-* **[R4]** Restored the slicing header element for sliced elements of type value[x], since implicit slicing
-  is not supported by other tools (yet).
-
-Bug fixes
-^^^^^^^^^
-* Forge is signed with a renewed certificate.
-* Edited cardinality on a type slice would not be loaded from a profile correctly.
-* Any overridden slicing detail would remove all remaining slicing details.
-
-Release 24.0 
-------------
-This Sydney 2020 Edition release introduces a tighter coupling with Simplifier.net, simplifying the way Forge integrates with Simplifier.net.
-
-Changes
-^^^^^^^
-* The new Forge license makes the new pricing model official, differentiating between paid license plans 
-  and Forge Community Edition, which remains free for non-commercial use.
-* You now log in to Simplifier.net when you start Forge. The separate logins for import/export from/to
-  Simplifier.net are removed.
-* Incompatible packages are omitted from the package result list. Package versions implementing a FHIR 
-  version not supported by Forge can not be added anymore.
-* A package search without results now clears the result list.
-* Clickthrough on resource warnings (bottom pane) is restored.
-
-For known issues, please check: :ref:`known-issues`.
