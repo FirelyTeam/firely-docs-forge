@@ -64,8 +64,6 @@ Changes
 * A package search without results now clears the result list.
 * Clickthrough on resource warnings (bottom pane) is restored.
 
-
-
 Forge 23.0 for R4 - Fall 2019 Edition
 -------------------------------------
 This is a stability release that fixes a couple of issues in the previous release.
