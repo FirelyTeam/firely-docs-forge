@@ -13,7 +13,7 @@ Changes
 ^^^^^^^
 * Added a **File format settings** menu option for specifying the indent size used in Xml and Json files.
 * The **Create a new StructureDefinition** dialog now checks for an already existing canonical url and/or file name in your project.
-* You can now run Forge for a limited time if your internet connection is down.
+* You can now run Forge when your internet connection is down.
 * The **Resolve resources from subdirectories** option is now turned on by default.
 
 Bug fixes
