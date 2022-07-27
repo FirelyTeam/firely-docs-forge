@@ -11,6 +11,7 @@ Release 29.1
 ------------
 Changes
 ^^^^^^^
+* Upgrade to Firely .NET SDK 4.1.0.
 * Added a **File format settings** menu option for specifying the indent size used in Xml and Json files.
 * The **Create a new StructureDefinition** dialog now checks for an already existing canonical url and/or file name in your project.
 * You can now run Forge when your internet connection is down.
