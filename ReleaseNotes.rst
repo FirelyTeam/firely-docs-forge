@@ -12,22 +12,29 @@ Release 29.1
 Changes
 ^^^^^^^
 * Upgrade to Firely .NET SDK 4.1.0.
+* Added **Simplifier** menu and **Repair link...** option.
 * Added a **File format settings** menu option for specifying the indent size used in Xml and Json files.
 * The **Create a new StructureDefinition** dialog now checks for an already existing canonical url and/or file name in your project.
-* You can now run Forge when your internet connection is down.
+* You can now run Forge when your internet connection is down (requires a previously successful login).
 * The **Resolve resources from subdirectories** option is now turned on by default.
+* When Forge corrects the differential of your profile after opening it, Forge now reports what has changed in more detail.
+* Multiple selection is now available when resolving file change conflicts in the Simplifier link and synchronize dialogs.
 
 Bug fixes
 ^^^^^^^^^
 * User settings were not retained when updating to a new version of Forge.
 * The **Save As...** option now works as expected (the document properties are updated to the new file name).
+* Quality Control no longer unjustifiably reports *Internal logic failure* messages.
 * When selecting the **Extension** type in the **Select Extension Context** dialog, the element tree was not rendered correctly.
 * Slice naming checks were incorrectly applied to element names for logical models.
 * When the source of an element constraint is empty it is no longer initialized to the canonical url of profile itself when it is opened in Forge.
 * Forge now suggests **extension.value** for *slicing.discriminator.path* instead of **extension.value[x]**.
+* Fixed invalid slice path when creating slices on a choice type element.
+* Fixed creating duplicate slices when loading a profile with slices that have an invalid path.
 * When linking a project folder to a project on Simplifier, double clicking a disabled item would still allow you to continue.
 * The project list view was not updated correctly after installing a package in an empty project folder.
 * Columns of list views can no longer be collapsed completely.
+* Fixed Forge not starting because it was repeatedly trying to install .NET6 and failing.
 * Fixed various minor UI styling issues.
 * **[R4B-R5]** Added support for opening files with an unknown FHIR version. The unknown FHIR version must be a variant of a known published FHIR versions (e.g. "4.3.0-unknown" or "4.3.0"). The version in the resource is updated to the latest version known by Forge.
 
