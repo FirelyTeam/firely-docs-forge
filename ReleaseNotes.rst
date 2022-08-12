@@ -19,6 +19,10 @@ Changes
 * The **Resolve resources from subdirectories** option is now turned on by default.
 * When Forge corrects the differential of your profile after opening it, Forge now reports what has changed in more detail.
 * Multiple selection is now available when resolving file change conflicts in the Simplifier link and synchronize dialogs.
+* There are now two menu options for **Save All** in the context menu for a project item:
+
+  - **Save All Changed** only saves documents with pending changes.
+  - **Save All** saves all documents even if there are no pending changes.
 
 Bug fixes
 ^^^^^^^^^
