@@ -30,7 +30,6 @@ Forge is the user-friendly editor for creating and editing profiles that enables
    Features
    LicenseAgreement
    ManagingForgelicenses
-   Knownissues
    ReleaseNotes
 
 For questions or feedback on Forge, go to the Help menu in Forge and
