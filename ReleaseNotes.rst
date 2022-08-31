@@ -7,6 +7,12 @@
 
    OldReleaseNotes
 
+Release 29.1.1
+--------------
+Bug fixes
+^^^^^^^^^
+* Fixed creating duplicate slices when loading a profile with slices that have an invalid path (now all child element definitions are processed correctly).
+
 Release 29.1
 ------------
 Changes
