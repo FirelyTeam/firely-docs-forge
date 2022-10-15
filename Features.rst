@@ -21,8 +21,9 @@ With Forge you can:
    features/DefineSlices
    features/CreateDerivedProfiles
    features/CreateLogicalModels
-   features/SetForgeOptions
+   features/ForgeOptions
    features/IntegrationwithSimplifier
    features/QualityControl
+   features/R4BUpgradeWizard
 
 All these features will be described in more detail in the above linked sections.

@@ -62,6 +62,7 @@ a level lower than the selected element.
 
 .. figure:: ../images/ExtensionProfiling.png
    :alt: Adding and removing elements from an extension in Forge
+   :scale: 75%
 
 Add the extension to the profile
 --------------------------------
@@ -79,6 +80,7 @@ section above the element tree.
 
 .. figure:: ../images/SelectElement.png
    :alt: Adding an extension to a profile in Forge
+   :scale: 75%
 
 Forge shows the extensions that are available in your project folder.
 

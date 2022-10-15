@@ -7,6 +7,32 @@
 
    OldReleaseNotes
 
+Release 30.0
+------------
+Changes
+^^^^^^^
+* Upgrade to Firely .NET SDK 4.3.0.
+* Added Project menu.
+* Redesigned Option menu: moved settings to Settings dialog.
+* Added option **Do this for all current items** for some dialogs:
+
+  - Save file changes: **Save** or **Discard**
+  - Update resource FHIR version: **Yes** or **No**
+* R4B officially supported by Forge
+* **[R4]** Added R4B Upgrade Analysis Wizard in Project menu
+* **[R4B]** Added R4B Upgrade Wizard in Project menu
+
+Bug fixes
+^^^^^^^^^
+* The resource resolver in Forge is not updated after saving modifications in a resource. 
+  This is noticeable when using quality control that reports an issue in a resource. After you fix the issue
+  and run quality control again the same issue will be reported again.
+* Validation messages are not displayed in session message panel and folder item tooltip.
+* When package restore fails then no error message is shown to the user and the project dependencies are missing in the overview.
+* Opening a resource with no FHIR version results in an error message.
+* Saving all documents after duplicating a resource multiple times would result in an error message. 
+* Fixed various minor UI styling issues.
+
 Release 29.1.1
 --------------
 Bug fixes
@@ -213,24 +239,4 @@ Bug fixes
 * Extending elements now show up in the right order.
 * **[STU3]** In some edge cases, elements would be duplicated. This is no longer the case.
 * **[R4-R5]** Logical models with an empty root type can now be opened.
-
-Release 25.1
-------------
-Changes
-^^^^^^^
-* Core extensions are no longer included in profiled elements.
-* Manually added extensions to ElementDefinition or its children are retained.
-* The 'FHIR version' profile field is now editable. For new profiles, it is initialized to 4.0.1 (R4) or 3.0.2 (STU3) (but can thus be changed).
-* For profiles containing 'versioned' references (http://a.org/b|x.y.z), the version is now ignored when resolving the dependency.
-* **[STU3]** When opening a profile for a deprecated FHIR version, you now have the option to leave the version unchanged.
-
-Bug fixes
-^^^^^^^^^
-* Invalid package versions do not lead to unstable behavior anymore
-* Additional slices would inadvertantly copy info from an existing slice
-* The XML order of extension definitions within a slice was wrong and has been corrected
-* **[R4-R5]** Removed duplicate 'Type(s)' in Element Property
-
-
-
 

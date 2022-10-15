@@ -59,8 +59,9 @@ XML viewer
 
 The ``XML`` tab is the XML viewer of the current profile. The XML viewer
 only shows the differential. A snapshot can be obtained by saving your
-work after the option ``Save snapshot component`` is checked in the
-``Options`` menu.
+work after the option **Save snapshot component** is checked in the
+``Persistence`` tab in the ``Settings`` dialog (``Options`` menu).
 
 .. figure:: ../images/ElementXml.png
    :alt: The Element XML overview in Forge
+   :scale: 75%

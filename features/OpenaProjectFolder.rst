@@ -9,6 +9,7 @@ click ``Open FHIR Project Folder...`` and select your working directory.
 
 .. figure:: ../images/OpenFolder.png
    :alt: Open a folder in Forge
+   :scale: 75%
 
 Note that although Forge allows you to select any folder, it would be a
 very bad idea to select a general folder like
