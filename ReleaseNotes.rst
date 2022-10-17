@@ -24,12 +24,12 @@ Changes
 
 Bug fixes
 ^^^^^^^^^
-* The resource resolver in Forge is not updated after saving modifications in a resource. 
-  This is noticeable when using quality control that reports an issue in a resource. After you fix the issue
-  and run quality control again the same issue will be reported again.
-* Validation messages are not displayed in session message panel and folder item tooltip.
-* When package restore fails then no error message is shown to the user and the project dependencies are missing in the overview.
-* Opening a resource with no FHIR version results in an error message.
+* The resource resolver in Forge was not updated after saving modifications in a resource. 
+  This was noticeable when using quality control that reports an issue in a resource. After you fixed the issue
+  and ran quality control again the same issue would be be reported again.
+* Validation messages were not displayed in session message panel and folder item tooltip.
+* When package restore failed then no error message was shown to the user and the project dependencies were missing in the overview.
+* Opening a resource with no FHIR version resulted in an error message.
 * Saving all documents after duplicating a resource multiple times would result in an error message. 
 * Fixed various minor UI styling issues.
 
