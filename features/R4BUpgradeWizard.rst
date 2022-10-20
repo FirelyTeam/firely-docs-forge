@@ -107,7 +107,7 @@ Click ``Next >`` to start the upgrade.
 
 When the upgrade process has finished a log file is created in the new project folder.
 
-.. code-block:: log
+.. code-block::
 
     Upgrade log for C:\Users\Rob\Documents\FHIR\ACMEBaseProfilesR4-R4B\ACMEbaseObservationLab.StructureDefinition.xml
         VersionUpdated

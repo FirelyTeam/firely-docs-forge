@@ -12,20 +12,23 @@ Release 30.0
 Changes
 ^^^^^^^
 * Upgrade to Firely .NET SDK 4.3.0.
-* Added Project menu.
-* Redesigned Option menu: moved settings to Settings dialog.
+* R4B officially supported by Forge.
+* Added **Project** menu.
+* Redesigned **Option** menu: moved settings to **Settings** dialog.
 * Added option **Do this for all current items** for some dialogs:
 
   - Save file changes: **Save** or **Discard**
   - Update resource FHIR version: **Yes** or **No**
-* R4B officially supported by Forge
-* **[R4]** Added R4B Upgrade Analysis Wizard in Project menu
-* **[R4B]** Added R4B Upgrade Wizard in Project menu
+* Added separate session message filter **Corrections** for messages related to corrections
+  that Forge makes when you open a resource.
+* **[R4]** Added **R4B Upgrade Analysis Wizard** in **Project** menu.
+* **[R4B]** Added **R4B Upgrade Wizard** in **Project** menu.
+* Forge documentation has been updated and a new page has been added with information on the `R4B Upgrade Wizard <features/R4BUpgradeWizard.html>`__.
 
 Bug fixes
 ^^^^^^^^^
 * The resource resolver in Forge was not updated after saving modifications in a resource. 
-  This was noticeable when using quality control that reports an issue in a resource. After you fixed the issue
+  This was noticeable when using quality control that reported an issue in a resource. After you fixed the issue
   and ran quality control again the same issue would be be reported again.
 * Validation messages were not displayed in session message panel and folder item tooltip.
 * When package restore failed then no error message was shown to the user and the project dependencies were missing in the overview.
