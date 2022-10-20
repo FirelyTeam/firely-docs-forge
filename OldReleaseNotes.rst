@@ -3,6 +3,23 @@
 Old release notes
 =================
 
+Release 25.1
+------------
+Changes
+^^^^^^^
+* Core extensions are no longer included in profiled elements.
+* Manually added extensions to ElementDefinition or its children are retained.
+* The 'FHIR version' profile field is now editable. For new profiles, it is initialized to 4.0.1 (R4) or 3.0.2 (STU3) (but can thus be changed).
+* For profiles containing 'versioned' references (http://a.org/b|x.y.z), the version is now ignored when resolving the dependency.
+* **[STU3]** When opening a profile for a deprecated FHIR version, you now have the option to leave the version unchanged.
+
+Bug fixes
+^^^^^^^^^
+* Invalid package versions do not lead to unstable behavior anymore
+* Additional slices would inadvertantly copy info from an existing slice
+* The XML order of extension definitions within a slice was wrong and has been corrected
+* **[R4-R5]** Removed duplicate 'Type(s)' in Element Property
+
 Release 24.2
 ------------
 

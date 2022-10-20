@@ -7,6 +7,35 @@
 
    OldReleaseNotes
 
+Release 30.0
+------------
+Changes
+^^^^^^^
+* Upgrade to Firely .NET SDK 4.3.0.
+* R4B officially supported by Forge.
+* Added **Project** menu.
+* Redesigned **Option** menu: moved settings to **Settings** dialog.
+* Added option **Do this for all current items** for some dialogs:
+
+  - Save file changes: **Save** or **Discard**
+  - Update resource FHIR version: **Yes** or **No**
+* Added separate session message filter **Corrections** for messages related to corrections
+  that Forge makes when you open a resource.
+* **[R4]** Added **R4B Upgrade Analysis Wizard** in **Project** menu.
+* **[R4B]** Added **R4B Upgrade Wizard** in **Project** menu.
+* Forge documentation has been updated and a new page has been added with information on the `R4B Upgrade Wizard <features/R4BUpgradeWizard.html>`__.
+
+Bug fixes
+^^^^^^^^^
+* The resource resolver in Forge was not updated after saving modifications in a resource. 
+  This was noticeable when using quality control that reported an issue in a resource. After you fixed the issue
+  and ran quality control again the same issue would be be reported again.
+* Validation messages were not displayed in session message panel and folder item tooltip.
+* When package restore failed then no error message was shown to the user and the project dependencies were missing in the overview.
+* Opening a resource with no FHIR version resulted in an error message.
+* Saving all documents after duplicating a resource multiple times would result in an error message. 
+* Fixed various minor UI styling issues.
+
 Release 29.1.1
 --------------
 Bug fixes
@@ -213,24 +242,4 @@ Bug fixes
 * Extending elements now show up in the right order.
 * **[STU3]** In some edge cases, elements would be duplicated. This is no longer the case.
 * **[R4-R5]** Logical models with an empty root type can now be opened.
-
-Release 25.1
-------------
-Changes
-^^^^^^^
-* Core extensions are no longer included in profiled elements.
-* Manually added extensions to ElementDefinition or its children are retained.
-* The 'FHIR version' profile field is now editable. For new profiles, it is initialized to 4.0.1 (R4) or 3.0.2 (STU3) (but can thus be changed).
-* For profiles containing 'versioned' references (http://a.org/b|x.y.z), the version is now ignored when resolving the dependency.
-* **[STU3]** When opening a profile for a deprecated FHIR version, you now have the option to leave the version unchanged.
-
-Bug fixes
-^^^^^^^^^
-* Invalid package versions do not lead to unstable behavior anymore
-* Additional slices would inadvertantly copy info from an existing slice
-* The XML order of extension definitions within a slice was wrong and has been corrected
-* **[R4-R5]** Removed duplicate 'Type(s)' in Element Property
-
-
-
 

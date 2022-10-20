@@ -21,18 +21,21 @@ located at the right bottom of Forge.
 
 .. figure:: ../images/QualityControl.png
    :alt: QualityControl
+   :scale: 75%
 
 Clicking on the button wil open a drop down menu with the available
 validation rulesets you can run on your project.
 
 .. figure:: ../images/QualityControl_Menu.png
    :alt: QualityControl_Menu
+   :scale: 75%
 
 When you run a ruleset, a window will open displaying the individual
 rules and the current progress.
 
 .. figure:: ../images/QualityControl_Progress.png
    :alt: QualityControl_Progress
+   :scale: 75%
 
 If the Quality Control process takes a very long time you can click
 ``Cancel`` to abort the operation.
@@ -54,6 +57,7 @@ You can also right click on a message to open a context menu:
 
 .. figure:: ../images/QualityControl_Messages_Menu.png
    :alt: QualityControl_Messages_Menu
+   :scale: 75%
 
 ``Navigate to...`` opens the associated file and selects the
 corresponding element when available. ``Copy`` copies the message to the

@@ -12,12 +12,14 @@ available:
 
 .. figure:: ../images/SimplifierMenu.png
    :alt: Simplifier menu
+   :scale: 75%
 
 Some options are also available in the start and session panels and in
 the project toolbar.
 
 .. figure:: ../images/SyncStartPanel.png
    :alt: Start panel
+   :scale: 75%
 
 The ``Project`` tab contains a toolbar with additional Simplifier
 options.
@@ -64,11 +66,12 @@ your computer.
 
 The first time you do this you have to select the parent folder for your
 FHIR projects. Forge will remember the parent folder you selected but
-you can change it at any time by opening the ``Options`` menu and
-selecting the menu item ``Select parent folder FHIR projects...``.
+you can change it at any time by opening the ``Options`` menu, select ``Settings...`` 
+and then ``Folders``.
 
 .. figure:: ../images/SyncParentFolderSelection.png
    :alt: Select FHIR parent folder
+   :scale: 75%
 
 Select the parent folder and click ``Select Folder``. A dialog is opened
 listing all the available projects on Simplifier you can open. When you
@@ -180,6 +183,7 @@ added file.
 
 .. figure:: ../images/SyncFileStatus.png
    :alt: Project file status
+   :scale: 75%
 
 Forge is watching for changes in your project folder so any
 modifications you make outside of Forge will be reflected in the list
@@ -198,6 +202,7 @@ clicking the drop-down arrow and clicking the desired option. The
 
 .. figure:: ../images/SyncToolbarDropdown.png
    :alt: Simplifier synchronize options
+   :scale: 75%
 
 When you click a synchronize button a dialog is opened showing you a
 summary of what will be synchronized.

@@ -46,6 +46,7 @@ that dependent packages are installed too.
 
 .. figure:: ../images/DerivedPackagesInstalled.png
    :alt: Installed packages
+   :scale: 75%
 
 To create a derived profile for the US Core Patient, open the package
 **hl7.fhir.us.core#5.0.0** by selecting it from the list and clicking

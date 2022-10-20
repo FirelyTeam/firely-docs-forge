@@ -8,6 +8,7 @@ folder.
 
 .. figure:: ../images/NewProfileMenu.png
    :alt: Project folder toolbar
+   :scale: 75%
 
 This will open a window in which you can select one of the base
 Resources or DataTypes.
