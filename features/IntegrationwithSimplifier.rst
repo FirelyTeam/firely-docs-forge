@@ -1,3 +1,5 @@
+.. _integration-with-simplifier:
+
 Integration with Simplifier
 ===========================
 
