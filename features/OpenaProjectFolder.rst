@@ -3,9 +3,14 @@ Open a Project Folder
 
 When you want to start working in Forge, you will first need to open a
 project folder (i.e. the working directory containing your profiles).
+
 When you select an item from your recent documents, Forge will
-automatically open its associated project folder. In any other case
-click ``Open FHIR Project Folder...`` and select your working directory.
+automatically open its associated project folder. 
+
+.. attention:: When you already have a project on **Simplifier.net** or you want to start using Simplifier for your FHIR projects then read the chapter :ref:`integration-with-simplifier` first. 
+
+
+Click ``Open FHIR Project Folder...`` and select your working directory.
 
 .. figure:: ../images/OpenFolder.png
    :alt: Open a folder in Forge
@@ -15,15 +20,15 @@ Note that although Forge allows you to select any folder, it would be a
 very bad idea to select a general folder like
 **C:\Documents** as your project folder. If you are
 managing multiple projects it is good practice to organize all of your
-projects under the same parent folder: for example **FHIR**. If you
-don’t have a specific folder for your project, please create one. For
+projects under the same parent folder: for example **FHIR**.
+
+If you don’t have a specific folder for your project, please create one. For
 example, let’s open my project folder called **MyForgeProject**.
-By default subdirectories are not included. Select this option to
-include all subdirectories of the selected folder. This may be
-convenient if you want to organize your profiles in separate folders,
-but still want to be able to edit them in the same project. On the other
-hand, if you have a subdirectory containing old versions of your
-profiles, it would be better to ignore the subdirectory.
+By default subdirectories are included. 
+
+Deselect the option if you want to exclude all subdirectories of the selected folder. This may be
+convenient if you have a subdirectory containing old versions of your
+profiles. In that case it would be better to ignore the subdirectory.
 
 .. figure:: ../images/SelectFolder.png
    :alt: Select a folder in Forge
