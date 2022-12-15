@@ -13,9 +13,6 @@ Please visit the `Simplifier
 documentation <https://docs.fire.ly/projects/Simplifier/develop/quality-control.html>`__
 for an introduction to Quality Control: Validating FHIR Projects.
 
-Running rules in Forge
-----------------------
-
 You can access Quality Control from the **Quality Control** toolbar
 located at the right bottom of Forge.
 
@@ -30,15 +27,42 @@ validation rulesets you can run on your project.
    :alt: QualityControl_Menu
    :scale: 75%
 
+Running rules in Forge
+----------------------
+
 When you run a ruleset, a window will open displaying the individual
 rules and the current progress.
 
 .. figure:: ../images/QualityControl_Progress.png
    :alt: QualityControl_Progress
-   :scale: 75%
 
 If the Quality Control process takes a very long time you can click
 ``Cancel`` to abort the operation.
+
+Running Forge validation
+------------------------
+
+Forge validation will use the Forge engine to validate your resources.
+In addition to errors, warnings and messages, Forge validation
+will also list any corrections that can be made to your resources.
+
+When you run Forge validation, a window will open displaying the individual 
+files and the current progress.
+
+.. figure:: ../images/QualityControl_ForgeValidation_Progress.png
+   :alt: QualityControl_ForgeValidation_Progress
+
+If the Forge validation process takes a very long time you can click
+``Cancel`` to abort the operation.
+
+When the Forge validation has found resources where corrections can be made
+you have the option to correct your resources.
+
+.. figure:: ../images/QualityControl_ForgeValidation.png
+   :alt: QualityControl_ForgeValidation
+
+Click ``Correct Resources...`` to automatically correct and update your resources
+or click ``Close`` to inspect the Quality Control messages.
 
 Quality Control messages
 ------------------------

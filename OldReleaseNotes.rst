@@ -3,6 +3,20 @@
 Old release notes
 =================
 
+Release 26.1
+------------
+Changes
+^^^^^^^
+* Upgrade to Firely .NET SDK 2.0.1.
+* 'Must support' is now possible on Extension definitions and their element definitions.
+
+Bug fixes
+^^^^^^^^^
+* If you had profiled any of the common resource elements (e.g. id, meta) those elements would not show up on top of the XML/JSON.
+* Extending elements now show up in the right order.
+* **[STU3]** In some edge cases, elements would be duplicated. This is no longer the case.
+* **[R4-R5]** Logical models with an empty root type can now be opened.
+
 Release 25.1
 ------------
 Changes

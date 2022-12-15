@@ -1,6 +1,14 @@
 R4B Upgrade Wizard
 ==================
 
+.. important::
+   `This feature is available from the Professional plan and up <https://simplifier.net/pricing>`_.
+
+In the Forge **Community Edition** you can only perform a project analysis.
+
+Introduction
+------------
+
 The R4 and R4B versions of Forge feature a R4B Upgrade Wizard for your FHIR project.
 
 .. note:: The wizard only supports upgrading a R4 project to R4B.
