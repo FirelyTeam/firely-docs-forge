@@ -55,8 +55,8 @@ files and the current progress.
 If the Forge validation process takes a very long time you can click
 ``Cancel`` to abort the operation.
 
-When the Forge validation has found resources where corrections can be made
-you have the option to correct your resources.
+When the Forge validation has found resources for which corrections can be made
+you have the option to automatically correct and update your resources.
 
 .. figure:: ../images/QualityControl_ForgeValidation.png
    :alt: QualityControl_ForgeValidation
