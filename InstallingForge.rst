@@ -1,7 +1,7 @@
 Installing Forge
 ================
 
-Go to the `Forge download page <https://simplifier.net/downloads/forge>`__ to
+Go to the `Forge download page <https://simplifier.net/forge>`__ to
 download Forge.
 
 Installing on Windows
