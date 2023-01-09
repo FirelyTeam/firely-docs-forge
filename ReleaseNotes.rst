@@ -7,6 +7,30 @@
 
    OldReleaseNotes
 
+Release 30.1
+------------
+Changes
+^^^^^^^
+* Added Forge validation report option to Quality Control. Automatic correction of resources in bulk is also supported.
+
+Bug fixes
+^^^^^^^^^
+* Date/time related input fields did not support the FHIR specification correctly.
+* The checkbox for boolean element properties would still be in three state mode even though the base element property had a value.
+  This could result in not being able to change the value in the checkbox.
+* If an element had a value for mustSupport then Forge would not allow you to change the value anymore.
+  However changing the value from false to true is allowed.
+* References to files on disk were not resolved properly.
+* Fixed bug that would lead to error message: "Unable to cast object of type 'Integer' to 'UnsignedInt'".
+* Fixed regression bug introduced in version 30.0 where inherited extensions were added to the differential.
+* Relative values in contentReference are now handled correctly (they should be absolute).
+  This would result in elements wrongly added to the differential (e.g. ReferenceRange).
+* When creating a new data type profile, profiles derived from Quality (Age, Distance, Count and Duration) were not listed.
+* Fixed false positives for correction 'Removed redundant source for constraint'.
+* Keys - and * from the numeric keypad are now handled correctly when editing in a textbox.
+* Fixed various minor UI styling issues.
+* **[STU3]** Fixed various slice name issues when selecting/deselecting types in a choice type.
+
 Release 30.0
 ------------
 Changes
@@ -228,18 +252,3 @@ Changes
 Bug fixes
 ^^^^^^^^^
 * Some user interface elements did not scale properly when the font size was changed.
-
-Release 26.1
-------------
-Changes
-^^^^^^^
-* Upgrade to Firely .NET SDK 2.0.1.
-* 'Must support' is now possible on Extension definitions and their element definitions.
-
-Bug fixes
-^^^^^^^^^
-* If you had profiled any of the common resource elements (e.g. id, meta) those elements would not show up on top of the XML/JSON.
-* Extending elements now show up in the right order.
-* **[STU3]** In some edge cases, elements would be duplicated. This is no longer the case.
-* **[R4-R5]** Logical models with an empty root type can now be opened.
-
