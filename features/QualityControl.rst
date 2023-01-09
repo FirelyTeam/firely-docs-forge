@@ -10,7 +10,7 @@ Introduction
 ------------
 
 Please visit the `Simplifier
-documentation <https://docs.fire.ly/projects/Simplifier/develop/quality-control.html>`__
+documentation <https://docs.fire.ly/projects/Simplifier/simplifierQualityControl.html>`__
 for an introduction to Quality Control: Validating FHIR Projects.
 
 You can access Quality Control from the **Quality Control** toolbar
