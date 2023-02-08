@@ -19,12 +19,12 @@ Bug fixes
 ^^^^^^^^^
 * When a resource was loaded in Forge and the resource was modified outside of Forge and the resource became invalid then no message was shown.
 * Forge did not correctly validate all extension context type/expression value combinations.
-* The **Select Extension Context** dialog listed complex data types **SimpleQuality** and **MoneyQuantity** as **Quality**.
+* The **Select Extension Context** dialog listed complex data types **SimpleQuantity** and **MoneyQuantity** as **Quantity**.
 * Fixed issues with the **Forge validation** option in Quality Control:
 
   - Some messages were listed twice.
   - Bundle entries in a project would result in an error message. 
-* If package restoration failed the all dependencies were removed from the project and the **package.json** file.
+* If package restoration failed then all dependencies were removed from the project and the **package.json** file.
 * Fixed not being able to add a slice to a backbone element.
 * Inherited content reference elements could still end up in the differential.
 * The differential for a slice element included an inherited binding.
