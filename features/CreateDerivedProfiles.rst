@@ -31,6 +31,9 @@ profile.
 .. figure:: ../images/Profilehierarchy2.png
    :alt: The hierarchy between FHIR profiles
 
+Adding dependencies
+-------------------
+
 To do this in Forge you first need to add one or more Core Packages. The
 following example adds the **hl7.fhir.us.core** package to the project.
 Select the ``Dependencies`` tab, then click ``Simplifier``, then type
@@ -40,6 +43,8 @@ Select **hl7.fhir.us.core** in the list and then select package version
 
 .. figure:: ../images/DerivedAddPackage.png
    :alt: Add a core package
+
+.. attention:: Forge uses Simplifier to look for packages in the dependencies tab. As Simplifier currently does not support R4B it is not possible to install R4B packages via this route. For a workaround allowing you to use R4B packages in your project, please refer to :ref:`r4b-package-dependencies`.
 
 Click the ``Project`` tab to see what packages are installed. Notice
 that dependent packages are installed too.
