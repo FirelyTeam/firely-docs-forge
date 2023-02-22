@@ -14,6 +14,7 @@ Changes
 * **Forge validation** now shows a warning message when a resource uses a deprecated FHIR version.
 * Added a warning message when Forge calculates the minimum cardinality for extension arrays in a base profile and the value is not correct.
 * **[R4B]** Added support for upgrading search parameter and operation definition resources in the **R4B Upgrade Wizard**.
+* **[R4B]** When opening and upgrading a R4 resource, Forge now shows upgrade messages in the session message panel.
 
 Bug fixes
 ^^^^^^^^^
