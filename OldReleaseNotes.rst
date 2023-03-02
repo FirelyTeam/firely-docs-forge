@@ -3,6 +3,20 @@
 Old release notes
 =================
 
+Release 27.1
+------------
+Changes
+^^^^^^^
+* New user interface styling.
+* Upgrade to Firely .NET SDK 3.2.0.
+* Forge is now compatible with the latest version of Firely Terminal regarding package cache and 
+  resolving canonicals in dependencies.
+* The filter option for the Extend element dialog has been moved to the toolbar.
+
+Bug fixes
+^^^^^^^^^
+* Some user interface elements did not scale properly when the font size was changed.
+
 Release 26.1
 ------------
 Changes

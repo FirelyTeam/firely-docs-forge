@@ -7,6 +7,30 @@
 
    OldReleaseNotes
 
+Release 30.2
+------------
+Changes
+^^^^^^^
+* **Forge validation** now shows a warning message when a resource uses a deprecated FHIR version.
+* Added a warning message when Forge calculates the minimum cardinality for extension arrays in a base profile and the value is incorrect.
+* **[R4B]** Added support for upgrading search parameter and operation definition resources in the **R4B Upgrade Wizard**.
+* **[R4B]** When opening and upgrading a R4 resource, Forge now shows upgrade messages in the session message panel.
+
+Bug fixes
+^^^^^^^^^
+* When a resource was loaded in Forge and the resource was modified outside of Forge and the resource became invalid then no message was shown.
+* Forge did not correctly validate all extension context type/expression value combinations.
+* The **Select Extension Context** dialog listed complex data types **SimpleQuantity** and **MoneyQuantity** as **Quantity**.
+* Fixed issues with the **Forge validation** option in Quality Control:
+
+  - Some messages were listed twice.
+  - Bundle entries in a project would result in an error message. 
+* If package restoration failed then all dependencies were removed from the project and the **package.json** file.
+* Fixed not being able to add a slice to a backbone element.
+* Inherited content reference elements could still end up in the differential.
+* The differential for a slice element included an inherited binding.
+* Fixed various minor UI (styling) issues.
+
 Release 30.1
 ------------
 Changes
@@ -238,17 +262,3 @@ Bug fixes
   Note that in order to update your existing profiles in this regard you need to open and then save a profile again. 
 * Removed "New Implementation Guide" menu option (feature was not supported anyway).
 * **[R4-R5]** Forge cannot extend choice[x] elements.
-
-Release 27.1
-------------
-Changes
-^^^^^^^
-* New user interface styling.
-* Upgrade to Firely .NET SDK 3.2.0.
-* Forge is now compatible with the latest version of Firely Terminal regarding package cache and 
-  resolving canonicals in dependencies.
-* The filter option for the Extend element dialog has been moved to the toolbar.
-
-Bug fixes
-^^^^^^^^^
-* Some user interface elements did not scale properly when the font size was changed.
