@@ -7,6 +7,31 @@
 
    OldReleaseNotes
 
+Release 31.0
+------------
+Changes
+^^^^^^^
+* Upgrade to Firely .NET SDK 5.2.0.
+* Upgrade to .NET 7.
+* R5 officially supported by Forge.
+* Resource tree view rendering is now consistent with Simplifier.
+* When adding an extension to an element the cardinality of the extension is now used by default.
+* Various other UI styling improvements.
+
+Bug fixes
+^^^^^^^^^
+* A parent extension element definition was always created with default values in Forge ignoring differential values from the resource file.
+* When adding a data type profile (with constraints) on a data type that already has constraints on it from a base profile then now all constraints are merged whenever possible.
+* Fixed false positive correction messages for inherited extensions.
+* Opening a profile saved with a snapshot but without a differential would result in false correction messages.
+* When saving a profile with a snapshot then the snapshot could contain superfluous elements.
+* When adding a new extension to a profile then the **Element Properties** panel would not show the correct values (e.g. description).
+* After adding an extension to a primitive data type then saving and reloading the profile then the id property of the primitive data type would be visible in the tree while it should be hidden.
+* Forge would allow you to add (modifier) extensions on elements that do not support it.
+* When creating a new complex extension the **value[x]** element is hidden in the tree view but the element is included in the differential.
+  However, the differential for element **Extension.value[x]** contains type elements whereas none were expected as the element does not alter the base element definition.
+  Forge did not include the Meta type and thus created a difference with the base definition.
+
 Release 30.2
 ------------
 Changes
@@ -224,41 +249,3 @@ Bug fixes
 * **[STU3]** Not possible to create/edit Logical Models in Forge 27.3.1.
 * **[R4-R5]** Extensions don't show in what context they are supposed to be used
 * **[R4-R5]** Forge allows definition of default values in Profiles. Constraint sdf-21 is now enforced.
-
-Release 27.3.1
---------------
-Bug fixes
-^^^^^^^^^
-* Forge prerequisite check did not take .NET 5 updates into account.
-
-Release 27.3
-------------
-R4B Support
-^^^^^^^^^^^
-The first release of Forge for FHIR R4B. This alpha release is based on FHIR 
-preview release 4.1.0, which is part of the FHIR R4B version range.
-
-.. note::
-  Please note that as both the FHIR version and this Forge alpha version are 
-  far from definitive, Forge 27.3 alpha may or may not contain unexpected errors 
-  and missing functionality.
-
-There is experimental support for migrating R4 profiles to R4B.
-
-Changes
-^^^^^^^
-* Upgrade to Firely .NET SDK 3.4.0.
-* Upgrade to .NET 5.
-
-Bug fixes
-^^^^^^^^^
-* Faulty slicing behaviour in extension.
-* Extension misplacement.
-* Forge not enforcing slicing rules element.
-* StructureDefinition.name regex should be warning only.
-  This was already a warning but the tooltip suggested that it was an error. Changed tooltip title to "Validation messages:".
-* Index was out of range error when saving profile.
-* Forge now calculates the minimum cardinality for extension arrays.
-  Note that in order to update your existing profiles in this regard you need to open and then save a profile again. 
-* Removed "New Implementation Guide" menu option (feature was not supported anyway).
-* **[R4-R5]** Forge cannot extend choice[x] elements.
