@@ -39,7 +39,7 @@ following example adds the **hl7.fhir.us.core** package to the project.
 Select the ``Dependencies`` tab, then click ``Simplifier``, then type
 *hl7.fhir.us* in the **Search** field and finally click ``Search``.
 Select **hl7.fhir.us.core** in the list and then select package version
-**5.0.0**. Finally click ``Add`` to add the package to the project.
+**6.1.0**. Finally click ``Add`` to add the package to the project.
 
 .. figure:: ../images/DerivedAddPackage.png
    :alt: Add a core package
@@ -49,10 +49,9 @@ that dependent packages are installed too.
 
 .. figure:: ../images/DerivedPackagesInstalled.png
    :alt: Installed packages
-   :scale: 75%
 
 To create a derived profile for the US Core Patient, open the package
-**hl7.fhir.us.core#5.0.0** by selecting it from the list and clicking
+**hl7.fhir.us.core#6.1.0** by selecting it from the list and clicking
 ``Open``. Then select **package** in the list and click ``Open``. In the
 **Filter** toolbar select **Patient** as Structure Type to filter on.
 

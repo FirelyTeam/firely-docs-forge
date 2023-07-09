@@ -25,10 +25,10 @@ User Interface
  .. list-table:: 
 
      * - .. image:: ../images/Settings_NightTime_Off.png
-            :scale: 20%
+            :scale: 25%
 
        - .. image:: ../images/Settings_NightTime_On.png
-            :scale: 20%
+            :scale: 25%
 
      * - *Night Time Off*
 
@@ -50,22 +50,6 @@ User Interface
 
        - *Xml Folding On*
 
--  **Show element cardinalty hints**
-
-   Shows or hides cardinality hints on elements in the **Element Tree**.
-
- .. list-table:: 
-
-     * - .. image:: ../images/Settings_CardinalityHint_Off.png
-            :scale: 75%
-
-       - .. image:: ../images/Settings_CardinalityHint_On.png
-            :scale: 75%
-
-     * - *Cardinalty Hint Off*
-
-       - *Cardinalty Hint On*
-
 -  **Show common resource elements (id, meta, ...)**
 
    Shows or hides common resource elements in the **Element Tree**.
@@ -73,10 +57,10 @@ User Interface
  .. list-table:: 
 
      * - .. image:: ../images/Settings_CommonElements_Off.png
-            :scale: 75%
+            :scale: 76%
 
        - .. image:: ../images/Settings_CommonElements_On.png
-            :scale: 75%
+            :scale: 76%
 
      * - *Show common resource elements Off*
 
@@ -91,10 +75,10 @@ User Interface
  .. list-table:: 
 
      * - .. image:: ../images/Settings_SliceElements_Off.png
-            :scale: 90%
+            :scale: 75%
 
        - .. image:: ../images/Settings_SliceElements_On.png
-            :scale: 90%
+            :scale: 75%
 
      * - *Show child elements when sliced Off*
 
@@ -107,10 +91,10 @@ User Interface
  .. list-table:: 
 
      * - .. image:: ../images/Settings_ExpandElements_Off.png
-            :scale: 90%
+            :scale: 75%
 
        - .. image:: ../images/Settings_ExpandElements_On.png
-            :scale: 90%
+            :scale: 75%
 
      * - *Expand constrained elements Off*
 
@@ -125,6 +109,24 @@ User Interface
    If you encounter rendering issues with the Forge user interface then those are most likely caused by the video driver.
    In that case you can turn off hardware rendering.
 
+-  **Element Tree modified style**
+
+   Selects how modified elements in the **Element Tree** are displayed.
+
+ .. list-table:: 
+
+     * - .. image:: ../images/Settings_ModifiedStyle_Dimmed.png
+            :scale: 75%
+
+       - .. image:: ../images/Settings_ModifiedStyle_Pen.png
+            :scale: 75%
+
+     * - *Unmodified elements are displayed dimmed*
+
+       - *Modified elements are indicated with a pen*
+
+
+
 Persistence
 ~~~~~~~~~~~
 
@@ -138,7 +140,7 @@ Persistence
    You can always change the setting in the **Open FHIR Projet Folder** dialog.
 
  .. image:: ../images/Settings_IncludeSubfolders.png
-    :scale: 75%
+    :scale: 80%
 
 -  **Auto update publication data**
 

@@ -14,7 +14,10 @@ Changes
 * Upgrade to Firely .NET SDK 5.2.0.
 * Upgrade to .NET 7.
 * R5 officially supported by Forge.
-* Resource tree view rendering is now consistent with Simplifier.
+* Resource tree view rendering is now consistent with Simplifier with two rendering options.
+
+  - Modified elements in the tree are indicated with a pen icon.
+  - Unmodified elements in the tree are displayed dimmed. 
 * When adding an extension to an element the cardinality of the extension is now used by default.
 * Various other UI styling improvements.
 
@@ -28,9 +31,20 @@ Bug fixes
 * When adding a new extension to a profile then the **Element Properties** panel would not show the correct values (e.g. description).
 * After adding an extension to a primitive data type then saving and reloading the profile then the id property of the primitive data type would be visible in the tree while it should be hidden.
 * Forge would allow you to add (modifier) extensions on elements that do not support it.
+* Forge no longer tries to correct the cardinality of parent extensions where the extension definition slicing rule is closed.
 * When creating a new complex extension the **value[x]** element is hidden in the tree view but the element is included in the differential.
   However, the differential for element **Extension.value[x]** contains type elements whereas none were expected as the element does not alter the base element definition.
-  Forge did not include the Meta type and thus created a difference with the base definition.
+  Forge did not always include the Meta type and thus created a difference with the base definition.
+* A profile with a sliced element but without a discriminator would not load properly.
+* Using the **Duplicate** or **Open** profile (from Element Properties panel) would cause Forge to crash when the resource had an old Fhir version.
+* Changes to the option **Resolve resources from subfolders** in the **Settings** dialog and the Open folder dialog were not saved.
+* Fixed various minor UI (styling) issues.
+* **[R4B/R5]** CodeableReference was not treated as a reference and thus the target profile property was not shown in the **Element Properties** panel.
+
+Known issues
+^^^^^^^^^^^^
+* **[R5]** The new element definition properties **mustHaveValue** and **valueAlternatives** are not merged by the snapshot generator.
+  So when opening a profile with one of the properties in the differential then these changes are lost.
 
 Release 30.2
 ------------
