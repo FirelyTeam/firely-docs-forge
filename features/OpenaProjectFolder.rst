@@ -18,7 +18,7 @@ Click ``Open FHIR Project Folder...`` and select your working directory.
 
 Note that although Forge allows you to select any folder, it would be a
 very bad idea to select a general folder like
-**C:\Documents** as your project folder. If you are
+**This PC > Documents** as your project folder. If you are
 managing multiple projects it is good practice to organize all of your
 projects under the same parent folder: for example **FHIR**.
 

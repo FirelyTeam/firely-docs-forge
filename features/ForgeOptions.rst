@@ -125,8 +125,6 @@ User Interface
 
        - *Modified elements are indicated with a pen*
 
-
-
 Persistence
 ~~~~~~~~~~~
 
