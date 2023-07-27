@@ -16,6 +16,7 @@ in in the HL7 extension registry.
 
 .. figure:: ../images/PatientExtensionBirthPlace.png
    :alt: Editing an extension with Forge
+   :scale: 75%
 
 New extension
 -------------
@@ -28,6 +29,7 @@ context information for this new extension.
 
 .. figure:: ../images/PatientExtensionBirthPlaceContext.png
    :alt: Editing an extension context with Forge
+   :scale: 75%
 
 Provide this information in ``Properties`` tab of the extension. Context
 Type indicates if the extension extends a Resource, Datatype, Mapping or
@@ -36,6 +38,7 @@ another Extension. Give the exact context by clicking the button next to
 
 .. figure:: ../images/PatientExtensionBirthPlaceContextExpressionButton.png
    :alt: Editing an extension context with Forge
+   :scale: 75%
 
 This brings you to a new screen were you can select the specific
 resource or datatype where the extension is allowed to be placed. If you
@@ -47,6 +50,7 @@ relevant information in the properties section as well.
 
 .. figure:: ../images/SelectingExtensionContext.png
    :alt: Selecting Extension context in Forge
+   :scale: 75%
 
 Extension profile
 -----------------
@@ -72,6 +76,7 @@ to your project folder or add a package to your project folder.
 
 .. figure:: ../images/AddPackage.png
    :alt: Adding a package to your project
+   :scale: 75%
 
 Select the element in the Element Tree of your profile where you want to
 add the extension. Then, click ``Extend`` which is shown in the tool
@@ -84,6 +89,7 @@ Forge shows the extensions that are available in your project folder.
 
 .. figure:: ../images/SelectExtension.png
    :alt: Adding an extension to a profile in Forge
+   :scale: 75%
 
 Note that you can only select extensions that are compatible with your
 context (e.g. when extending an AdverseEvent resource you can only
@@ -93,3 +99,4 @@ extensions by clicking ``Filter`` to turn off filtering.
 
 .. figure:: ../images/SelectExtensionFilter.png
    :alt: Showing only compatible extensions in Forge
+   :scale: 75%

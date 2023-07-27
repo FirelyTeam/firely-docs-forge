@@ -32,12 +32,14 @@ profiles. In that case it would be better to ignore the subdirectory.
 
 .. figure:: ../images/SelectFolder.png
    :alt: Select a folder in Forge
+   :scale: 75%
 
 Click ``Select Folder`` to open your folder. Now Forge will show you all
 files contained in your folder.
 
 .. figure:: ../images/SessionExplorer.png
    :alt: The session explorer in Forge
+   :scale: 75%
 
 When there’s a lot of content in your folder, you may want to use one of
 the available filters:
@@ -48,6 +50,7 @@ the available filters:
 
 .. figure:: ../images/ProjectFilter.png
    :alt: The project filter in Forge
+   :scale: 75%
 
 You can also switch views. By default the ``List`` view is shown,
 showing all content in the folder and all its subdirectories (when these
@@ -56,6 +59,7 @@ subdirectories one by one as if you’re using your file explorer.
 
 .. figure:: ../images/ProjectView.png
    :alt: The project view in Forge
+   :scale: 75%
 
 Select one of the structure definitions from the content list and choose
 ``Open`` to open it in Forge. Choose ``New...`` to add new structure

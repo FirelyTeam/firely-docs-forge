@@ -17,6 +17,7 @@ Enter a name for your logical model and click ``OK``.
 
 .. figure:: ../images/LogicalModel-Create.png
    :alt: Creating a Logical Model in Forge
+   :scale: 75%
 
 You can customize the meta properties for your model and add backbone
 elements and typed elements. A backbone element has no datatype. A
@@ -25,11 +26,13 @@ and/or other (nested) backbone elements.
 
 .. figure:: ../images/LogicalModel-BackboneElement.png
    :alt: Editing a backbone element for a Logical Model in Forge
+   :scale: 75%
 
 A typed element is mapped to a FHIR datatype or resource profile.
 
 .. figure:: ../images/LogicalModel-TypedElement.png
    :alt: Editing a typed element for a Logical Model in Forge
+   :scale: 75%
 
 You cannot introduce new child elements of a typed element, because they
 are implicitly defined by the element datatype profile.You also have the

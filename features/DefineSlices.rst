@@ -17,6 +17,7 @@ Select the element that you want to slice and click on ``Slice``.
 
 .. figure:: ../images/SliceCreate.png
    :alt: Slicing an element in Forge
+   :scale: 75%
 
 The element is now ‘Sliced’ and it is possible to add slices by clicking
 ``Add Slice``. You can create as many slices as necessary by selecting
@@ -31,6 +32,7 @@ message that there is no discriminator defined for the sliced elements.
 
 .. figure:: ../images/SliceCreated.png
    :alt: Slicing an element in Forge
+   :scale: 75%
 
 The discriminator is used to distinguish the sliced elements from one
 another. The discriminators in their sum should allow applications to
@@ -40,7 +42,8 @@ element under **Slicing Details**.
 
 .. figure:: ../images/SlicingDetails.png
    :alt: Slicing an element in Forge
-
+   :scale: 75%
+   
 More information concerning slicing and discriminators can be found
 here: http://hl7.org/fhir/profiling.html.
 

@@ -30,6 +30,7 @@ profile.
 
 .. figure:: ../images/Profilehierarchy2.png
    :alt: The hierarchy between FHIR profiles
+   :scale: 75%
 
 Adding dependencies
 -------------------
@@ -43,6 +44,7 @@ Select **hl7.fhir.us.core** in the list and then select package version
 
 .. figure:: ../images/DerivedAddPackage.png
    :alt: Add a core package
+   :scale: 75%
 
 Click the ``Project`` tab to see what packages are installed. Notice
 that dependent packages are installed too.
@@ -57,17 +59,20 @@ To create a derived profile for the US Core Patient, open the package
 
 .. figure:: ../images/DerivedUSCorePatient.png
    :alt: Derive profile
+   :scale: 75%
 
 Select the US Core Patient in the list and click ``Derive``.
 
 .. figure:: ../images/DerivedUSCorePatientProperties.png
    :alt: Derive profile properties
+   :scale: 75%
 
 Enter the name for the profile and click ``OK``. A new derived profile
 is created and opened. You can now make your own modifications.
 
 .. figure:: ../images/DerivedUSCorePatientProfile.png
    :alt: US Core Patient profile
+   :scale: 75%
 
 Things to keep in mind are that you can only further constrain (or add
 extensions to) profiles. This means that each derived profile is more
@@ -81,3 +86,4 @@ differential will reflect constraints on the national profile.
 
 .. figure:: ../images/Profilehierarchy.png
    :alt: The hierarchy and conformance between FHIR profiles
+   :scale: 75%
