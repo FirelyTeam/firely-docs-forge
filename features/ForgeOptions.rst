@@ -6,7 +6,7 @@ Forge provides several options regarding rendering and saving in the
 
 .. figure:: ../images/OptionsForge.png
    :alt: The options menu in Forge
-   :width: 450px
+   :scale: 80%
 
 Settings
 --------
@@ -16,7 +16,7 @@ User Interface
 
 .. figure:: ../images/Settings_UserInterface.png
    :alt: The user interface settings
-   :width: 450px
+   :scale: 100%
 
 -  **Night Time**
 
@@ -25,10 +25,10 @@ User Interface
  .. list-table:: 
 
      * - .. image:: ../images/Settings_NightTime_Off.png
-            :scale: 25%
+            :scale: 50%
 
        - .. image:: ../images/Settings_NightTime_On.png
-            :scale: 25%
+            :scale: 50%
 
      * - *Night Time Off*
 
@@ -41,10 +41,10 @@ User Interface
  .. list-table:: 
 
      * - .. image:: ../images/Settings_XmlFolding_Off.png
-            :scale: 50%
+            :scale: 80%
 
        - .. image:: ../images/Settings_XmlFolding_On.png
-            :scale: 50%
+            :scale: 80%
 
      * - *Xml Folding Off*
 
@@ -57,10 +57,10 @@ User Interface
  .. list-table:: 
 
      * - .. image:: ../images/Settings_CommonElements_Off.png
-            :scale: 76%
+            :scale: 100%
 
        - .. image:: ../images/Settings_CommonElements_On.png
-            :scale: 76%
+            :scale: 100%
 
      * - *Show common resource elements Off*
 
@@ -75,10 +75,10 @@ User Interface
  .. list-table:: 
 
      * - .. image:: ../images/Settings_SliceElements_Off.png
-            :scale: 75%
+            :scale: 100%
 
        - .. image:: ../images/Settings_SliceElements_On.png
-            :scale: 75%
+            :scale: 100%
 
      * - *Show child elements when sliced Off*
 
@@ -91,10 +91,10 @@ User Interface
  .. list-table:: 
 
      * - .. image:: ../images/Settings_ExpandElements_Off.png
-            :scale: 75%
+            :scale: 100%
 
        - .. image:: ../images/Settings_ExpandElements_On.png
-            :scale: 75%
+            :scale: 100%
 
      * - *Expand constrained elements Off*
 
@@ -116,10 +116,10 @@ User Interface
  .. list-table:: 
 
      * - .. image:: ../images/Settings_ModifiedStyle_Dimmed.png
-            :scale: 75%
+            :scale: 100%
 
        - .. image:: ../images/Settings_ModifiedStyle_Pen.png
-            :scale: 75%
+            :scale: 100%
 
      * - *Unmodified elements are displayed dimmed*
 
@@ -130,7 +130,7 @@ Persistence
 
 .. figure:: ../images/Settings_Persistence.png
    :alt: The persistence settings
-   :width: 450px
+   :scale: 100%
 
 -  **Resolve resources from subfolders**
 
@@ -138,7 +138,7 @@ Persistence
    You can always change the setting in the **Open FHIR Project Folder** dialog.
 
  .. image:: ../images/Settings_IncludeSubfolders.png
-    :scale: 80%
+    :scale: 100%
 
 -  **Auto update publication data**
 
@@ -177,7 +177,7 @@ FHIR
 
 .. figure:: ../images/Settings_FHIR.png
    :alt: The FHIR settings
-   :width: 450px
+   :scale: 80%
 
 -  **Validate FHIRPath expressions**
 
@@ -188,7 +188,7 @@ FHIR
    When creating a new profile this option will copy all the mappings from the base profile to the new profile.
 
  .. image:: ../images/Settings_GlobalMappings.png
-    :scale: 65%
+    :scale: 80%
 
 -  **Discard DomainResource.text values**
 
@@ -196,14 +196,14 @@ FHIR
    In effect this will clear the **Narrative** of your resource.
 
  .. image:: ../images/Settings_DiscardResourceText.png
-    :scale: 65%
+    :scale: 80%
 
 Folders
 ~~~~~~~
 
 .. figure:: ../images/Settings_Folders.png
    :alt: The folders settings
-   :width: 450px
+   :scale: 80%
 
 -  **Parent folder FHIR projects**
 
