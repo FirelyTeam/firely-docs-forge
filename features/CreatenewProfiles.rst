@@ -15,6 +15,7 @@ Resources or DataTypes.
 
 .. figure:: ../images/NewProfile.png
    :alt: Create a new FHIR profile in Forge
+   :scale: 75%
 
 New profile resource selection
 ------------------------------
