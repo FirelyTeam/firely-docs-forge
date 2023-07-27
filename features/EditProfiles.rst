@@ -7,6 +7,7 @@ detail.
 
 .. figure:: ../images/EditProfileTabs.png
    :alt: The tabs in Forge for editing a profile
+   :scale: 75%
 
 Properties
 ----------
@@ -18,6 +19,7 @@ the ``Properties`` tab.
 
 .. figure:: ../images/ElementProperties.png
    :alt: The Properties overview in Forge
+   :scale: 75%
 
 Narrative
 ---------
@@ -31,6 +33,7 @@ profile.
 
 .. figure:: ../images/ElementNarrative.png
    :alt: The Narrative overview in Forge
+   :scale: 75%
 
 Element Tree and Element Grid
 -----------------------------
@@ -44,6 +47,7 @@ Element Tree
 
 .. figure:: ../images/ElementTree.png
    :alt: The Element Tree overview in Forge
+   :scale: 75%
 
 Via the ``Element Tree`` tab you can edit Element Properties, slice
 Elements, or add extensions.
@@ -53,6 +57,7 @@ Element Grid
 
 .. figure:: ../images/ElementGrid.png
    :alt: The Element Grid overview in Forge
+   :scale: 75%
 
 XML viewer
 ----------
