@@ -11,14 +11,19 @@ Release 31.0
 ------------
 Changes
 ^^^^^^^
-* Upgrade to Firely .NET SDK 5.2.0.
-* Upgrade to .NET 7.
+* Upgraded to Firely .NET SDK 5.2.0.
+* Upgraded to .NET 7.
 * R5 officially supported by Forge.
-* Resource tree view rendering is now consistent with Simplifier with two rendering options.
+* Resource tree view rendering is now consistent with Simplifier with two rendering options:
 
+  - Unmodified elements in the tree are displayed dimmed (default). 
   - Modified elements in the tree are indicated with a pen icon.
-  - Unmodified elements in the tree are displayed dimmed. 
-* When adding an extension to an element the cardinality of the extension is now used by default.
+* When adding an extension to an element the cardinality of the extension is now applied by default.
+* Added option for saving **Xml Declaration** header in xml files to the settings dialog:
+
+  - Same as source
+  - Include
+  - Omit
 * Various other UI styling improvements.
 
 Bug fixes

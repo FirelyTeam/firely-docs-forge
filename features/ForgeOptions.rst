@@ -135,7 +135,7 @@ Persistence
 -  **Resolve resources from subfolders**
 
    Indicates the default setting for whether or not subfolders should be included when searching for resources in your project folder.
-   You can always change the setting in the **Open FHIR Projet Folder** dialog.
+   You can always change the setting in the **Open FHIR Project Folder** dialog.
 
  .. image:: ../images/Settings_IncludeSubfolders.png
     :scale: 80%
@@ -152,6 +152,17 @@ Persistence
 -  **Save with UTF-8 Byte Order Mark (BOM)**
 
    The UTF-8 BOM is a sequence of bytes at the start of a text file (0xEF, 0xBB, 0xBF) that allows the reader to more reliably guess a file as being encoded in UTF-8.
+
+-  **Xml declaration**
+
+   Xml documents can contain an Xml declaration that if present, must be the first construct in the document and it looks like this: ``<?xml version="1.0" encoding="utf-8"?>``.
+   Forge has three options that allow you to specify when Xml declarations are saved to a resource:
+
+   - Same as source
+   - Include
+   - Omit
+
+   Note that when saving resources that are newly created, duplicated or upgraded, the Xml declaration is included when the option is set to **Same as source** or **Include** and omitted when set to **Omit**.
 
 -  **Xml indent size**
 
