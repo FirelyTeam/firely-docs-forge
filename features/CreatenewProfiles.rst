@@ -8,14 +8,14 @@ folder.
 
 .. figure:: ../images/NewProfileMenu.png
    :alt: Project folder toolbar
-   :scale: 80%
+   :width: 368
 
 This will open a window in which you can select one of the base
 Resources or DataTypes.
 
 .. figure:: ../images/NewProfile.png
    :alt: Create a new FHIR profile in Forge
-   :scale: 100%
+   :width: 1302
 
 New profile resource selection
 ------------------------------

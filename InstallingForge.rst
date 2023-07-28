@@ -46,7 +46,7 @@ In some cases users find that when installing or updating Forge the
 following security warning appears:
 
 .. image:: ./images/ForgeInstallSecurityWarning.png
-   :scale: 100%
+   :width: 597
 
 If this is the case for you, please follow `the steps listed in this
 blog

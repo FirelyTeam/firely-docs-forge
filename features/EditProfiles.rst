@@ -7,7 +7,7 @@ detail.
 
 .. figure:: ../images/EditProfileTabs.png
    :alt: The tabs in Forge for editing a profile
-   :scale: 100%
+   :width: 825
 
 Properties
 ----------
@@ -19,7 +19,7 @@ the ``Properties`` tab.
 
 .. figure:: ../images/ElementProperties.png
    :alt: The Properties overview in Forge
-   :scale: 100%
+   :width: 832
 
 Narrative
 ---------
@@ -33,7 +33,7 @@ profile.
 
 .. figure:: ../images/ElementNarrative.png
    :alt: The Narrative overview in Forge
-   :scale: 80%
+   :width: 815
 
 Element Tree and Element Grid
 -----------------------------
@@ -47,7 +47,7 @@ Element Tree
 
 .. figure:: ../images/ElementTree.png
    :alt: The Element Tree overview in Forge
-   :scale: 100%
+   :width: 1054
 
 Via the ``Element Tree`` tab you can edit Element Properties, slice
 Elements, or add extensions.
@@ -57,7 +57,7 @@ Element Grid
 
 .. figure:: ../images/ElementGrid.png
    :alt: The Element Grid overview in Forge
-   :scale: 100%
+   :width: 1080
 
 XML viewer
 ----------
@@ -69,4 +69,4 @@ work after the option **Save snapshot component** is checked in the
 
 .. figure:: ../images/ElementXml.png
    :alt: The Element XML overview in Forge
-   :scale: 80%
+   :width: 516
