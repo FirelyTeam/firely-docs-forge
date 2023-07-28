@@ -46,11 +46,6 @@ Bug fixes
 * Fixed various minor UI (styling) issues.
 * **[R4B/R5]** CodeableReference was not treated as a reference and thus the target profile property was not shown in the **Element Properties** panel.
 
-Known issues
-^^^^^^^^^^^^
-* **[R5]** The new element definition properties **mustHaveValue** and **valueAlternatives** are not merged by the snapshot generator.
-  So when opening a profile with one of the properties in the differential then these changes are lost.
-
 Release 30.2
 ------------
 Changes
