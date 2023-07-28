@@ -11,7 +11,7 @@ Release 31.0
 ------------
 Changes
 ^^^^^^^
-* Upgraded to Firely .NET SDK 5.2.0.
+* Upgraded to Firely .NET SDK 5.3.0.
 * Upgraded to .NET 7.
 * R5 officially supported by Forge.
 * Resource tree view rendering is now consistent with Simplifier with two rendering options:
