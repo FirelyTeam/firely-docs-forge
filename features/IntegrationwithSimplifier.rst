@@ -177,7 +177,7 @@ you can open.
 
 .. figure:: ../images/SyncLink.png
    :alt: Link to project on Simplifier
-   :width: 974
+   :width: 874
 
 You cannot change the project folder here because you are linking a
 Simplifier project to your current project folder. Select the correct
