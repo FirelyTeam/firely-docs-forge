@@ -3,6 +3,9 @@
 Adding R4B dependencies to your project
 =======================================
 
+.. Attention:: The information on this page is now obsolete because Simplifier supports R4B and R5 and thus dependencies can be added from within Forge.
+   However the information on this page is still relevant if you want to install packages manually.
+
 Forge uses Simplifier as a package registery when looking for packages. As Simplifier does not currently support R4B, it is not possible to add R4B packages 
 via the normal route. Luckily there is a workaround allowing these packages to be used as dependencies in Forge. For this you can follow these steps:
 
