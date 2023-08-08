@@ -44,7 +44,7 @@ Bug fixes
 * Using the **Duplicate** or **Open** profile (from Element Properties panel) would cause Forge to crash when the resource had an old Fhir version.
 * Changes to the option **Resolve resources from subfolders** in the **Settings** dialog and the Open folder dialog were not saved.
 * Profiles with a FHIR version unknown to Forge (e.g. FHIR version 5.0.0 for Forge 30.2.0 for R5) but where that unknown version is newer 
-  than the latest FHIR version known by Forge (e.g. 5.0.0-snapshot3 for Forge 30.2.0 for R5) would result in an error message and the profile would not be opened.
+  than the latest FHIR version known by Forge (e.g. 5.0.0-snapshot1 for Forge 30.2.0 for R5) would result in an error message and the profile would not be opened.
 * Fixed various minor UI (styling) issues.
 * **[R4B/R5]** CodeableReference was not treated as a reference and thus the target profile property was not shown in the **Element Properties** panel.
 
