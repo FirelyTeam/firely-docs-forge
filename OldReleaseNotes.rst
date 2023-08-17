@@ -3,6 +3,44 @@
 Old release notes
 =================
 
+Release 27.3.1
+--------------
+Bug fixes
+^^^^^^^^^
+* Forge prerequisite check did not take .NET 5 updates into account.
+
+Release 27.3
+------------
+R4B Support
+^^^^^^^^^^^
+The first release of Forge for FHIR R4B. This alpha release is based on FHIR 
+preview release 4.1.0, which is part of the FHIR R4B version range.
+
+.. note::
+  Please note that as both the FHIR version and this Forge alpha version are 
+  far from definitive, Forge 27.3 alpha may or may not contain unexpected errors 
+  and missing functionality.
+
+There is experimental support for migrating R4 profiles to R4B.
+
+Changes
+^^^^^^^
+* Upgrade to Firely .NET SDK 3.4.0.
+* Upgrade to .NET 5.
+
+Bug fixes
+^^^^^^^^^
+* Faulty slicing behaviour in extension.
+* Extension misplacement.
+* Forge not enforcing slicing rules element.
+* StructureDefinition.name regex should be warning only.
+  This was already a warning but the tooltip suggested that it was an error. Changed tooltip title to "Validation messages:".
+* Index was out of range error when saving profile.
+* Forge now calculates the minimum cardinality for extension arrays.
+  Note that in order to update your existing profiles in this regard you need to open and then save a profile again. 
+* Removed "New Implementation Guide" menu option (feature was not supported anyway).
+* **[R4-R5]** Forge cannot extend choice[x] elements.
+
 Release 27.1
 ------------
 Changes

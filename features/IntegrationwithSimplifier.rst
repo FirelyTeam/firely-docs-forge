@@ -14,21 +14,21 @@ available:
 
 .. figure:: ../images/SimplifierMenu.png
    :alt: Simplifier menu
-   :scale: 75%
+   :width: 276
 
 Some options are also available in the start and session panels and in
 the project toolbar.
 
 .. figure:: ../images/SyncStartPanel.png
    :alt: Start panel
-   :scale: 75%
+   :width: 350
 
 The ``Project`` tab contains a toolbar with additional Simplifier
 options.
 
 .. figure:: ../images/SyncProjectToolbar.png
    :alt: Project tab
-   :scale: 75%
+   :width: 875
 
 The following paragraphs describe the options in more detail.
 
@@ -52,7 +52,7 @@ Enter you project details on Simplifier and click ``Create``.
 
 .. figure:: ../images/SyncCreateProject.png
    :alt: Create a project on Simplifier
-   :scale: 75%
+   :width: 1164
 
 Open a FHIR Project from Simplifer
 ----------------------------------
@@ -75,7 +75,7 @@ and then ``Folders``.
 
 .. figure:: ../images/SyncParentFolderSelection.png
    :alt: Select FHIR parent folder
-   :scale: 75%
+   :width: 669
 
 Select the parent folder and click ``Select Folder``. A dialog is opened
 listing all the available projects on Simplifier you can open. When you
@@ -85,7 +85,7 @@ project folder name if you want.
 
 .. figure:: ../images/SyncConnect.png
    :alt: Open a project from Simplifier
-   :scale: 75%
+   :width: 914
 
 The project item tooltip displays the project title, description, |URL
 Key| URL Key and folder icon information:
@@ -108,7 +108,7 @@ files from Simplifier.
 
 .. figure:: ../images/SyncConnected.png
    :alt: Connected to a project on Simplifier
-   :scale: 75%
+   :width: 1302
 
 Open a FHIR Project from Simplifer when you already have a local project folder with files
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -119,7 +119,7 @@ the following dialog will open.
 
 .. figure:: ../images/SyncConnectOptions.png
    :alt: Options when open a project from Simplifier
-   :scale: 75%
+   :width: 974
 
 You have three options to specify what you would like to do:
 
@@ -155,7 +155,7 @@ listed file conflict:
 
 .. figure:: ../images/SyncConnectOptionsAdvanced.png
    :alt: Advanced optionsSimplifier
-   :scale: 75%
+   :width: 1217
 
 Click ``Continue`` to create a backup of your local project folder and
 download the relevant project files from Simplifier.
@@ -170,14 +170,14 @@ with an existing Simplifier project, you can do so by clicking
 
 .. figure:: ../images/SyncLinking.png
    :alt: Linking to project on Simplifier
-   :scale: 75%
+   :width: 143
 
 This will open a dialog listing all the available projects on Simplifier
 you can open.
 
 .. figure:: ../images/SyncLink.png
    :alt: Link to project on Simplifier
-   :scale: 75%
+   :width: 874
 
 You cannot change the project folder here because you are linking a
 Simplifier project to your current project folder. Select the correct
@@ -193,7 +193,7 @@ added file.
 
 .. figure:: ../images/SyncFileStatus.png
    :alt: Project file status
-   :scale: 75%
+   :width: 400
 
 Forge is watching for changes in your project folder so any
 modifications you make outside of Forge will be reflected in the list
@@ -212,14 +212,14 @@ clicking the drop-down arrow and clicking the desired option. The
 
 .. figure:: ../images/SyncToolbarDropdown.png
    :alt: Simplifier synchronize options
-   :scale: 75%
+   :width: 234
 
 When you click a synchronize button a dialog is opened showing you a
 summary of what will be synchronized.
 
 .. figure:: ../images/SyncSummaryBasicView.png
    :alt: Summary Basic view
-   :scale: 75%
+   :width: 936
 
 By default, the Basic view is displayed. This view will simply describe
 what will happen without details. If you want to see more details you
@@ -227,7 +227,7 @@ can switch to the Advanced view by clicking ``Advanced view``.
 
 .. figure:: ../images/SyncSummaryAdvancedView.png
    :alt: Summary Advanced view
-   :scale: 75%
+   :width: 1510
 
 You can return to the Basic view by clicking ``Basic view``. Click
 ``Continue`` to synchronize with Simplifier.
@@ -242,7 +242,7 @@ resources will not be synchronized.
 
 .. figure:: ../images/SyncConflictsBasicView.png
    :alt: Summary conflicts Basic view
-   :scale: 75%
+   :width: 822
 
 To resolve conflicts you have to switch to the Advanced view by
 clicking ``Advanced view``. For each listed file conflict you have
@@ -266,7 +266,7 @@ three choices:
 
 .. figure:: ../images/SyncConflictsAdvancedView.png
    :alt: Summary conflicts Advanced view
-   :scale: 75%
+   :width: 974
 
 Miscellaneous options
 ---------------------

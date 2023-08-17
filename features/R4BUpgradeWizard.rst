@@ -63,13 +63,13 @@ of files that have been found for each status category.
 
 .. figure:: ../images/R4BUpgradeWizard_AnalysisResult.png
    :alt: Analysis Result
-   :scale: 75%
+   :width: 670
 
 Click ``Next >`` to view the analysis summary.
 
 .. figure:: ../images/R4BUpgradeWizard_AnalysisSummary.png
    :alt: Analysis Summary
-   :scale: 75%
+   :width: 670
 
 The summary page gives a recommendation for upgrading, two links to R4B information on the HL7 website
 and a list of the resource types that you use in your project that have changes in R4B.
@@ -81,7 +81,7 @@ Click ``Next >`` to view the upgrade options.
 
 .. figure:: ../images/R4BUpgradeWizard_UpgradeOptions.png
    :alt: Upgrade Options
-   :scale: 75%
+   :width: 670
 
 -  **Try to correct any errors in my resources**
 
@@ -111,7 +111,7 @@ Click ``Next >`` to start the upgrade.
 
 .. figure:: ../images/R4BUpgradeWizard_UpgradeDone.png
    :alt: Upgrade Options
-   :scale: 75%
+   :width: 670
 
 When the upgrade process has finished a log file is created in the new project folder.
 

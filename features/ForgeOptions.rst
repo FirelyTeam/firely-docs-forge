@@ -6,7 +6,7 @@ Forge provides several options regarding rendering and saving in the
 
 .. figure:: ../images/OptionsForge.png
    :alt: The options menu in Forge
-   :width: 450px
+   :width: 501
 
 Settings
 --------
@@ -16,7 +16,7 @@ User Interface
 
 .. figure:: ../images/Settings_UserInterface.png
    :alt: The user interface settings
-   :width: 450px
+   :width: 527
 
 -  **Night Time**
 
@@ -25,10 +25,10 @@ User Interface
  .. list-table:: 
 
      * - .. image:: ../images/Settings_NightTime_Off.png
-            :scale: 20%
+            :width: 651
 
        - .. image:: ../images/Settings_NightTime_On.png
-            :scale: 20%
+            :width: 651
 
      * - *Night Time Off*
 
@@ -41,30 +41,14 @@ User Interface
  .. list-table:: 
 
      * - .. image:: ../images/Settings_XmlFolding_Off.png
-            :scale: 50%
+            :width: 536
 
        - .. image:: ../images/Settings_XmlFolding_On.png
-            :scale: 50%
+            :width: 536
 
      * - *Xml Folding Off*
 
        - *Xml Folding On*
-
--  **Show element cardinalty hints**
-
-   Shows or hides cardinality hints on elements in the **Element Tree**.
-
- .. list-table:: 
-
-     * - .. image:: ../images/Settings_CardinalityHint_Off.png
-            :scale: 75%
-
-       - .. image:: ../images/Settings_CardinalityHint_On.png
-            :scale: 75%
-
-     * - *Cardinalty Hint Off*
-
-       - *Cardinalty Hint On*
 
 -  **Show common resource elements (id, meta, ...)**
 
@@ -73,10 +57,10 @@ User Interface
  .. list-table:: 
 
      * - .. image:: ../images/Settings_CommonElements_Off.png
-            :scale: 75%
+            :width: 408
 
        - .. image:: ../images/Settings_CommonElements_On.png
-            :scale: 75%
+            :width: 408
 
      * - *Show common resource elements Off*
 
@@ -91,10 +75,10 @@ User Interface
  .. list-table:: 
 
      * - .. image:: ../images/Settings_SliceElements_Off.png
-            :scale: 90%
+            :width: 418
 
        - .. image:: ../images/Settings_SliceElements_On.png
-            :scale: 90%
+            :width: 419
 
      * - *Show child elements when sliced Off*
 
@@ -107,10 +91,10 @@ User Interface
  .. list-table:: 
 
      * - .. image:: ../images/Settings_ExpandElements_Off.png
-            :scale: 90%
+            :width: 424
 
        - .. image:: ../images/Settings_ExpandElements_On.png
-            :scale: 90%
+            :width: 424
 
      * - *Expand constrained elements Off*
 
@@ -125,20 +109,36 @@ User Interface
    If you encounter rendering issues with the Forge user interface then those are most likely caused by the video driver.
    In that case you can turn off hardware rendering.
 
+-  **Element Tree modified style**
+
+   Selects how modified elements in the **Element Tree** are displayed.
+
+ .. list-table:: 
+
+     * - .. image:: ../images/Settings_ModifiedStyle_Dimmed.png
+            :width: 425
+
+       - .. image:: ../images/Settings_ModifiedStyle_Pen.png
+            :width: 425
+
+     * - *Unmodified elements are displayed dimmed*
+
+       - *Modified elements are indicated with a pen*
+
 Persistence
 ~~~~~~~~~~~
 
 .. figure:: ../images/Settings_Persistence.png
    :alt: The persistence settings
-   :width: 450px
+   :width: 527
 
 -  **Resolve resources from subfolders**
 
    Indicates the default setting for whether or not subfolders should be included when searching for resources in your project folder.
-   You can always change the setting in the **Open FHIR Projet Folder** dialog.
+   You can always change the setting in the **Open FHIR Project Folder** dialog.
 
  .. image:: ../images/Settings_IncludeSubfolders.png
-    :scale: 75%
+    :width: 787
 
 -  **Auto update publication data**
 
@@ -153,6 +153,17 @@ Persistence
 
    The UTF-8 BOM is a sequence of bytes at the start of a text file (0xEF, 0xBB, 0xBF) that allows the reader to more reliably guess a file as being encoded in UTF-8.
 
+-  **Xml declaration**
+
+   Xml documents can contain an Xml declaration that if present, must be the first construct in the document and it looks like this: ``<?xml version="1.0" encoding="utf-8"?>``.
+   Forge has three options that allow you to specify when Xml declarations are saved to a resource:
+
+   - Same as source
+   - Include
+   - Omit
+
+   Note that when saving resources that are newly created, duplicated or upgraded, the Xml declaration is included when the option is set to **Same as source** or **Include** and omitted when set to **Omit**.
+
 -  **Xml indent size**
 
    The indent size to use when saving Xml files.
@@ -166,7 +177,7 @@ FHIR
 
 .. figure:: ../images/Settings_FHIR.png
    :alt: The FHIR settings
-   :width: 450px
+   :width: 526
 
 -  **Validate FHIRPath expressions**
 
@@ -177,7 +188,7 @@ FHIR
    When creating a new profile this option will copy all the mappings from the base profile to the new profile.
 
  .. image:: ../images/Settings_GlobalMappings.png
-    :scale: 65%
+    :width: 382
 
 -  **Discard DomainResource.text values**
 
@@ -185,14 +196,14 @@ FHIR
    In effect this will clear the **Narrative** of your resource.
 
  .. image:: ../images/Settings_DiscardResourceText.png
-    :scale: 65%
+    :width: 431
 
 Folders
 ~~~~~~~
 
 .. figure:: ../images/Settings_Folders.png
    :alt: The folders settings
-   :width: 450px
+   :width: 526
 
 -  **Parent folder FHIR projects**
 

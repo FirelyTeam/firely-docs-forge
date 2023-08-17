@@ -16,13 +16,13 @@ the application. After installation of a new release, you will receive
 automatic update notifications when you start the application.
 
 Forge is built with the `Microsoft .NET Framework 4.7.2, .NET
-6 <https://dotnet.microsoft.com/learn/dotnet/what-is-dotnet>`__ and
+7 <https://dotnet.microsoft.com/learn/dotnet/what-is-dotnet>`__ and
 `WPF <https://visualstudio.microsoft.com/vs/features/wpf/>`__. The
 ClickOnce installer will download and install the .NET Framework 4.7.2
-if necessary. Forge itself will download and install .NET 6 if
+if necessary. Forge itself will download and install .NET 7 if
 necessary.
 
-.. Attention:: Installing or updating the .NET Framework or .NET 6 requires
+.. Attention:: Installing or updating the .NET Framework or .NET 7 requires
    administrator permissions. If you have insufficient permissions,
    please contact your system administrator.
 
@@ -46,6 +46,7 @@ In some cases users find that when installing or updating Forge the
 following security warning appears:
 
 .. image:: ./images/ForgeInstallSecurityWarning.png
+   :width: 597
 
 If this is the case for you, please follow `the steps listed in this
 blog

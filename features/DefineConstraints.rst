@@ -22,7 +22,7 @@ happens.
 
 .. figure:: ../images/ConstraintsCardinality.png
    :alt: Set element cardinality in Forge
-   :scale: 75%
+   :width: 1072
    
 Element Type
 ------------
@@ -41,13 +41,13 @@ explorer and the profile's base Resource fits the element.
 
 .. figure:: ../images/ConstraintsType.png
    :alt: Setting valueset binding in Forge
-   :scale: 75%
+   :width: 1296
 
    *Setting Observation.value[x] types in Forge* 
 
 .. figure:: ../images/ConstraintsTypeReference.png
    :alt: Setting valueset binding in Forge
-   :scale: 75%
+   :width: 1297
 
    *Setting Observation.subject reference type in Forge*
 
@@ -63,7 +63,7 @@ value.
 
 .. figure:: ../images/ConstraintsValueSetBinding.png
    :alt: Setting valueset binding in Forge
-   :scale: 75%
+   :width: 1296
 
 Inline constraints
 ------------------
@@ -84,7 +84,7 @@ elements defined by external type profiles.
 
 .. figure:: ../images/Inlineconstraintontypeslice.png
    :alt: Setting an inline constraint on an element in Forge
-   :scale: 75%
+   :width: 1296
 
 This behavior also applies to Extension Definitions, as technically they
 are also external type profiles. Suppose you author a profile with an
@@ -97,5 +97,5 @@ in the underlying extension definition.
 
 .. figure:: ../images/Inlineconstraintonprofileextension.png
    :alt: Setting an inline constraint on an extension in Forge
-   :scale: 75%
+   :width: 1297
 

@@ -7,7 +7,7 @@ user-interface.
 
 .. image:: images/ForgeProject.png
    :alt: Forge
-   :scale: 75%
+   :width: 1302
 
 With Forge you can:
 

@@ -30,7 +30,7 @@ profile.
 
 .. figure:: ../images/Profilehierarchy2.png
    :alt: The hierarchy between FHIR profiles
-   :scale: 75%
+   :width: 674
 
 Adding dependencies
 -------------------
@@ -40,40 +40,40 @@ following example adds the **hl7.fhir.us.core** package to the project.
 Select the ``Dependencies`` tab, then click ``Simplifier``, then type
 *hl7.fhir.us* in the **Search** field and finally click ``Search``.
 Select **hl7.fhir.us.core** in the list and then select package version
-**5.0.0**. Finally click ``Add`` to add the package to the project.
+**6.1.0**. Finally click ``Add`` to add the package to the project.
 
 .. figure:: ../images/DerivedAddPackage.png
    :alt: Add a core package
-   :scale: 75%
+   :width: 830
 
 Click the ``Project`` tab to see what packages are installed. Notice
 that dependent packages are installed too.
 
 .. figure:: ../images/DerivedPackagesInstalled.png
    :alt: Installed packages
-   :scale: 75%
+   :width: 378
 
 To create a derived profile for the US Core Patient, open the package
-**hl7.fhir.us.core#5.0.0** by selecting it from the list and clicking
+**hl7.fhir.us.core#6.1.0** by selecting it from the list and clicking
 ``Open``. Then select **package** in the list and click ``Open``. In the
 **Filter** toolbar select **Patient** as Structure Type to filter on.
 
 .. figure:: ../images/DerivedUSCorePatient.png
    :alt: Derive profile
-   :scale: 75%
+   :width: 1246
 
 Select the US Core Patient in the list and click ``Derive``.
 
 .. figure:: ../images/DerivedUSCorePatientProperties.png
    :alt: Derive profile properties
-   :scale: 75%
+   :width: 1302
 
 Enter the name for the profile and click ``OK``. A new derived profile
 is created and opened. You can now make your own modifications.
 
 .. figure:: ../images/DerivedUSCorePatientProfile.png
    :alt: US Core Patient profile
-   :scale: 75%
+   :width: 879
 
 Things to keep in mind are that you can only further constrain (or add
 extensions to) profiles. This means that each derived profile is more
@@ -87,4 +87,4 @@ differential will reflect constraints on the national profile.
 
 .. figure:: ../images/Profilehierarchy.png
    :alt: The hierarchy and conformance between FHIR profiles
-   :scale: 75%
+   :width: 645

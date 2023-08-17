@@ -14,11 +14,11 @@ Click ``Open FHIR Project Folder...`` and select your working directory.
 
 .. figure:: ../images/OpenFolder.png
    :alt: Open a folder in Forge
-   :scale: 75%
+   :width: 351
 
 Note that although Forge allows you to select any folder, it would be a
 very bad idea to select a general folder like
-**C:\Documents** as your project folder. If you are
+**This PC > Documents** as your project folder. If you are
 managing multiple projects it is good practice to organize all of your
 projects under the same parent folder: for example **FHIR**.
 
@@ -32,14 +32,14 @@ profiles. In that case it would be better to ignore the subdirectory.
 
 .. figure:: ../images/SelectFolder.png
    :alt: Select a folder in Forge
-   :scale: 75%
+   :width: 948
 
 Click ``Select Folder`` to open your folder. Now Forge will show you all
 files contained in your folder.
 
 .. figure:: ../images/SessionExplorer.png
    :alt: The session explorer in Forge
-   :scale: 75%
+   :width: 1302
 
 When there’s a lot of content in your folder, you may want to use one of
 the available filters:
@@ -50,7 +50,7 @@ the available filters:
 
 .. figure:: ../images/ProjectFilter.png
    :alt: The project filter in Forge
-   :scale: 75%
+   :width: 467
 
 You can also switch views. By default the ``List`` view is shown,
 showing all content in the folder and all its subdirectories (when these
@@ -59,7 +59,7 @@ subdirectories one by one as if you’re using your file explorer.
 
 .. figure:: ../images/ProjectView.png
    :alt: The project view in Forge
-   :scale: 75%
+   :width: 128
 
 Select one of the structure definitions from the content list and choose
 ``Open`` to open it in Forge. Choose ``New...`` to add new structure
