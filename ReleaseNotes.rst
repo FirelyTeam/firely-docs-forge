@@ -7,6 +7,12 @@
 
    OldReleaseNotes
 
+Release 31.0.1
+--------------
+Bug fixes
+^^^^^^^^^
+* Fixed an issue where the parent element for a slice could be added to the differential unnecessarily.
+
 Release 31.0
 ------------
 Changes
