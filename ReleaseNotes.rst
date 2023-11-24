@@ -7,6 +7,17 @@
 
    OldReleaseNotes
 
+Release 31.0.2
+--------------
+Bug fixes
+^^^^^^^^^
+* **Quality Control** would not run if a rule did not contain a name and Forge would display an error.
+* File filters in Quality Control rules were not working.
+* The enabled state was not properly set for some options in the context menu for the root node in the **Element Tree** view.
+* Fixed performance issue when loading profiles where recalculation of parent extension cardinality was required.
+* When adding a slice to a *Bundle.entry* and setting a canonical for the *Bundle.entry.resource.type.profile*, 
+  Forge would not unfold the resource in the profile nor include it in the differential.
+
 Release 31.0.1
 --------------
 Bug fixes
