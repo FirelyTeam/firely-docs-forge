@@ -4,7 +4,7 @@ Dependencies of Forge and their licenses
 Forge is mainly built using libraries from Microsoft and the Firely SDK, along with a limited list of other libraries.
 This is the full list of direct depencies that Forge has on other libraries, along with their licenses.
 
-.. note:: Only packages for FHIR version R4 are listed here. Packages for STU3, R4B and R5 are used as well an can be found on `nuget.org <https://www.nuget.org/>`__
+.. note:: Only packages for FHIR version R4 are listed here. Packages for STU3, R4B and R5 are used as well and can be found on `nuget.org <https://www.nuget.org/>`__
 
 .. list-table::
    :header-rows: 1
