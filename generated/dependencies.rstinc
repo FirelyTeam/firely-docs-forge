@@ -1,0 +1,119 @@
+﻿.. list-table::
+   :header-rows: 1
+
+   * - Package
+     - License
+   * - `Firely.Fhir.Packages <https://www.nuget.org/packages/Firely.Fhir.Packages>`__
+     - BSD-3-Clause
+   * - `Hl7.Fhir.Base <https://www.nuget.org/packages/Hl7.Fhir.Base>`__
+     - BSD-3-Clause
+   * - `Hl7.Fhir.ElementModel <https://www.nuget.org/packages/Hl7.Fhir.ElementModel>`__
+     - BSD-3-Clause
+   * - `Hl7.Fhir.R4 <https://www.nuget.org/packages/Hl7.Fhir.R4>`__
+     - BSD-3-Clause
+   * - `Hl7.Fhir.R4B <https://www.nuget.org/packages/Hl7.Fhir.R4B>`__
+     - BSD-3-Clause
+   * - `Hl7.Fhir.R5 <https://www.nuget.org/packages/Hl7.Fhir.R5>`__
+     - BSD-3-Clause
+   * - `Hl7.Fhir.Serialization <https://www.nuget.org/packages/Hl7.Fhir.Serialization>`__
+     - BSD-3-Clause
+   * - `Hl7.Fhir.Specification.Data.R4 <https://www.nuget.org/packages/Hl7.Fhir.Specification.Data.R4>`__
+     - BSD-3-Clause
+   * - `Hl7.Fhir.Specification.Data.R4B <https://www.nuget.org/packages/Hl7.Fhir.Specification.Data.R4B>`__
+     - BSD-3-Clause
+   * - `Hl7.Fhir.Specification.Data.R5 <https://www.nuget.org/packages/Hl7.Fhir.Specification.Data.R5>`__
+     - BSD-3-Clause
+   * - `Hl7.Fhir.Specification.Data.STU3 <https://www.nuget.org/packages/Hl7.Fhir.Specification.Data.STU3>`__
+     - BSD-3-Clause
+   * - `Hl7.Fhir.Specification.R4 <https://www.nuget.org/packages/Hl7.Fhir.Specification.R4>`__
+     - BSD-3-Clause
+   * - `Hl7.Fhir.STU3 <https://www.nuget.org/packages/Hl7.Fhir.STU3>`__
+     - BSD-3-Clause
+   * - `Hl7.Fhir.Support <https://www.nuget.org/packages/Hl7.Fhir.Support>`__
+     - BSD-3-Clause
+   * - `Hl7.Fhir.Support.Poco <https://www.nuget.org/packages/Hl7.Fhir.Support.Poco>`__
+     - BSD-3-Clause
+   * - `Hl7.Fhir.Validation.Legacy.R4 <https://www.nuget.org/packages/Hl7.Fhir.Validation.Legacy.R4>`__
+     - BSD-3-Clause
+   * - `Hl7.Fhir.Validation.Legacy.R4B <https://www.nuget.org/packages/Hl7.Fhir.Validation.Legacy.R4B>`__
+     - BSD-3-Clause
+   * - `Hl7.Fhir.Validation.Legacy.R5 <https://www.nuget.org/packages/Hl7.Fhir.Validation.Legacy.R5>`__
+     - BSD-3-Clause
+   * - `Hl7.Fhir.Validation.Legacy.STU3 <https://www.nuget.org/packages/Hl7.Fhir.Validation.Legacy.STU3>`__
+     - BSD-3-Clause
+   * - `Hl7.FhirPath <https://www.nuget.org/packages/Hl7.FhirPath>`__
+     - BSD-3-Clause
+   * - `Microsoft-WindowsAPICodePack-Core <https://www.nuget.org/packages/Microsoft-WindowsAPICodePack-Core>`__
+     - 
+   * - `Microsoft-WindowsAPICodePack-Shell <https://www.nuget.org/packages/Microsoft-WindowsAPICodePack-Shell>`__
+     - 
+   * - `Microsoft.CSharp <https://www.nuget.org/packages/Microsoft.CSharp>`__
+     - MIT
+   * - `Microsoft.Extensions.DependencyInjection <https://www.nuget.org/packages/Microsoft.Extensions.DependencyInjection>`__
+     - MIT
+   * - `Microsoft.Extensions.FileSystemGlobbing <https://www.nuget.org/packages/Microsoft.Extensions.FileSystemGlobbing>`__
+     - MIT
+   * - `Microsoft.Windows.Compatibility <https://www.nuget.org/packages/Microsoft.Windows.Compatibility>`__
+     - MIT
+   * - `Microsoft.Xaml.Behaviors.Wpf <https://www.nuget.org/packages/Microsoft.Xaml.Behaviors.Wpf>`__
+     - MIT
+   * - `Newtonsoft.Json <https://www.nuget.org/packages/Newtonsoft.Json>`__
+     - MIT
+   * - `Nito.AsyncEx <https://www.nuget.org/packages/Nito.AsyncEx>`__
+     - MIT
+   * - `Prism.Core <https://www.nuget.org/packages/Prism.Core>`__
+     - MIT
+   * - `SemanticVersioning <https://www.nuget.org/packages/SemanticVersioning>`__
+     - MIT
+   * - `SharpZipLib <https://www.nuget.org/packages/SharpZipLib>`__
+     - MIT
+   * - `System.CommandLine <https://www.nuget.org/packages/System.CommandLine>`__
+     - MIT
+   * - `System.ComponentModel.Annotations <https://www.nuget.org/packages/System.ComponentModel.Annotations>`__
+     - MIT
+   * - `System.IdentityModel.Tokens.Jwt <https://www.nuget.org/packages/System.IdentityModel.Tokens.Jwt>`__
+     - MIT
+   * - `System.Net.Http <https://www.nuget.org/packages/System.Net.Http>`__
+     - 
+   * - `System.Net.Http.WinHttpHandler <https://www.nuget.org/packages/System.Net.Http.WinHttpHandler>`__
+     - MIT
+   * - `System.ServiceModel.Duplex <https://www.nuget.org/packages/System.ServiceModel.Duplex>`__
+     - MIT
+   * - `System.ServiceModel.Federation <https://www.nuget.org/packages/System.ServiceModel.Federation>`__
+     - MIT
+   * - `System.ServiceModel.NetTcp <https://www.nuget.org/packages/System.ServiceModel.NetTcp>`__
+     - MIT
+   * - `System.Text.Json <https://www.nuget.org/packages/System.Text.Json>`__
+     - MIT
+   * - `System.ValueTuple <https://www.nuget.org/packages/System.ValueTuple>`__
+     - MIT
+   * - `YamlDotNet <https://www.nuget.org/packages/YamlDotNet>`__
+     - MIT
+
+For unit testing:
+
+.. list-table::
+   :header-rows: 1
+
+   * - Package
+     - License
+   * - `coverlet.collector <https://www.nuget.org/packages/coverlet.collector>`__
+     - MIT
+   * - `FluentAssertions <https://www.nuget.org/packages/FluentAssertions>`__
+     - Apache-2.0
+   * - `Microsoft.NET.Test.Sdk <https://www.nuget.org/packages/Microsoft.NET.Test.Sdk>`__
+     - MIT
+   * - `Moq <https://www.nuget.org/packages/Moq>`__
+     - BSD-3-Clause
+   * - `MSTest.TestAdapter <https://www.nuget.org/packages/MSTest.TestAdapter>`__
+     - MIT
+   * - `MSTest.TestFramework <https://www.nuget.org/packages/MSTest.TestFramework>`__
+     - MIT
+   * - `NUnit <https://www.nuget.org/packages/NUnit>`__
+     - MIT
+   * - `NUnit3TestAdapter <https://www.nuget.org/packages/NUnit3TestAdapter>`__
+     - MIT
+   * - `xunit <https://www.nuget.org/packages/xunit>`__
+     - Apache-2.0
+   * - `xunit.runner.visualstudio <https://www.nuget.org/packages/xunit.runner.visualstudio>`__
+     - MIT
