@@ -42,61 +42,61 @@ IS NOT A LEGITIMATE, AUTHORIZED COPY OF FIRELY’S SOFTWARE.**
 1. *Definitions*. For purposes of this Agreement, the following terms
    have the following meanings:
 
-“\ **Account**\ ” means the account Licensee creates on the Website.
+   “\ **Account**\ ” means the account Licensee creates on the Website.
 
-“\ **Authorized Users**\ ” means solely those individuals authorized to
-use the Software pursuant to the license granted under this Agreement,
-as set forth in the Order Form.
+   “\ **Authorized Users**\ ” means solely those individuals authorized to
+   use the Software pursuant to the license granted under this Agreement,
+   as set forth in the Order Form.
 
-“\ **Commercial Use**\ ” means use of the Software by the Licensee for
-financial or monetary gain (including use of the Software for or by a
-non-profit organization), as determined by Firely in its sole
-discretion.
+   “\ **Commercial Use**\ ” means use of the Software by the Licensee for
+   financial or monetary gain (including use of the Software for or by a
+   non-profit organization), as determined by Firely in its sole
+   discretion.
 
-“\ **Documentation**\ ” means Firely’s user manuals, handbooks, and
-installation guides relating to the Software provided by Firely to
-Licensee either electronically or in hard copy form/end user
-documentation relating to the Software available on the Website.
+   “\ **Documentation**\ ” means Firely’s user manuals, handbooks, and
+   installation guides relating to the Software provided by Firely to
+   Licensee either electronically or in hard copy form/end user
+   documentation relating to the Software available on the Website.
 
-“\ **Intellectual Property Rights**\ ” means any and all registered and
-unregistered rights granted, applied for, or otherwise now or hereafter
-in existence under or related to any patent, copyright, trademark, trade
-secret, database protection, or other intellectual property rights laws,
-and all similar or equivalent rights or forms of protection, in any part
-of the world.
+   “\ **Intellectual Property Rights**\ ” means any and all registered and
+   unregistered rights granted, applied for, or otherwise now or hereafter
+   in existence under or related to any patent, copyright, trademark, trade
+   secret, database protection, or other intellectual property rights laws,
+   and all similar or equivalent rights or forms of protection, in any part
+   of the world.
 
-“\ **Fees**\ ” means the fees, including all taxes thereon, paid or
-required to be paid by Licensee for the license granted under this
-Agreement.
+   “\ **Fees**\ ” means the fees, including all taxes thereon, paid or
+   required to be paid by Licensee for the license granted under this
+   Agreement.
 
-“\ **Order Form**\ ” means the order form or any other document filled
-out and submitted by or on behalf of Licensee, and accepted by Firely,
-for Licensee's purchase of the license for the Software granted under
-this Agreement.
+   “\ **Order Form**\ ” means the order form or any other document filled
+   out and submitted by or on behalf of Licensee, and accepted by Firely,
+   for Licensee's purchase of the license for the Software granted under
+   this Agreement.
 
-“\ **Firely**\ ” means Firely B.V., with its registered offices at
-Westerdok 442, 1013 BH Amsterdam, The Netherlands and Firely USA, Inc.,
-a Delaware corporation located in New York, NY, USA.
+   “\ **Firely**\ ” means Firely B.V., with its registered offices at
+   Westerdok 442, 1013 BH Amsterdam, The Netherlands and Firely USA, Inc.,
+   a Delaware corporation located in New York, NY, USA.
 
-“\ **Non-Commercial Use**\ ” means use of the Software by the Licensee
-not for financial or monetary gain, as determined by Firely in its sole
-discretion.
+   “\ **Non-Commercial Use**\ ” means use of the Software by the Licensee
+   not for financial or monetary gain, as determined by Firely in its sole
+   discretion.
 
-“\ **Person**\ ” means an individual, corporation, partnership, joint
-venture, limited liability company, governmental authority,
-unincorporated organization, trust, association, or other entity.
+   “\ **Person**\ ” means an individual, corporation, partnership, joint
+   venture, limited liability company, governmental authority,
+   unincorporated organization, trust, association, or other entity.
 
-“\ **Software**\ ” means the Forge application for authoring conformance
-resources in HL7® FHIR®, including any Updates provided to Licensee
-pursuant to this Agreement.
+   “\ **Software**\ ” means the Forge application for authoring conformance
+   resources in HL7® FHIR®, including any Updates provided to Licensee
+   pursuant to this Agreement.
 
-“\ **Third Party**\ ” means any Person other than Licensee or Firely.
+   “\ **Third Party**\ ” means any Person other than Licensee or Firely.
 
-“\ **Updates**\ ” means any updates, upgrades, bug fixes, patches, or
-other error corrections to the Software that Firely generally makes
-available free of charge to all licensees of the Software.
+   “\ **Updates**\ ” means any updates, upgrades, bug fixes, patches, or
+   other error corrections to the Software that Firely generally makes
+   available free of charge to all licensees of the Software.
 
-“\ **Website**\ ” means www.simplifier.net.
+   “\ **Website**\ ” means www.simplifier.net.
 
 2.  *License Grant and Scope*
 
@@ -340,12 +340,14 @@ available free of charge to all licensees of the Software.
     aware of any infringement of the Firely’s Intellectual Property
     Rights in the Software and fully cooperate with Firely in any legal
     action taken by Firely to enforce its Intellectual Property Rights.
+..
 
 9.  *Payment*. All Fees payable for Commercial Use of a license shall be
     paid in advance in the manner set forth in the Order Form and are
     non-refundable, except as may be expressly set forth herein.
+..
 
-10. *Term and Termination*.
+10.  *Term and Termination*.
 
     a. This Agreement and the license granted hereunder shall remain in
        effect for the Term set forth on the Order Form or until
@@ -373,6 +375,7 @@ available free of charge to all licensees of the Software.
        after its first log in. In case of (v), Firely shall send a
        communication to the Licensee’s email address registered with its
        Account.
+..
 
 11. *Disclaimer*. THE SOFTWARE, INCLUDING ANY OPEN SOFTWARE COMPONENTS,
     AND DOCUMENTATION ARE PROVIDED TO LICENSEE "AS IS" AND WITH ALL
@@ -392,9 +395,10 @@ available free of charge to all licensees of the Software.
     APPLICATIONS, SYSTEMS, OR SERVICES, OPERATE WITHOUT INTERRUPTION,
     MEET ANY PERFORMANCE OR RELIABILITY STANDARDS OR BE ERROR FREE, OR
     THAT ANY ERRORS OR DEFECTS CAN OR WILL BE CORRECTED.
+..
 
-12. *Limitation of Liability*. TO THE FULLEST EXTENT PERMITTED UNDER
-    APPLICABLE LAW:
+12.  *Limitation of Liability*. TO THE FULLEST EXTENT PERMITTED UNDER
+     APPLICABLE LAW:
 
     a. IN NO EVENT WILL FIRELY OR ITS AFFILIATES, OR ANY OF ITS OR THEIR
        RESPECTIVE LICENSORS OR SERVICE PROVIDERS, BE LIABLE TO LICENSEE
@@ -423,8 +427,9 @@ available free of charge to all licensees of the Software.
        SPECIFIC SERVICES THAT PRECEEDED THE DAMAGING EVENT. DAMAGES MAY
        ONLY BE CLAIMED IF REPORTED IN WRITING TO FIRELY AT MOST TWO (2)
        MONTHS AFTER DISCOVERED BY LICENSEE.
+..
 
-13. *Force Majeure*
+13.  *Force Majeure*
 
     a. In no event will either Party be liable or responsible to the
        other Party, or be deemed to have defaulted under or breached
@@ -454,6 +459,7 @@ available free of charge to all licensees of the Software.
        Contract due to a Force Majeure Event. In case of a Force Majeure
        Event Firely shall have no obligation to compensate Licensee for
        any damages it suffers arising from such an event.
+..
 
 14. *Export Regulation*. The Software may be subject to US export
     control laws, including the Export Control Reform Act and its
@@ -466,78 +472,79 @@ available free of charge to all licensees of the Software.
     obtaining any necessary export license or other governmental
     approval), prior to exporting, re-exporting, releasing, or otherwise
     making the Software available outside the US.
+..
 
 15. *Applicable Law and Dispute Resolution*
 
-**US Customers (Sections 15(a)-15(b))**
+   **US Customers (Sections 15(a)-15(b))**
 
-a. Unless stated otherwise in writing, this Agreement and any other
-   contract between the Parties shall be governed by and construed in
-   accordance with the laws of the State of New York, notwithstanding
-   conflict of law principles, and without giving effect to the United
-   Nations Convention on the Contracts for the International Sale of
-   Goods.
+   a. Unless stated otherwise in writing, this Agreement and any other
+      contract between the Parties shall be governed by and construed in
+      accordance with the laws of the State of New York, notwithstanding
+      conflict of law principles, and without giving effect to the United
+      Nations Convention on the Contracts for the International Sale of
+      Goods.
 
-b. The Parties agree that any and all disputes, claims or controversies
-   arising out of or relating to this Agreement or any other contract
-   shall be submitted to JAMS, or its successor, for mediation, and if
-   the matter is not resolved through mediation, then it shall be
-   submitted to JAMS, or its successor, for final and binding
-   arbitration. Any dispute, controversy or claim arising out of or
-   relating to this Agreement or any contract, or the breach,
-   termination, enforcement, interpretation or validity thereof,
-   including the determination of the scope or applicability of this
-   agreement to arbitrate, will be referred to and finally determined by
-   arbitration in accordance with the JAMS Comprehensive Arbitration
-   Rules and Procedures. The seat of the arbitration will be New York,
-   New York. The arbitration shall be administered for a single
-   arbitrator. The language to be used in the arbitral proceeding will
-   be English. Judgment upon the award rendered by the arbitrator may be
-   entered by any court having jurisdiction thereof. ANY CAUSE OF ACTION
-   AGAINST FIRELY, REGARDLESS WHETHER IN CONTRACT, TORT OR OTHERWISE,
-   MUST COMMENCE WITHIN ONE (1) YEAR AFTER THE CAUSE OF ACTION ACCRUES.
-   OTHERWISE, SUCH CAUSE OF ACTION IS PERMANENTLY BARRED.
+   b. The Parties agree that any and all disputes, claims or controversies
+      arising out of or relating to this Agreement or any other contract
+      shall be submitted to JAMS, or its successor, for mediation, and if
+      the matter is not resolved through mediation, then it shall be
+      submitted to JAMS, or its successor, for final and binding
+      arbitration. Any dispute, controversy or claim arising out of or
+      relating to this Agreement or any contract, or the breach,
+      termination, enforcement, interpretation or validity thereof,
+      including the determination of the scope or applicability of this
+      agreement to arbitrate, will be referred to and finally determined by
+      arbitration in accordance with the JAMS Comprehensive Arbitration
+      Rules and Procedures. The seat of the arbitration will be New York,
+      New York. The arbitration shall be administered for a single
+      arbitrator. The language to be used in the arbitral proceeding will
+      be English. Judgment upon the award rendered by the arbitrator may be
+      entered by any court having jurisdiction thereof. ANY CAUSE OF ACTION
+      AGAINST FIRELY, REGARDLESS WHETHER IN CONTRACT, TORT OR OTHERWISE,
+      MUST COMMENCE WITHIN ONE (1) YEAR AFTER THE CAUSE OF ACTION ACCRUES.
+      OTHERWISE, SUCH CAUSE OF ACTION IS PERMANENTLY BARRED.
 
-**All other Customers (Sections 15(c)-15(e))**
+   **All other Customers (Sections 15(c)-15(e))**
 
-c. Unless stated otherwise in writing, this Agreement and any contract
-   between the Parties shall be governed by and construed in accordance
-   with the laws of the Netherlands, and without giving effect to the
-   United Nations Convention on the Contracts for the International Sale
-   of Goods.
+   c. Unless stated otherwise in writing, this Agreement and any contract
+      between the Parties shall be governed by and construed in accordance
+      with the laws of the Netherlands, and without giving effect to the
+      United Nations Convention on the Contracts for the International Sale
+      of Goods.
+   
+   d. The Parties agree that any and all disputes, claims or controversies
+      arising out of or relating to this Agreement and any contract shall
+      first be submitted to the Foundation for the Settlement of Automation
+      Disputes (Stichting Geschillenoplossing Automatisering),
+      (http://sgoa.eu/en/ with offices in Heemstede, the Netherlands)
+      (SGOA) or its successor, for ICT Mediation. The other Party must
+      actively participate in the ICT Mediation, which means attending one
+      joint meeting between the mediator(s) and the Parties. Each Party may
+      terminate the ICT Mediation procedure at any time following the joint
+      meeting. Notwithstanding this Section, either Party may seek
+      preliminary relief through arbitral proceedings or in a court of law,
+      and may take conservatory measures (e.g., attachment) if necessary.
+   
+   e. Any dispute, controversy or claim arising out of or relating to this
+      Agreement or any contract, or the breach, termination, enforcement,
+      interpretation or validity thereof, including the determination of
+      the scope or applicability of this agreement to arbitrate, which is
+      not resolved through mediation, will be referred to and finally
+      determined by arbitration in accordance with the Arbitration Rules of
+      SGOA, or its successor. The seat of the arbitration will be
+      Heemstede, the Netherlands. The arbitration shall be administered for
+      a single arbitrator. The language to be used in the arbitral
+      proceeding will be English. Judgment upon the award rendered by the
+      arbitrator may be entered by any court having jurisdiction thereof.
+      ANY CAUSE OF ACTION AGAINST FIRELY, REGARDLESS WHETHER IN CONTRACT,
+      TORT OR OTHERWISE, MUST COMMENCE WITHIN ONE (1) YEAR AFTER THE CAUSE
+      OF ACTION ACCRUES. OTHERWISE, SUCH CAUSE OF ACTION IS PERMANENTLY
+      BARRED. Either Party may seek preliminary relief through arbitral
+      proceedings or in a court of law, and may take conservatory measures
+      (e.g., attachment) if necessary.
 
-d. The Parties agree that any and all disputes, claims or controversies
-   arising out of or relating to this Agreement and any contract shall
-   first be submitted to the Foundation for the Settlement of Automation
-   Disputes (Stichting Geschillenoplossing Automatisering),
-   (http://sgoa.eu/en/ with offices in Heemstede, the Netherlands)
-   (SGOA) or its successor, for ICT Mediation. The other Party must
-   actively participate in the ICT Mediation, which means attending one
-   joint meeting between the mediator(s) and the Parties. Each Party may
-   terminate the ICT Mediation procedure at any time following the joint
-   meeting. Notwithstanding this Section, either Party may seek
-   preliminary relief through arbitral proceedings or in a court of law,
-   and may take conservatory measures (e.g., attachment) if necessary.
-
-e. Any dispute, controversy or claim arising out of or relating to this
-   Agreement or any contract, or the breach, termination, enforcement,
-   interpretation or validity thereof, including the determination of
-   the scope or applicability of this agreement to arbitrate, which is
-   not resolved through mediation, will be referred to and finally
-   determined by arbitration in accordance with the Arbitration Rules of
-   SGOA, or its successor. The seat of the arbitration will be
-   Heemstede, the Netherlands. The arbitration shall be administered for
-   a single arbitrator. The language to be used in the arbitral
-   proceeding will be English. Judgment upon the award rendered by the
-   arbitrator may be entered by any court having jurisdiction thereof.
-   ANY CAUSE OF ACTION AGAINST FIRELY, REGARDLESS WHETHER IN CONTRACT,
-   TORT OR OTHERWISE, MUST COMMENCE WITHIN ONE (1) YEAR AFTER THE CAUSE
-   OF ACTION ACCRUES. OTHERWISE, SUCH CAUSE OF ACTION IS PERMANENTLY
-   BARRED. Either Party may seek preliminary relief through arbitral
-   proceedings or in a court of law, and may take conservatory measures
-   (e.g., attachment) if necessary.
-
-16. *Miscellaneous Provisions*
+16.  *Miscellaneous Provisions*
 
     a. *Notices*. All notices, requests, consents, claims, demands,
        waivers, and other communications hereunder shall be in writing
