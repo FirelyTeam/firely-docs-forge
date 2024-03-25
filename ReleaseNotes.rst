@@ -7,6 +7,34 @@
 
    OldReleaseNotes
 
+Release 31.1
+------------
+Changes
+^^^^^^^
+* Upgraded to Firely .NET SDK 5.7.0.
+
+  - Switched to using the new xml/json parsers from the SDK.
+* Upgraded to .NET 8.
+* Added check to prevent non-repeating, non-choice type elements from being sliced.
+* Show extension elements in order as specified by FHIR specification.
+* You can now change the version of an already installed packacge by selecting a different version and then click the **Add** button.
+  The current installed version is replaced by the newly selected version.
+* Added better reporting when there is an error starting Forge. 
+
+
+Bug fixes
+^^^^^^^^^
+* Forge now correctly processes files with an ampersand character (%) in the file name (e.g. MyPatient_%C3%A9.xml). 
+  Having files with a % in the file name would result in an error when trying to synchronize with Simplifier.
+* Changing a slicing rules value in derived profile to a less strict value than the base profile did not trigger an error.
+* The narrative html was not sanitized before displaying it in the preview window.
+* Forge would only support the short notation for author information in the the **package.json** file. 
+  Using the extended notation (i.e. with child properties) would result in Forge not being able to load the project folder.
+* After adding a complex extension to an element definition, cardinality corrections were not applied.
+* Opening a project with large dependencies was very slow. Package summary information is now cached to improve startup performance.
+* Shorthand definition for sliced choice type element was not handled correctly.
+* **[R5]** UI elements for the **binding.additional** element definition property were missing.
+
 Release 31.0.2
 --------------
 Bug fixes
@@ -241,44 +269,3 @@ Bug fixes
 
   - R4B - 4.3.0-snapshot1
   - R5 - 5.0.0-snapshot1
-
-Release 28.0
-------------
-Changes
-^^^^^^^
-* Upgrade to Firely .NET SDK 3.8.1.
-* Added support for synchronizing project files with Simplifier.net.
-  Removed Import from/Publish to Simplifer.net/FHIR Server.
-* Improved performance
-
-  - opening/closing files
-  - switching between tabs/documents
-  - editing with many documents opened
-  - editing profiles with many nested sections
-* Added support for multi selection in the project list for opening multiple files.
-* Added Reload/Save/Close All commands to the project context menu in the session bar.
-* Improved visual feedback for resources that cannot be opened.
-* The creation of modifier extensions is now possible.
-* The default path value for Discriminator type pattern is now set to $this.
-  Added $this and resolve() to the path dropdown list.
-* The Initialize global mappings option is now turned off by default.
-* Removed the shortcut option for adding fixing system and codes.
-* Moved release notes to https://docs.fire.ly/.
-
-Bug fixes
-^^^^^^^^^
-* Fixed various minor UI styling issues.
-* If a logical model violates sdf-1, Forge does not open the file. Illegal slicing elements are now removed.
-* Adding Extensions in Forge doesn't show the cardinality.
-* Forge gives errors when creating polymorphic elements in logical models.
-* Derived profile contains wrong Min cardinality even though it was not changed in regards to the base profile.
-* When creating an extension and limiting the value[x] the comment: "A stream of bytes, base64 encoded" is shown.
-* Missing invariant check txt-2 on Narrative.div.
-* Forge adds unexplainable slicing details in the differential.
-* Snapshot generator removes or ommits an extension when the element type has a custom profile.
-* After slicing a choice element and saving it, the names of the slices are reset to "no name" after reloading.
-* You could open the same project folder multiple times.
-* The project list view was not updated after creating a new Search Parameter or Operation Definition resource.
-* **[STU3]** Not possible to create/edit Logical Models in Forge 27.3.1.
-* **[R4-R5]** Extensions don't show in what context they are supposed to be used
-* **[R4-R5]** Forge allows definition of default values in Profiles. Constraint sdf-21 is now enforced.
