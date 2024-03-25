@@ -3,6 +3,47 @@
 Old release notes
 =================
 
+Release 28.0
+------------
+Changes
+^^^^^^^
+* Upgrade to Firely .NET SDK 3.8.1.
+* Added support for synchronizing project files with Simplifier.net.
+  Removed Import from/Publish to Simplifer.net/FHIR Server.
+* Improved performance
+
+  - opening/closing files
+  - switching between tabs/documents
+  - editing with many documents opened
+  - editing profiles with many nested sections
+* Added support for multi selection in the project list for opening multiple files.
+* Added Reload/Save/Close All commands to the project context menu in the session bar.
+* Improved visual feedback for resources that cannot be opened.
+* The creation of modifier extensions is now possible.
+* The default path value for Discriminator type pattern is now set to $this.
+  Added $this and resolve() to the path dropdown list.
+* The Initialize global mappings option is now turned off by default.
+* Removed the shortcut option for adding fixing system and codes.
+* Moved release notes to https://docs.fire.ly/.
+
+Bug fixes
+^^^^^^^^^
+* Fixed various minor UI styling issues.
+* If a logical model violates sdf-1, Forge does not open the file. Illegal slicing elements are now removed.
+* Adding Extensions in Forge doesn't show the cardinality.
+* Forge gives errors when creating polymorphic elements in logical models.
+* Derived profile contains wrong Min cardinality even though it was not changed in regards to the base profile.
+* When creating an extension and limiting the value[x] the comment: "A stream of bytes, base64 encoded" is shown.
+* Missing invariant check txt-2 on Narrative.div.
+* Forge adds unexplainable slicing details in the differential.
+* Snapshot generator removes or ommits an extension when the element type has a custom profile.
+* After slicing a choice element and saving it, the names of the slices are reset to "no name" after reloading.
+* You could open the same project folder multiple times.
+* The project list view was not updated after creating a new Search Parameter or Operation Definition resource.
+* **[STU3]** Not possible to create/edit Logical Models in Forge 27.3.1.
+* **[R4-R5]** Extensions don't show in what context they are supposed to be used
+* **[R4-R5]** Forge allows definition of default values in Profiles. Constraint sdf-21 is now enforced.
+
 Release 27.3.1
 --------------
 Bug fixes
