@@ -340,11 +340,13 @@ IS NOT A LEGITIMATE, AUTHORIZED COPY OF FIRELY’S SOFTWARE.**
     aware of any infringement of the Firely’s Intellectual Property
     Rights in the Software and fully cooperate with Firely in any legal
     action taken by Firely to enforce its Intellectual Property Rights.
+
 ..
 
 9.  *Payment*. All Fees payable for Commercial Use of a license shall be
     paid in advance in the manner set forth in the Order Form and are
     non-refundable, except as may be expressly set forth herein.
+
 ..
 
 10.  *Term and Termination*.
@@ -375,6 +377,7 @@ IS NOT A LEGITIMATE, AUTHORIZED COPY OF FIRELY’S SOFTWARE.**
        after its first log in. In case of (v), Firely shall send a
        communication to the Licensee’s email address registered with its
        Account.
+
 ..
 
 11. *Disclaimer*. THE SOFTWARE, INCLUDING ANY OPEN SOFTWARE COMPONENTS,
@@ -395,6 +398,7 @@ IS NOT A LEGITIMATE, AUTHORIZED COPY OF FIRELY’S SOFTWARE.**
     APPLICATIONS, SYSTEMS, OR SERVICES, OPERATE WITHOUT INTERRUPTION,
     MEET ANY PERFORMANCE OR RELIABILITY STANDARDS OR BE ERROR FREE, OR
     THAT ANY ERRORS OR DEFECTS CAN OR WILL BE CORRECTED.
+
 ..
 
 12.  *Limitation of Liability*. TO THE FULLEST EXTENT PERMITTED UNDER
@@ -427,6 +431,7 @@ IS NOT A LEGITIMATE, AUTHORIZED COPY OF FIRELY’S SOFTWARE.**
        SPECIFIC SERVICES THAT PRECEEDED THE DAMAGING EVENT. DAMAGES MAY
        ONLY BE CLAIMED IF REPORTED IN WRITING TO FIRELY AT MOST TWO (2)
        MONTHS AFTER DISCOVERED BY LICENSEE.
+
 ..
 
 13.  *Force Majeure*
@@ -459,6 +464,7 @@ IS NOT A LEGITIMATE, AUTHORIZED COPY OF FIRELY’S SOFTWARE.**
        Contract due to a Force Majeure Event. In case of a Force Majeure
        Event Firely shall have no obligation to compensate Licensee for
        any damages it suffers arising from such an event.
+
 ..
 
 14. *Export Regulation*. The Software may be subject to US export
@@ -472,6 +478,7 @@ IS NOT A LEGITIMATE, AUTHORIZED COPY OF FIRELY’S SOFTWARE.**
     obtaining any necessary export license or other governmental
     approval), prior to exporting, re-exporting, releasing, or otherwise
     making the Software available outside the US.
+
 ..
 
 15. *Applicable Law and Dispute Resolution*
@@ -607,11 +614,8 @@ IS NOT A LEGITIMATE, AUTHORIZED COPY OF FIRELY’S SOFTWARE.**
 
 SCHEDULE A: BILL OF MATERIALS
 
--  Firely .NET SDK dependencies can be found here:
-   https://github.com/FirelyTeam/firely-net-sdk/network/dependencies
+-  `Firely .NET SDK dependencies can be found here <https://github.com/FirelyTeam/firely-net-sdk/network/dependencies>`__
 
--  Forge dependencies can be found here:
-   https://docs.fire.ly/projects/Forge/Dependencies.html
+-  :ref:`Forge dependencies can be found here.<dependencies>`
 
--  Simplifier dependencies can be found here:
-   https://docs.fire.ly/projects/Simplifier/Dependencies.html
+-  :ref:`Simplifier dependencies can be found here.<simplifier_docs:dependencies>`

@@ -1,3 +1,5 @@
+.. _Dependencies:
+
 Dependencies of Forge and their licenses
 ========================================
 

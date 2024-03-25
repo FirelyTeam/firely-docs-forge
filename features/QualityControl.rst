@@ -9,8 +9,7 @@ In the Forge **Community Edition** you can only run **free** rules.
 Introduction
 ------------
 
-Please visit the :ref:`Simplifier
-documentation <simplifier_docs:QC>`
+Please visit the :ref:`Simplifier documentation <simplifier_docs:QC>`
 for an introduction to Quality Control: Validating FHIR Projects.
 
 You can access Quality Control from the **Quality Control** toolbar
