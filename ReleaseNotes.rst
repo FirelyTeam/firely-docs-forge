@@ -11,13 +11,14 @@ Release 31.1
 ------------
 Changes
 ^^^^^^^
+* Updated license agreement.
 * Upgraded to Firely .NET SDK 5.7.0.
 
-  - Switched to using the new xml/json parsers from the SDK.
+  - Switched to using the new xml/json parsers.
 * Upgraded to .NET 8.
 * Added check to prevent non-repeating, non-choice type elements from being sliced.
-* Show extension elements in order as specified by FHIR specification.
-* You can now change the version of an already installed packacge by selecting a different version and then click the **Add** button.
+* Show extension elements in order as specified by the FHIR specification.
+* You can now change the version of an already installed package by selecting a different version and then click the **Add** button.
   The current installed version is replaced by the newly selected version.
 * Added better reporting when there is an error starting Forge. 
 
@@ -34,6 +35,10 @@ Bug fixes
 * Opening a project with large dependencies was very slow. Package summary information is now cached to improve startup performance.
 * Shorthand definition for sliced choice type element was not handled correctly.
 * **[R5]** UI elements for the **binding.additional** element definition property were missing.
+
+Known issues
+^^^^^^^^^^^^
+* Quality Control currently crashes when processing rules related to claims.
 
 Release 31.0.2
 --------------
