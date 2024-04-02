@@ -16,6 +16,7 @@ Changes
 
   - Switched to using the new xml/json parsers.
 * Upgraded to .NET 8.
+* **Recent Documents** feature has been split into **Recent Files** and **Recent Projects**.
 * Added check to prevent non-repeating, non-choice type elements from being sliced.
 * Show extension elements in order as specified by the FHIR specification.
 * You can now change the version of an already installed package by selecting a different version and then click the **Add** button.
