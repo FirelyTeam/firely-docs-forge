@@ -44,7 +44,7 @@ Select **hl7.fhir.us.core** in the list and then select package version
 
 .. figure:: ../images/DerivedAddPackage.png
    :alt: Add a core package
-   :width: 830
+   :width: 850
 
 Click the ``Project`` tab to see what packages are installed. Notice
 that dependent packages are installed too.

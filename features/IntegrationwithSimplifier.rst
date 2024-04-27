@@ -21,7 +21,7 @@ the project toolbar.
 
 .. figure:: ../images/SyncStartPanel.png
    :alt: Start panel
-   :width: 350
+   :width: 324
 
 The ``Project`` tab contains a toolbar with additional Simplifier
 options.

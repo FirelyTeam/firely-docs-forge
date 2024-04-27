@@ -13,19 +13,42 @@ Changes
 ^^^^^^^
 * Updated license agreement.
 * Upgraded to Firely .NET SDK 5.7.0.
-
-  - Switched to using the new xml/json parsers.
 * Upgraded to .NET 8.
+* Added **Project Settings** dialog to project menu. Options are:
+
+  - Resolve resources from subfolders
+  - Preferred file format (XML or JSON)
+
+  Note that these options have been removed from the **Open FHIR Project Folder** dialog.
+* Added **Create new FHIR Project Folder** wizard. 
+  Here you can set the parent folder for your FHIR projects, enter a project name and change project settings.
+  The core package will be added automatically to your new project.
+* Forge can now show the JSON serialization of the selected resource.
+
+  - Added **Show file preview tab** option to the application settings. Choices are:
+
+    - XML + JSON
+    - Same as source
+    - None
+  - The tab representing the file format of the resource is displayed in bold when **XML + JSON** is selected.
+  - The color scheme of XML/JSON text has been improved (matches Simplifier color scheme).
+  - XML/JSON elements with canonical URLs are displayed underlined and can be clicked. If the URL can be resolved in the project then the associated resource is opened in Forge. Otherwise, the URL is opened in the default web browser.
+  - The font size of the XML/JSON text now changes when the font size of the rest of the application changes.
+  - The setting **XML Folding** has been renamed to **Show XML/JSON node expand button**. 
 * **Recent Documents** feature has been split into **Recent Files** and **Recent Projects**.
+* Structure definition resources without a FHIR version specification can now be opened with Forge.
+  The resource is parsed and validated using the FHIR version of the Forge version you are using.
 * Added check to prevent non-repeating, non-choice type elements from being sliced.
 * Show extension elements in order as specified by the FHIR specification.
 * You can now change the version of an already installed package by selecting a different version and then click the **Add** button.
   The current installed version is replaced by the newly selected version.
 * Added better reporting when there is an error starting Forge. 
 
-
 Bug fixes
 ^^^^^^^^^
+* Opening a project with large dependencies was very slow. Package summary information is now cached to improve startup performance.
+* When adding an extension to a sliced element an error message would popup and in some case the added extension would not be correct.
+* When adding a non-complex extension that you created yourself, the type icon was incorrectly shown to be a complex extension
 * Forge now correctly processes files with an ampersand character (%) in the file name (e.g. MyPatient_%C3%A9.xml). 
   Having files with a % in the file name would result in an error when trying to synchronize with Simplifier.
 * Changing a slicing rules value in derived profile to a less strict value than the base profile did not trigger an error.
@@ -33,9 +56,12 @@ Bug fixes
 * Forge would only support the short notation for author information in the the **package.json** file. 
   Using the extended notation (i.e. with child properties) would result in Forge not being able to load the project folder.
 * After adding a complex extension to an element definition, cardinality corrections were not applied.
-* Opening a project with large dependencies was very slow. Package summary information is now cached to improve startup performance.
 * Shorthand definition for sliced choice type element was not handled correctly.
+* The project list view can now show files with the same name but with different extensions.
+* Fixed various minor UI (styling) issues.
+* **[STU3]** The type of the root element of a resource is now displayed correctly. For example a Patient was displayed as Resource.
 * **[R5]** UI elements for the **binding.additional** element definition property were missing.
+* **[R5]** The **Identifier** property was missing from the UI for **Operation definition** resources.
 
 Known issues
 ^^^^^^^^^^^^

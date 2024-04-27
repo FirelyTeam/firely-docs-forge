@@ -6,17 +6,17 @@ Forge provides several options regarding rendering and saving in the
 
 .. figure:: ../images/OptionsForge.png
    :alt: The options menu in Forge
-   :width: 501
+   :width: 554
 
-Settings
---------
+Application Settings
+--------------------
 
 User Interface
 ~~~~~~~~~~~~~~
 
 .. figure:: ../images/Settings_UserInterface.png
    :alt: The user interface settings
-   :width: 527
+   :width: 574
 
 -  **Night Time**
 
@@ -34,21 +34,38 @@ User Interface
 
        - *Night Time On*
 
--  **Xml Folding**
+-  **Force garbage collection on unload**
 
-   When turned on allows you to collapse and expand nodes in the **XML viewer**.
+   When switched on this option will try to free up system memory when you close a document.
+
+-  **Disable hardware rendering**
+
+   If you encounter rendering issues with the Forge user interface then those are most likely caused by the video driver.
+   In that case you can turn off hardware rendering.
+
+-  **Show file preview tab**
+
+   Forge has three options that allow you to specify how the file serialization preview of a resource is presented:
+
+   - XML + JSON
+   - Same as source
+   - None
+
+-  **Show XML/JSON node expand button**
+
+   When turned on allows you to collapse and expand nodes in the **XML** and **JSON** viewer.
 
  .. list-table:: 
 
      * - .. image:: ../images/Settings_XmlFolding_Off.png
-            :width: 536
+            :width: 628
 
        - .. image:: ../images/Settings_XmlFolding_On.png
-            :width: 536
+            :width: 628
 
-     * - *Xml Folding Off*
+     * - *Show XML/JSON node expand button Off*
 
-       - *Xml Folding On*
+       - *Show XML/JSON node expand button On*
 
 -  **Show common resource elements (id, meta, ...)**
 
@@ -100,15 +117,6 @@ User Interface
 
        - *Expand constrained elements On*
 
--  **Force garbage collection on unload**
-
-   When switched on this option will try to free up system memory when you close a document.
-
--  **Disable hardware rendering**
-
-   If you encounter rendering issues with the Forge user interface then those are most likely caused by the video driver.
-   In that case you can turn off hardware rendering.
-
 -  **Element Tree modified style**
 
    Selects how modified elements in the **Element Tree** are displayed.
@@ -130,15 +138,7 @@ Persistence
 
 .. figure:: ../images/Settings_Persistence.png
    :alt: The persistence settings
-   :width: 527
-
--  **Resolve resources from subfolders**
-
-   Indicates the default setting for whether or not subfolders should be included when searching for resources in your project folder.
-   You can always change the setting in the **Open FHIR Project Folder** dialog.
-
- .. image:: ../images/Settings_IncludeSubfolders.png
-    :width: 787
+   :width: 574
 
 -  **Auto update publication data**
 
@@ -177,7 +177,7 @@ FHIR
 
 .. figure:: ../images/Settings_FHIR.png
    :alt: The FHIR settings
-   :width: 526
+   :width: 574
 
 -  **Validate FHIRPath expressions**
 
@@ -188,22 +188,23 @@ FHIR
    When creating a new profile this option will copy all the mappings from the base profile to the new profile.
 
  .. image:: ../images/Settings_GlobalMappings.png
-    :width: 382
+    :width: 439
 
--  **Discard DomainResource.text values**
+
+-  **Discard DomainResource.text values*
 
    When this option is checked the **text** element of a **DomainResource** is cleared when it is opened.
    In effect this will clear the **Narrative** of your resource.
 
  .. image:: ../images/Settings_DiscardResourceText.png
-    :width: 431
+    :width: 490
 
 Folders
 ~~~~~~~
 
 .. figure:: ../images/Settings_Folders.png
    :alt: The folders settings
-   :width: 526
+   :width: 573
 
 -  **Parent folder FHIR projects**
 
