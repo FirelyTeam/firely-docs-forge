@@ -191,7 +191,7 @@ FHIR
     :width: 439
 
 
--  **Discard DomainResource.text values*
+-  **Discard DomainResource.text values** 
 
    When this option is checked the **text** element of a **DomainResource** is cleared when it is opened.
    In effect this will clear the **Narrative** of your resource.
