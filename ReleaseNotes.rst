@@ -48,7 +48,6 @@ Bug fixes
 ^^^^^^^^^
 * Opening a project with large dependencies was very slow. Package summary information is now cached to improve startup performance.
 * When adding an extension to a sliced element an error message would popup and in some case the added extension would not be correct.
-* When adding a non-complex extension that you created yourself, the type icon was incorrectly shown to be a complex extension
 * Forge now correctly processes files with an ampersand character (%) in the file name (e.g. MyPatient_%C3%A9.xml). 
   Having files with a % in the file name would result in an error when trying to synchronize with Simplifier.
 * Changing a slicing rules value in derived profile to a less strict value than the base profile did not trigger an error.
