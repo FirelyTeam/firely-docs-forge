@@ -62,10 +62,6 @@ Bug fixes
 * **[R5]** UI elements for the **binding.additional** element definition property were missing.
 * **[R5]** The **Identifier** property was missing from the UI for **Operation definition** resources.
 
-Known issues
-^^^^^^^^^^^^
-* Quality Control currently crashes when processing rules related to claims.
-
 Release 31.0.2
 --------------
 Bug fixes
