@@ -12,7 +12,7 @@ Release 32.0
 Changes
 ^^^^^^^
 * Updated license agreement.
-* Upgraded to Firely .NET SDK 5.8.0.
+* Upgraded to Firely .NET SDK 5.8.1.
 * Upgraded to .NET 8.
 * Added **Project Settings** dialog to project menu. Options are:
 
