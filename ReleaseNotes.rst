@@ -47,6 +47,9 @@ Changes
 Bug fixes
 ^^^^^^^^^
 * Opening a project with large dependencies was very slow. Package summary information is now cached to improve startup performance.
+* Forge did not serialize date/time information in a region/language independent way when caching resource and summary information on disk. 
+  This would result in an error message similar to: '2024-04-22T08.41.08.303414+00:00' cannot be parsed as an instant.
+  It only affects Windows users that have a regional date/time setting that is incompatible with the FHIR standard (e.g. Finish).
 * When adding an extension to a sliced element an error message would popup and in some case the added extension would not be correct.
 * Forge now correctly processes files with an ampersand character (%) in the file name (e.g. MyPatient_%C3%A9.xml). 
   Having files with a % in the file name would result in an error when trying to synchronize with Simplifier.
