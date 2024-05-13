@@ -33,7 +33,7 @@ profile.
 
 .. figure:: ../images/ElementNarrative.png
    :alt: The Narrative overview in Forge
-   :width: 815
+   :width: 817
 
 Element Tree and Element Grid
 -----------------------------
@@ -59,14 +59,18 @@ Element Grid
    :alt: The Element Grid overview in Forge
    :width: 1080
 
-XML viewer
-----------
+XML and JSON viewer
+-------------------
 
-The ``XML`` tab is the XML viewer of the current profile. The XML viewer
-only shows the differential. A snapshot can be obtained by saving your
+The ``XML`` and ``JSON`` tabs are used to view the XML and JSON serialization of the current profile. The tabs
+only show the differential. A snapshot can be obtained by saving your
 work after the option **Save snapshot component** is checked in the
 ``Persistence`` tab in the ``Settings`` dialog (``Options`` menu).
 
 .. figure:: ../images/ElementXml.png
    :alt: The Element XML overview in Forge
-   :width: 516
+   :width: 603
+
+.. figure:: ../images/ElementJson.png
+   :alt: The Element JSON overview in Forge
+   :width: 687

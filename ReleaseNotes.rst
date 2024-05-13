@@ -7,6 +7,64 @@
 
    OldReleaseNotes
 
+Release 32.0
+------------
+Changes
+^^^^^^^
+* Updated license agreement.
+* Upgraded to Firely .NET SDK 5.8.1.
+* Upgraded to .NET 8.
+* Added **Project Settings** dialog to project menu. Options are:
+
+  - Resolve resources from subfolders
+  - Preferred file format (XML or JSON)
+
+  Note that these options have been removed from the **Open FHIR Project Folder** dialog.
+* Added **Create new FHIR Project Folder** wizard. 
+  Here you can set the parent folder for your FHIR projects, enter a project name and change project settings.
+  The core package will be added automatically to your new project.
+* Forge can now show the JSON serialization of the selected resource.
+
+  - Added **Show file preview tab** option to the application settings. Choices are:
+
+    - XML + JSON
+    - Same as source
+    - None
+  - The tab representing the file format of the resource is displayed in bold when **XML + JSON** is selected.
+  - The color scheme of XML/JSON text has been improved (matches Simplifier color scheme).
+  - XML/JSON elements with canonical URLs are displayed underlined and can be clicked. If the URL can be resolved in the project then the associated resource is opened in Forge. Otherwise, the URL is opened in the default web browser.
+  - The font size of the XML/JSON text now changes when the font size of the rest of the application changes.
+  - The setting **XML Folding** has been renamed to **Show XML/JSON node expand button**. 
+* **Recent Documents** feature has been split into **Recent Files** and **Recent Projects**.
+* Structure definition resources without a FHIR version specification can now be opened with Forge.
+  The resource is parsed and validated using the FHIR version of the Forge version you are using.
+* Added check to prevent non-repeating, non-choice type elements from being sliced.
+* Show extension elements in order as specified by the FHIR specification.
+* You can now change the version of an already installed package by selecting a different version and then click the **Add** button.
+  The current installed version is replaced by the newly selected version.
+* Added better reporting when there is an error starting Forge. 
+
+Bug fixes
+^^^^^^^^^
+* Opening a project with large dependencies was very slow. Package summary information is now cached to improve startup performance.
+* Forge did not serialize date/time information in a region/language independent way when caching resource and summary information on disk. 
+  This would result in an error message similar to: '2024-04-22T08.41.08.303414+00:00' cannot be parsed as an instant.
+  It only affects Windows users that have a regional date/time setting that is incompatible with the FHIR standard (e.g. Finish).
+* When adding an extension to a sliced element an error message would popup and in some case the added extension would not be correct.
+* Forge now correctly processes files with an ampersand character (%) in the file name (e.g. MyPatient_%C3%A9.xml). 
+  Having files with a % in the file name would result in an error when trying to synchronize with Simplifier.
+* Changing a slicing rules value in derived profile to a less strict value than the base profile did not trigger an error.
+* The narrative html was not sanitized before displaying it in the preview window.
+* Forge would only support the short notation for author information in the the **package.json** file. 
+  Using the extended notation (i.e. with child properties) would result in Forge not being able to load the project folder.
+* After adding a complex extension to an element definition, cardinality corrections were not applied.
+* Shorthand definition for sliced choice type element was not handled correctly.
+* The project list view can now show files with the same name but with different extensions.
+* Fixed various minor UI (styling) issues.
+* **[STU3]** The type of the root element of a resource is now displayed correctly. For example a Patient was displayed as Resource.
+* **[R5]** UI elements for the **binding.additional** element definition property were missing.
+* **[R5]** The **Identifier** property was missing from the UI for **Operation definition** resources.
+
 Release 31.0.2
 --------------
 Bug fixes
@@ -241,44 +299,3 @@ Bug fixes
 
   - R4B - 4.3.0-snapshot1
   - R5 - 5.0.0-snapshot1
-
-Release 28.0
-------------
-Changes
-^^^^^^^
-* Upgrade to Firely .NET SDK 3.8.1.
-* Added support for synchronizing project files with Simplifier.net.
-  Removed Import from/Publish to Simplifer.net/FHIR Server.
-* Improved performance
-
-  - opening/closing files
-  - switching between tabs/documents
-  - editing with many documents opened
-  - editing profiles with many nested sections
-* Added support for multi selection in the project list for opening multiple files.
-* Added Reload/Save/Close All commands to the project context menu in the session bar.
-* Improved visual feedback for resources that cannot be opened.
-* The creation of modifier extensions is now possible.
-* The default path value for Discriminator type pattern is now set to $this.
-  Added $this and resolve() to the path dropdown list.
-* The Initialize global mappings option is now turned off by default.
-* Removed the shortcut option for adding fixing system and codes.
-* Moved release notes to https://docs.fire.ly/.
-
-Bug fixes
-^^^^^^^^^
-* Fixed various minor UI styling issues.
-* If a logical model violates sdf-1, Forge does not open the file. Illegal slicing elements are now removed.
-* Adding Extensions in Forge doesn't show the cardinality.
-* Forge gives errors when creating polymorphic elements in logical models.
-* Derived profile contains wrong Min cardinality even though it was not changed in regards to the base profile.
-* When creating an extension and limiting the value[x] the comment: "A stream of bytes, base64 encoded" is shown.
-* Missing invariant check txt-2 on Narrative.div.
-* Forge adds unexplainable slicing details in the differential.
-* Snapshot generator removes or ommits an extension when the element type has a custom profile.
-* After slicing a choice element and saving it, the names of the slices are reset to "no name" after reloading.
-* You could open the same project folder multiple times.
-* The project list view was not updated after creating a new Search Parameter or Operation Definition resource.
-* **[STU3]** Not possible to create/edit Logical Models in Forge 27.3.1.
-* **[R4-R5]** Extensions don't show in what context they are supposed to be used
-* **[R4-R5]** Forge allows definition of default values in Profiles. Constraint sdf-21 is now enforced.

@@ -16,13 +16,13 @@ the application. After installation of a new release, you will receive
 automatic update notifications when you start the application.
 
 Forge is built with the `Microsoft .NET Framework 4.7.2, .NET
-7 <https://dotnet.microsoft.com/learn/dotnet/what-is-dotnet>`__ and
+8 <https://dotnet.microsoft.com/learn/dotnet/what-is-dotnet>`__ and
 `WPF <https://visualstudio.microsoft.com/vs/features/wpf/>`__. The
 ClickOnce installer will download and install the .NET Framework 4.7.2
-if necessary. Forge itself will download and install .NET 7 if
+if necessary. Forge itself will download and install .NET 8 if
 necessary.
 
-.. Attention:: Installing or updating the .NET Framework or .NET 7 requires
+.. Attention:: Installing or updating the .NET Framework or .NET 8 requires
    administrator permissions. If you have insufficient permissions,
    please contact your system administrator.
 
