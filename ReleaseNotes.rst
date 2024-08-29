@@ -7,6 +7,13 @@
 
    OldReleaseNotes
 
+Release 32.0.1
+--------------
+Bug fixes
+^^^^^^^^^
+* Fixed regression bug introduced in version 31.0 that could result in slice intro information from the base profile not being used for the derived profile.
+  In those cases the derived profile would get default slice intro information.
+
 Release 32.0
 ------------
 Changes
