@@ -7,6 +7,13 @@
 
    OldReleaseNotes
 
+Release 32.0.1
+--------------
+Bug fixes
+^^^^^^^^^
+* Fixed regression bug introduced in version 31.0 regarding sliced elements that could result in the slicing rules value from the base profile not being used for the derived profile.
+  In those cases the slicing rules value for the derived profile would always be set to **open**.
+
 Release 32.0
 ------------
 Changes
