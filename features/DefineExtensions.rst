@@ -102,3 +102,101 @@ extensions by clicking ``Filter`` to turn off filtering.
 .. figure:: ../images/SelectExtensionFilter.png
    :alt: Showing only compatible extensions in Forge
    :width: 359
+
+Add the extension to an element property
+----------------------------------------
+
+In addition to adding extensions to elements in the Element Tree of your profile
+you can also add extensions to some of the element properties.
+
+.. figure:: ../images/ElementPropertiesExtension.png
+   :alt: Extensions on element properties
+   :width: 673
+
+If an element property can be extended then a details button is shown next to it. 
+The color indicates if the element property has extensions:
+
+-  |No extensions| The element property does not have any extensions.
+-  |Inherited extensions| The element property has one or more inherited extensions.
+-  |Constrained extensions| The element property has one or more constrained extensions.
+
+Extensions on element properties are supported for:
+
+- Primitive types
+
+  - string
+  - markdown
+- Data types
+
+  - Address
+  - Coding
+  - CodeableConcept
+  - ElementDefinition
+  - UsageContext
+- Element definition components
+
+  - Base
+  - Binding
+
+    - Additional **(R5)** 
+  - Slicing
+  - Type
+
+You can view and edit extensions by clicking on the details button.
+To hide the extensions just click on the details buttton again.
+The following buttons are available to add a new extension to the element property:
+
+.. figure:: ../images/ElementPropertiesExtensionButtons.png
+   :alt: Buttons for adding a new extension to the element property
+   :width: 180
+
+The ``+`` button creates a new empty extension. 
+The ``+ Select...`` button opens a dialog showing the matching extensions that are available in your project folder.
+The |Translation extension| button is only available for **string** and **markdown** properties and provides a shortcut for the translation extension.
+
+For simple extensions only the **value** field is available.
+
+.. figure:: ../images/ExtensionSimple.png
+   :alt: Simple extension
+   :width: 385
+
+Complex extensions contain elements that can either be value fields or child extension slices. 
+If an element has a maximum cardinality of 1 then the element is always shown even if it is optional (you can leave it empty). 
+If an element has a maximum cardinality higher than 1 then the element is a child extension slice and it will be listed in the
+``Add slice`` dropdown box. You can add a new child extension slice by selecting the appropriate
+child extension slice name from the list.
+
+.. figure:: ../images/ExtensionComplex.png
+   :alt: Complex extension
+   :width: 335
+
+Show Element Properties Details
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To quickly show or hide extensions globally on all element properties you can use one of the following commands
+from the ``Options`` menu.
+
+.. figure:: ../images/ShowElementPropertiesDetails.png
+   :alt: Show element properties details
+   :width: 564
+
+- **On command only** (Ctrl+1)
+
+  Extensions are only displayed when you click the details button next to the element property.
+- **When Constrained** (Ctrl+2)
+
+  Extensions are displayed when they have one or more constraints. This is the default selection.
+- **When Constrained Or Inherited** (Ctrl+3)
+
+  Extensions are displayed when they have one or more constraints or when the base profile has defined one or more extensions.
+- **Element Id** (Ctrl+4)
+
+  Show or hide all **Element Id** fields for extensions. By default **Element Id** fields for extensions are hidden.
+  
+  .. image:: ../images/ExtensionElementId.png
+    :width: 488
+
+.. |No extensions| image:: ../images/DetailsEmpty.png
+.. |Inherited extensions| image:: ../images/DetailsInherited.png
+.. |Constrained extensions| image:: ../images/DetailsConstrained.png
+.. |Translation extension| image:: ../images/TranslationExtension.png

@@ -6,7 +6,7 @@ Forge provides several options regarding rendering and saving in the
 
 .. figure:: ../images/OptionsForge.png
    :alt: The options menu in Forge
-   :width: 554
+   :width: 596
 
 Application Settings
 --------------------
@@ -34,14 +34,37 @@ User Interface
 
        - *Night Time On*
 
--  **Force garbage collection on unload**
+-  **Show element properties details**
 
-   When switched on this option will try to free up system memory when you close a document.
+   - **On command only** (Ctrl+1)
 
--  **Disable hardware rendering**
+     Extensions are only displayed when you click the details button next to the element property.
+   - **When Constrained** (Ctrl+2)
 
-   If you encounter rendering issues with the Forge user interface then those are most likely caused by the video driver.
-   In that case you can turn off hardware rendering.
+     Extensions are displayed when they have one or more constraints. This is the default selection.
+   - **When Constrained Or Inherited** (Ctrl+3)
+
+     Extensions are displayed when they have one or more constraints or when the base profile has defined one or more extensions.
+
+   - **Element Id** (Ctrl+4)
+
+     Show or hide all **Element Id** fields for extensions. By default **Element Id** fields for extensions are hidden.
+
+-  **Element tree modified style**
+
+   Selects how modified elements in the **Element Tree** are displayed.
+
+ .. list-table:: 
+
+     * - .. image:: ../images/Settings_ModifiedStyle_Dimmed.png
+            :width: 425
+
+       - .. image:: ../images/Settings_ModifiedStyle_Pen.png
+            :width: 425
+
+     * - *Unmodified elements are displayed dimmed*
+
+       - *Modified elements are indicated with a pen*
 
 -  **Show file preview tab**
 
@@ -117,21 +140,18 @@ User Interface
 
        - *Expand constrained elements On*
 
--  **Element Tree modified style**
+-  **Expand all constrained extensions on element properties on load**
 
-   Selects how modified elements in the **Element Tree** are displayed.
+   This option will expand constrained extensions in the **Element Properties** panel when a resource is loaded.
 
- .. list-table:: 
+-  **Force garbage collection on unload**
 
-     * - .. image:: ../images/Settings_ModifiedStyle_Dimmed.png
-            :width: 425
+   When switched on this option will try to free up system memory when you close a document.
 
-       - .. image:: ../images/Settings_ModifiedStyle_Pen.png
-            :width: 425
+-  **Disable hardware rendering**
 
-     * - *Unmodified elements are displayed dimmed*
-
-       - *Modified elements are indicated with a pen*
+   If you encounter rendering issues with the Forge user interface then those are most likely caused by the video driver.
+   In that case you can turn off hardware rendering.
 
 Persistence
 ~~~~~~~~~~~
@@ -155,7 +175,10 @@ Persistence
 
 -  **Xml declaration**
 
-   Xml documents can contain an Xml declaration that if present, must be the first construct in the document and it looks like this: ``<?xml version="1.0" encoding="utf-8"?>``.
+   Xml documents can contain an Xml declaration that if present, must be the first construct in the document and it looks like this: 
+   
+   ``<?xml version="1.0" encoding="utf-8"?>``
+
    Forge has three options that allow you to specify when Xml declarations are saved to a resource:
 
    - Same as source
@@ -198,6 +221,10 @@ FHIR
 
  .. image:: ../images/Settings_DiscardResourceText.png
     :width: 490
+
+-  **Repeat slicing discriminator** (R4)
+
+   Check this option to prevent **eld-1** validator warnings.
 
 Folders
 ~~~~~~~
