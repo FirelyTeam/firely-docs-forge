@@ -27,7 +27,6 @@ Changes
     - UsageContext
   - Element definition components
 
-    - Base
     - Binding
 
       - Additional **(R5)** 
