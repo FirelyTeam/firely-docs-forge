@@ -7,12 +7,12 @@
 
    OldReleaseNotes
 
-Release 2025.0.0
+Release 2025.0.1
 ----------------
 Changes
 ^^^^^^^
 * Upgraded to Firely .NET SDK 5.11.4.
-* Added partial support for extensions on element definition properties. Supported are:
+* Added partial support for extensions (like the **Obligation** and **Translation** extension) on element definition properties. You can add extensions on:
 
   - Primitive types
 
@@ -29,7 +29,7 @@ Changes
 
     - Binding
 
-      - Additional **(R5)** 
+      - **[R5]** Additional  
     - Slicing
     - Type
 
@@ -53,22 +53,44 @@ Changes
 
       - Show or hide all element id fields
       - Keyboard shortcut: **Ctrl+4**
-  - Expand all constrained extensions on element properties on load
+  - Expand all constrained extensions on element properties on load.
 
-* On the root element of a resource, show the name of the base resource instead of the type name
-* Updated **Quality Control** to the latest version
-* Added support for repeating discriminators in the differential as an option in the settings
+* On the root element of a resource, show the name of the base resource instead of the type name.
+* Updated **Quality Control** to the latest version.
+* **[R4]** Added an option in the settings to repeat the discriminator in a slicing component in the differential when a slicing component is present.
+  This can be used to prevent **eld-1** validator warnings.
 * UI improvements
 
-  - Added a message with the busy indicator when appropriate
-  - Login, about and community edition dialog now scale with font size setting
-  - Added markdown status icon to indicate that the field supports markdown
-  - Updated the status icon for constrained elements
+  - Added a message with the busy indicator when appropriate.
+  - Login, about and community edition dialog now scale with font size setting.
+  - Added markdown status icon to indicate that the field supports markdown.
+  - Updated the status icon for constrained elements.
 
 Bug fixes
 ^^^^^^^^^
 * Slice name of a new slice is reset to 'no name' after unchecking a type.
-* Forge gives a null reference exception when a root folder is selected when opening or creating a project folder
+* Forge gives a null reference exception when a root folder is selected when opening or creating a project folder.
+* When a project has multiple dependencies with multiple versions of the same resource Forge did not resolve the most recent resource.
+
+Release 32.0.2
+--------------
+Changes
+^^^^^^^
+* When opening an extension definition resource, Forge checks the cardinality of elements to enforce *'An extension SHALL have either a value (i.e. a value[x] element) or sub-extensions, but not both.'*.
+  Any corrections Forge makes are now shown in the **Session Messages** panel.
+
+Bug fixes
+^^^^^^^^^
+* Fixed regression bug introduced in version 32.0 regarding using complex child elements when defining extensions.
+  Some of the elements were serialized to xml/json in the wrong order. 
+  Saving and reopening the extension would result in errors similar to this: 
+    *Element 'Extension.extension.extension' is not available in the corresponding resource*
+* Fixed incorrect removal of constrained extension elements from the differential.
+* When adding an extension to create a complex sub extension, the extension element was shown below the **value[x]** element but should
+  have been shown below the **id** element. After reloading the resource the extension was shown at the correct position.
+* Complex extension icon for an extension element was not updated after adding or removing sub-extension elements.
+* Forge now also checks the cardinality for **extension** elements in addition to **value[x]** elements to enforce *'An extension SHALL have either a value (i.e. a value[x] element) or sub-extensions, but not both.'*.
+  Elements **extension** and **value[x]** with cardinality 0..0 are no longer hidden in the **Element Tree**.
 
 Release 32.0.1
 --------------
