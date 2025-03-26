@@ -20,10 +20,10 @@ Bug fixes
   Some of the elements were serialized to xml/json in the wrong order. 
   Saving and reopening the extension would result in errors similar to this: 
     *Element 'Extension.extension.extension' is not available in the corresponding resource*
-* Fixed incorrect removal of constrained extension slice intro elements from the differential.
+* Fixed incorrect removal of constrained extension elements from the differential.
 * When adding an extension to create a complex sub extension, the extension element was shown below the **value[x]** element but should
   have been shown below the **id** element. After reloading the resource the extension was shown at the correct position.
-* Complex extension icon for an element was not updated after adding or removing sub-extension elements.
+* Complex extension icon for an extension element was not updated after adding or removing sub-extension elements.
 * Forge now also checks the cardinality for **extension** elements in addition to **value[x]** elements to enforce *'An extension SHALL have either a value (i.e. a value[x] element) or sub-extensions, but not both.'*.
   Empty elements are no longer hidden in the **Element Tree**.
 
