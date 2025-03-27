@@ -7,6 +7,26 @@
 
    OldReleaseNotes
 
+Release 32.0.2
+--------------
+Changes
+^^^^^^^
+* When opening an extension definition resource, Forge checks the cardinality of elements to enforce *'An extension SHALL have either a value (i.e. a value[x] element) or sub-extensions, but not both.'*.
+  Any corrections Forge makes are now shown in the **Session Messages** panel.
+
+Bug fixes
+^^^^^^^^^
+* Fixed regression bug introduced in version 32.0 regarding using complex child elements when defining extensions.
+  Some of the elements were serialized to xml/json in the wrong order. 
+  Saving and reopening the extension would result in errors similar to this: 
+    *Element 'Extension.extension.extension' is not available in the corresponding resource*
+* Fixed incorrect removal of constrained extension elements from the differential.
+* When adding an extension to create a complex sub extension, the extension element was shown below the **value[x]** element but should
+  have been shown below the **id** element. After reloading the resource the extension was shown at the correct position.
+* Complex extension icon for an extension element was not updated after adding or removing sub-extension elements.
+* Forge now also checks the cardinality for **extension** elements in addition to **value[x]** elements to enforce *'An extension SHALL have either a value (i.e. a value[x] element) or sub-extensions, but not both.'*.
+  Elements **extension** and **value[x]** with cardinality 0..0 are no longer hidden in the Element Tree.
+
 Release 32.0.1
 --------------
 Bug fixes
