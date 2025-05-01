@@ -7,6 +7,12 @@
 
    OldReleaseNotes
 
+Release 32.0.3
+--------------
+Changes
+^^^^^^^
+* Information for users on an Entry plan has been updated to reflect the upcoming changes in Entry plans and the new 60-day free trial.
+
 Release 32.0.2
 --------------
 Changes
