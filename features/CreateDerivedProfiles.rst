@@ -60,7 +60,7 @@ To create a derived profile for the US Core Patient, open the package
 
 .. figure:: ../images/DerivedUSCorePatient.png
    :alt: Derive profile
-   :width: 1246
+   :width: 1240
 
 Select the US Core Patient in the list and click ``Derive``.
 

@@ -47,7 +47,7 @@ Element Tree
 
 .. figure:: ../images/ElementTree.png
    :alt: The Element Tree overview in Forge
-   :width: 1054
+   :width: 928
 
 Via the ``Element Tree`` tab you can edit Element Properties, slice
 Elements, or add extensions.
@@ -57,7 +57,7 @@ Element Grid
 
 .. figure:: ../images/ElementGrid.png
    :alt: The Element Grid overview in Forge
-   :width: 1080
+   :width: 1189
 
 XML and JSON viewer
 -------------------

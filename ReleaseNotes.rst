@@ -7,7 +7,7 @@
 
    OldReleaseNotes
 
-Release 2025.0.1
+Release 2025.0.4
 ----------------
 Changes
 ^^^^^^^
@@ -55,22 +55,34 @@ Changes
       - Keyboard shortcut: **Ctrl+4**
   - Expand all constrained extensions on element properties on load.
 
+* Added support to ignore folders and files from your project folder when synchronizing your project to Simplifier.net. 
+  When you create a text file with the name **.simplifierupload** in the root of your project folder then Forge will exclude **untracked** files from
+  being uploaded to Simplifier.net. More information can be found `here <./features/IntegrationwithSimplifier.html#specifying-folders-and-or-files-to-ignore-when-uploading>`_.
 * On the root element of a resource, show the name of the base resource instead of the type name.
-* Updated **Quality Control** to the latest version.
+* Updated **Quality Control** to the latest version. The standard **free**, **minimal** and **recommended** rules have been updated to match the standard rules on Simplifier.
 * **[R4]** Added an option in the settings to repeat the discriminator in a slicing component in the differential when a slicing component is present.
   This can be used to prevent **eld-1** validator warnings.
+* The optional packages section of the **Create FHIR Project Folder** dialog has been updated to include the latest **hl7.fhir.uv.extensions** package by default.
+* When a project has dependencies where multiple versions of the same resource exist, Forge now always resolves to the most recent resource.
+  The **Extend element** dialog has been updated to use this information to hide older versions of the same extension.
+* The order in which resource elements are presented in the **Properties** tab has been consolidated across the various resource types. 
+* **[R5]** Added validation for constraints **eld-24** and **eld-27**.
 * UI improvements
 
   - Added a message with the busy indicator when appropriate.
   - Login, about and community edition dialog now scale with font size setting.
   - Added markdown status icon to indicate that the field supports markdown.
-  - Updated the status icon for constrained elements.
+  - Updated the status icon for elements 'that have or are affected by constraints'.
+  - Radio buttons now support tab navigation.
 
 Bug fixes
 ^^^^^^^^^
-* Slice name of a new slice is reset to 'no name' after unchecking a type.
-* Forge gives a null reference exception when a root folder is selected when opening or creating a project folder.
-* When a project has multiple dependencies with multiple versions of the same resource Forge did not resolve the most recent resource.
+* Slice name of a new slice was reset to 'no name' after unchecking a type.
+* Forge gave a null reference exception when a root folder was selected when opening or creating a project folder.
+* After removing an extension the extension parent cardinality was not recalculated.
+* In rare occasions entries in the **Recent Files** were cleared. 
+* Constraint **eld-14** and **eld-20** were not validated. Improved validation for constraint **eld-19**.
+* **[R4,R4B]** Constraint **eld-21** was not validated.
 
 Release 32.0.2
 --------------
@@ -143,7 +155,7 @@ Bug fixes
   This would result in an error message similar to: '2024-04-22T08.41.08.303414+00:00' cannot be parsed as an instant.
   It only affects Windows users that have a regional date/time setting that is incompatible with the FHIR standard (e.g. Finish).
 * When adding an extension to a sliced element an error message would popup and in some case the added extension would not be correct.
-* Forge now correctly processes files with an ampersand character (%) in the file name (e.g. MyPatient_%C3%A9.xml). 
+* Forge now correctly processes files with an ampersand character (%) in the file name (e.g. **MyPatient_%C3%A9.xml**). 
   Having files with a % in the file name would result in an error when trying to synchronize with Simplifier.
 * Changing a slicing rules value in derived profile to a less strict value than the base profile did not trigger an error.
 * The narrative html was not sanitized before displaying it in the preview window.

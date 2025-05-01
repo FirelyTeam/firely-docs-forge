@@ -16,7 +16,7 @@ in in the HL7 extension registry.
 
 .. figure:: ../images/PatientExtensionBirthPlace.png
    :alt: Editing an extension with Forge
-   :width: 1302
+   :width: 1243
 
 New extension
 -------------
@@ -29,7 +29,7 @@ context information for this new extension.
 
 .. figure:: ../images/PatientExtensionBirthPlaceContext.png
    :alt: Editing an extension context with Forge
-   :width: 1302
+   :width: 1243
 
 Provide this information in ``Properties`` tab of the extension. Context
 Type indicates if the extension extends a Resource, Datatype, Mapping or
@@ -50,7 +50,7 @@ relevant information in the properties section as well.
 
 .. figure:: ../images/SelectingExtensionContext.png
    :alt: Selecting Extension context in Forge
-   :width: 1302
+   :width: 1243
 
 Extension profile
 -----------------
@@ -66,7 +66,7 @@ a level lower than the selected element.
 
 .. figure:: ../images/ExtensionProfiling.png
    :alt: Adding and removing elements from an extension in Forge
-   :width: 491
+   :width: 508
 
 Add the extension to the profile
 --------------------------------
@@ -77,7 +77,7 @@ to your project folder or add a package to your project folder.
 
 .. figure:: ../images/AddPackage.png
    :alt: Adding a package to your project
-   :width: 726
+   :width: 797
 
 Select the element in the Element Tree of your profile where you want to
 add the extension. Then, click ``Extend`` which is shown in the tool
@@ -85,13 +85,13 @@ section above the element tree.
 
 .. figure:: ../images/SelectElement.png
    :alt: Adding an extension to a profile in Forge
-   :width: 462
+   :width: 474
 
 Forge shows the extensions that are available in your project folder.
 
 .. figure:: ../images/SelectExtension.png
    :alt: Adding an extension to a profile in Forge
-   :width: 1302
+   :width: 1243
 
 Note that you can only select extensions that are compatible with your
 context (e.g. when extending an AdverseEvent resource you can only

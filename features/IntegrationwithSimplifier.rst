@@ -282,3 +282,93 @@ project folder and Simplfiier.
 .. |Folder is empty| image:: ../images/FolderEmpty.png
 .. |Folder is not empty| image:: ../images/FolderFull.png
 .. |Folder already linked| image:: ../images/FolderSimplifier.png
+
+Specifying folders and/or files to ignore when uploading
+--------------------------------------------------------
+
+You can add a special file named **.simplifierupload** to the root of your project folder
+that specifies intentionally untracked files that Forge should ignore when uploading files to Simplifier. 
+Files already tracked by Forge are not affected. A file is tracked when it exists on Simplifier or 
+existed on Simplifier the last time you synchronized.
+
+The purpose of ignoring files is to ensure that certain files not tracked by Forge/Simplifier remain untracked.
+
+Pattern Format
+~~~~~~~~~~~~~~
+
+* A blank line matches no files, so it can serve as a separator for readability. 
+* A line starting with ``#`` serves as a comment.
+* A line starting with a pattern (e.g. ``*.txt``) **includes** matching files when uploading.
+* A line starting with ``!`` followed by a pattern (e.g. ``!*.txt``) **excludes** matching files when uploading.
+
+Include examples::
+
+   FHIR/IG/*
+   *.xml
+
+Exclude examples::
+
+   !FHIR/*.img
+   !*.cs
+   !FHIR/examples/*
+
+.. note:: If you have one or more inclusion patterns specified then by default all files **not** matching
+   any of your inclusion patterns are excluded and therefor **not** uploaded to Simplfier.
+
+The patterns that you can specify can use the following formats to match multiple files or directories.
+
+-  Exact directory or file name
+
+   * ``some-file.txt``
+   * ``path/to/file.txt`` 
+|vspace|
+
+-  Wildcards ``*`` in file and directory names that represent zero to many characters not including 
+   separator characters.
+
+  .. list-table:: 
+     :widths: 25 99
+     :header-rows: 1
+
+     * - Value
+       - Description
+     * - ``*.txt``
+       - All files with .txt file extension.
+     * - ``*.*``
+       - All files with an extension.
+     * - ``*``
+       - All files in top-level directory.
+     * - ``.*``
+       - File names beginning with '.'.
+     * - ``*word*``
+       - All files with 'word' in the filename.
+     * - ``readme.*``
+       - All files named 'readme' with any file extension.
+     * - ``styles/*.css``
+       - All files with extension '.css' in the directory 'styles/'.
+     * - ``scripts/*/*``
+       - All files in 'scripts/' or one level of subdirectory under 'scripts/'.
+     * - ``images*/*``
+       - All files in a folder with name that is or begins with 'images'.
+
+- Arbitrary directory depth (``/**/``).
+
+  .. list-table:: 
+     :widths: 40 99
+     :header-rows: 1
+
+     * - Value
+       - Description
+     * - ``**/*``
+       - All files in any subdirectory.
+     * - ``dir/``
+       - All files in any subdirectory under 'dir/'.
+     * - ``dir/**/*``
+       - All files in any subdirectory under 'dir/'.
+
+
+More (technical) information can be found on the Microsoft website on `File globbing in .NET <https://learn.microsoft.com/en-us/dotnet/core/extensions/file-globbing>`_.
+
+.. |vspace| raw:: latex
+
+   \vspace{5mm}

@@ -3,6 +3,8 @@
 
    * - Package
      - License
+   * - `CompilerAttributes <https://www.nuget.org/packages/CompilerAttributes>`__
+     - MIT
    * - `Firely.Fhir.Packages <https://www.nuget.org/packages/Firely.Fhir.Packages>`__
      - BSD-3-Clause
    * - `Hl7.Fhir.Base <https://www.nuget.org/packages/Hl7.Fhir.Base>`__
@@ -35,6 +37,8 @@
      - BSD-3-Clause
    * - `HtmlSanitizer <https://www.nuget.org/packages/HtmlSanitizer>`__
      - MIT
+   * - `Markdig <https://www.nuget.org/packages/Markdig>`__
+     - BSD-2-Clause
    * - `Microsoft-WindowsAPICodePack-Core <https://www.nuget.org/packages/Microsoft-WindowsAPICodePack-Core>`__
      - 
    * - `Microsoft-WindowsAPICodePack-Shell <https://www.nuget.org/packages/Microsoft-WindowsAPICodePack-Shell>`__
@@ -66,12 +70,6 @@
    * - `System.IdentityModel.Tokens.Jwt <https://www.nuget.org/packages/System.IdentityModel.Tokens.Jwt>`__
      - MIT
    * - `System.Net.Http.WinHttpHandler <https://www.nuget.org/packages/System.Net.Http.WinHttpHandler>`__
-     - MIT
-   * - `System.ServiceModel.Duplex <https://www.nuget.org/packages/System.ServiceModel.Duplex>`__
-     - MIT
-   * - `System.ServiceModel.Federation <https://www.nuget.org/packages/System.ServiceModel.Federation>`__
-     - MIT
-   * - `System.ServiceModel.NetTcp <https://www.nuget.org/packages/System.ServiceModel.NetTcp>`__
      - MIT
    * - `System.Text.Json <https://www.nuget.org/packages/System.Text.Json>`__
      - MIT
