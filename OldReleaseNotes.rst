@@ -321,10 +321,10 @@ Bug fixes
   that cannot be programatically derived from the core type definitions.
   FHIR R4 Technical Correction will address this issue by introducing improved system types declarations.
 
-* FOR-342 Hide SliceName property for type slice entry element
-  Only show the SliceName property for the actual type slices of type choice element ('[x]').
-  Forge will automatically generate standard sliceName when slice is constrained to a single datatype (`valueString').
-  Always hide the SliceName property for the original '[x]' element (even if constrained to a single type),
+* FOR-342 Hide SliceName property for type slice entry element 
+  Only show the SliceName property for the actual type slices of type choice element ("[x]").
+  Forge will automatically generate standard sliceName when slice is constrained to a single datatype ("valueString").
+  Always hide the SliceName property for the original "[x]" element (even if constrained to a single type),
   to prevent the author from inadvertently specifying a sliceName on the slice entry element itself.
 
 * FOR-344 sliced element can't be unsliced when cardinality is set to 0..0

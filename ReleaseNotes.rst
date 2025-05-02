@@ -84,6 +84,12 @@ Bug fixes
 * Constraint **eld-14** and **eld-20** were not validated. Improved validation for constraint **eld-19**.
 * **[R4,R4B]** Constraint **eld-21** was not validated.
 
+Release 32.0.3
+--------------
+Changes
+^^^^^^^
+* Information for users on an Entry plan has been updated to reflect the upcoming changes in Entry plans and the new 60-day free trial.
+
 Release 32.0.2
 --------------
 Changes
@@ -96,9 +102,9 @@ Bug fixes
 * Fixed regression bug introduced in version 32.0 regarding using complex child elements when defining extensions.
   Some of the elements were serialized to xml/json in the wrong order. 
   Saving and reopening the extension would result in errors similar to this: 
-    *Element 'Extension.extension.extension' is not available in the corresponding resource*
+* Element 'Extension.extension.extension' is not available in the corresponding resource*
 * Fixed incorrect removal of constrained extension elements from the differential.
-* When adding an extension to create a complex sub extension, the extension element was shown below the **value[x]** element but should
+* When adding an extension to create a complex sub extension, the extension element was shown below the **value[x]** element but should 
   have been shown below the **id** element. After reloading the resource the extension was shown at the correct position.
 * Complex extension icon for an extension element was not updated after adding or removing sub-extension elements.
 * Forge now also checks the cardinality for **extension** elements in addition to **value[x]** elements to enforce *'An extension SHALL have either a value (i.e. a value[x] element) or sub-extensions, but not both.'*.

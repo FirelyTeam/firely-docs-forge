@@ -26,13 +26,13 @@ and/or other (nested) backbone elements.
 
 .. figure:: ../images/LogicalModel-BackboneElement.png
    :alt: Editing a backbone element for a Logical Model in Forge
-   :width: 1015
+   :width: 1003
 
 A typed element is mapped to a FHIR datatype or resource profile.
 
 .. figure:: ../images/LogicalModel-TypedElement.png
    :alt: Editing a typed element for a Logical Model in Forge
-   :width: 998
+   :width: 1003
 
 You cannot introduce new child elements of a typed element, because they
 are implicitly defined by the element datatype profile.You also have the

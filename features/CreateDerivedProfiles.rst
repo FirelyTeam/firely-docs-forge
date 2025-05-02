@@ -73,7 +73,7 @@ is created and opened. You can now make your own modifications.
 
 .. figure:: ../images/DerivedUSCorePatientProfile.png
    :alt: US Core Patient profile
-   :width: 879
+   :width: 853
 
 Things to keep in mind are that you can only further constrain (or add
 extensions to) profiles. This means that each derived profile is more

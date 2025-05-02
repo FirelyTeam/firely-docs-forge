@@ -144,6 +144,18 @@ User Interface
 
    This option will expand constrained extensions in the **Element Properties** panel when a resource is loaded.
 
+ .. list-table:: 
+
+     * - .. image:: ../images/Settings_ExpandElementExtensions_Off.png
+            :width: 532
+
+       - .. image:: ../images/Settings_ExpandElementExtensions_On.png
+            :width: 532
+
+     * - *Expand constrained extensions on element properties Off*
+
+       - *Expand constrained extensions on element properties On*
+
 -  **Force garbage collection on unload**
 
    When switched on this option will try to free up system memory when you close a document.
