@@ -240,8 +240,8 @@ FHIR
 
 -  **Correct the content type for translation extensions to match the context in which they are used**
 
-   It is recommended to match the data type for the content property
-   of the translation extension with the data type of the property to which the translation extension was added.
+   It is recommended to match the data type for the content property of the translation extension,
+   with the data type of the property to which the translation extension was added.
 
 Folders
 ~~~~~~~
