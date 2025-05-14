@@ -16,7 +16,7 @@ User Interface
 
 .. figure:: ../images/Settings_UserInterface.png
    :alt: The user interface settings
-   :width: 574
+   :width: 703
 
 -  **Night Time**
 
@@ -170,7 +170,7 @@ Persistence
 
 .. figure:: ../images/Settings_Persistence.png
    :alt: The persistence settings
-   :width: 574
+   :width: 703
 
 -  **Auto update publication data**
 
@@ -212,7 +212,7 @@ FHIR
 
 .. figure:: ../images/Settings_FHIR.png
    :alt: The FHIR settings
-   :width: 574
+   :width: 703
 
 -  **Validate FHIRPath expressions**
 
@@ -234,16 +234,21 @@ FHIR
  .. image:: ../images/Settings_DiscardResourceText.png
     :width: 490
 
--  **Repeat slicing discriminator** (R4)
+-  **Repeat slicing discriminators om the differential to suppress eld-1 warnings** (R4)
 
    Check this option to prevent **eld-1** validator warnings.
+
+-  **Correct the content type for translation extensions to match the context in which they are used**
+
+   It is recommended to match the data type for the content property
+   of the translation extension with the data type of the property to which the translation extension was added.
 
 Folders
 ~~~~~~~
 
 .. figure:: ../images/Settings_Folders.png
    :alt: The folders settings
-   :width: 573
+   :width: 703
 
 -  **Parent folder FHIR projects**
 

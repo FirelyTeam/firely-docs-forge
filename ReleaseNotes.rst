@@ -7,11 +7,18 @@
 
    OldReleaseNotes
 
-Release 2025.0.4
+Release 2025.0.5
 ----------------
+
+.. important::
+   The Simplifier Entry plan no longer includes the use of Forge.
+   `You can start a 60-day free trial now <https://simplifier.net/explore/trial>`_ or `see what is the best plan for you <https://simplifier.net/pricing>`_.
+   If you are a FHIR trainer explaining Forge and Simplifier, then please `get in contact <https://simplifier.net/contact>`_
+   for a free trainers license and vouchers for your students.
+
 Changes
 ^^^^^^^
-* Upgraded to Firely .NET SDK 5.11.4.
+* Upgraded to Firely .NET SDK 5.11.6
 * Added partial support for extensions (like the **Obligation** and **Translation** extension) on element definition properties. You can add extensions on:
 
   - Primitive types
@@ -55,6 +62,9 @@ Changes
       - Keyboard shortcut: **Ctrl+4**
   - Expand all constrained extensions on element properties on load.
 
+* String and markdown properties have a dedicated **Add translation extension** button. 
+  In addition, the translation **content** property is checked to make sure the data type matches the data type of its parent property.
+  This correction behaviour can be turned off in the application settings but is turned on by default.
 * Added support to ignore folders and files from your project folder when synchronizing your project to Simplifier.net. 
   When you create a text file with the name **.simplifierupload** in the root of your project folder then Forge will exclude **untracked** files from
   being uploaded to Simplifier.net. More information can be found `here <./features/IntegrationwithSimplifier.html#specifying-folders-and-or-files-to-ignore-when-uploading>`_.
@@ -102,7 +112,8 @@ Bug fixes
 * Fixed regression bug introduced in version 32.0 regarding using complex child elements when defining extensions.
   Some of the elements were serialized to xml/json in the wrong order. 
   Saving and reopening the extension would result in errors similar to this: 
-* Element 'Extension.extension.extension' is not available in the corresponding resource*
+
+  *Element 'Extension.extension.extension' is not available in the corresponding resource*
 * Fixed incorrect removal of constrained extension elements from the differential.
 * When adding an extension to create a complex sub extension, the extension element was shown below the **value[x]** element but should 
   have been shown below the **id** element. After reloading the resource the extension was shown at the correct position.
