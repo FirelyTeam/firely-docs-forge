@@ -303,6 +303,8 @@ Ignored files and folders are indicated with the following icon: |Ignore Icon|
 Pattern Format
 ~~~~~~~~~~~~~~
 
+The format used is identical to the format used in :ref:`Simplifier to include/exclude files from being synced from GitHub to Simplifier<simplifier_docs:gh_include>`.
+
 * A blank line matches no files, so it can serve as a separator for readability. 
 * A line starting with ``#`` serves as a comment.
 * A line starting with a pattern (e.g. ``*.txt``) **includes** matching files when uploading.
