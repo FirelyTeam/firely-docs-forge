@@ -80,7 +80,7 @@ Changes
 * UI improvements
 
   - Added a message with the busy indicator when appropriate.
-  - Login, about and community edition dialog now scale with font size setting.
+  - Login and About dialog now scale with font size setting.
   - Added markdown status icon to indicate that the field supports markdown.
   - Updated the status icon for elements 'that have or are affected by constraints'.
   - Radio buttons now support tab navigation.

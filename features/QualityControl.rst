@@ -1,11 +1,6 @@
 Quality Control
 ===============
 
-.. important::
-   `This feature is available from the Professional plan and up <https://simplifier.net/pricing>`_.
-
-In the Forge **Community Edition** you can only run **free** rules.
-
 Introduction
 ------------
 

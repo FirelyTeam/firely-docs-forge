@@ -1,11 +1,6 @@
 R4B Upgrade Wizard
 ==================
 
-.. important::
-   `This feature is available from the Professional plan and up <https://simplifier.net/pricing>`_.
-
-In the Forge **Community Edition** you can only perform a project analysis.
-
 Introduction
 ------------
 
