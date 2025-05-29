@@ -11,10 +11,9 @@ When Forge users are associated with these license slots they will be able to us
 Current situation
 ^^^^^^^^^^^^^^^^^
 
-Currently you can not assign these license slots to specific Simplifier users yet. 
+Currently you cannot assign these license slots to specific Simplifier users yet. 
 For now, make sure that your Forge users have edit or admin rights on one of the projects associated to your Simplifier & Forge plan. 
 Projects associated with your plan need to be owned by the Simplifier user who also owns the license. 
-When this is set up correctly, no yellow bar will be shown to the Forge user after login.
 
 Still the amount of users who are allowed to use Forge for commercial use is limited by the amount allowed in your license.
 

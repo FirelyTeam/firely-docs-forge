@@ -223,7 +223,7 @@ Changes
 * You now log in to Simplifier.net when you start Forge. The separate logins for import/export from/to
   Simplifier.net are removed.
 * Incompatible packages are omitted from the package result list. Package versions implementing a FHIR 
-  version not supported by Forge can not be added anymore.
+  version not supported by Forge cannot be added anymore.
 * A package search without results now clears the result list.
 * Clickthrough on resource warnings (bottom pane) is restored.
 
