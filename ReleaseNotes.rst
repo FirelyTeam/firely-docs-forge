@@ -18,7 +18,7 @@ Release 2025.1.0
 
 Changes
 ^^^^^^^
-* Upgraded to Firely .NET SDK 5.11.6
+* Upgraded to Firely .NET SDK 5.11.7
 * Added partial support for extensions (like the **Obligation** and **Translation** extension) on element definition properties. You can add extensions on:
 
   - Primitive types
