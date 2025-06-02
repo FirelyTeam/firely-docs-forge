@@ -7,6 +7,93 @@
 
    OldReleaseNotes
 
+Release 2025.0.5
+----------------
+
+.. important::
+   The Simplifier Entry plan no longer includes the use of Forge.
+   `You can start a 60-day free trial now <https://simplifier.net/explore/trial>`_ or `see what is the best plan for you <https://simplifier.net/pricing>`_.
+   If you are a FHIR trainer explaining Forge and Simplifier, then please `get in contact <https://simplifier.net/contact>`_
+   for a free trainers license and vouchers for your students.
+
+Changes
+^^^^^^^
+* Upgraded to Firely .NET SDK 5.11.6
+* Added partial support for extensions (like the **Obligation** and **Translation** extension) on element definition properties. You can add extensions on:
+
+  - Primitive types
+
+    - string
+    - markdown
+  - Data types
+
+    - Address
+    - Coding
+    - CodeableConcept
+    - ElementDefinition
+    - UsageContext
+  - Element definition components
+
+    - Binding
+
+      - **[R5]** Additional  
+    - Slicing
+    - Type
+
+* Added user settings for managing the global visibility of extensions on element definition properties.
+
+  - **Show Element Properties Details**
+
+    - **On command only**
+
+      - Extensions are only displayed when you click the details button next to the element property
+      - Keyboard shortcut: **Ctrl+1**
+    - **When Constrained**
+
+      - Extensions are displayed when they have one or more constraints
+      - Keyboard shortcut: **Ctrl+2**
+    - **When Constrained Or Inherited**
+
+      - Extensions are displayed when they have one or more constraints or when the base profile has defined one or more extensions
+      - Keyboard shortcut: **Ctrl+3**
+    - **Element Id**
+
+      - Show or hide all element id fields
+      - Keyboard shortcut: **Ctrl+4**
+  - Expand all constrained extensions on element properties on load.
+
+* String and markdown properties have a dedicated **Add translation extension** button. 
+  In addition, the translation **content** property is checked to make sure the data type matches the data type of its parent property.
+  This correction behaviour can be turned off in the application settings but is turned on by default.
+* Added support to ignore folders and files from your project folder when synchronizing your project to Simplifier.net. 
+  When you create a text file with the name **.simplifierupload** in the root of your project folder then Forge will exclude **untracked** files from
+  being uploaded to Simplifier.net. More information can be found `here <./features/IntegrationwithSimplifier.html#specifying-folders-and-or-files-to-ignore-when-uploading>`_.
+* On the root element of a resource, show the name of the base resource instead of the type name.
+* Updated **Quality Control** to the latest version. The standard **free**, **minimal** and **recommended** rules have been updated to match the standard rules on Simplifier.
+* **[R4]** Added an option in the settings to repeat the discriminator in a slicing component in the differential when a slicing component is present.
+  This can be used to prevent **eld-1** validator warnings.
+* The optional packages section of the **Create FHIR Project Folder** dialog has been updated to include the latest **hl7.fhir.uv.extensions** package by default.
+* When a project has dependencies where multiple versions of the same resource exist, Forge now always resolves to the most recent resource.
+  The **Extend element** dialog has been updated to use this information to hide older versions of the same extension.
+* The order in which resource elements are presented in the **Properties** tab has been consolidated across the various resource types. 
+* **[R5]** Added validation for constraints **eld-24** and **eld-27**.
+* UI improvements
+
+  - Added a message with the busy indicator when appropriate.
+  - Login and About dialog now scale with font size setting.
+  - Added markdown status icon to indicate that the field supports markdown.
+  - Updated the status icon for elements 'that have or are affected by constraints'.
+  - Radio buttons now support tab navigation.
+
+Bug fixes
+^^^^^^^^^
+* Slice name of a new slice was reset to 'no name' after unchecking a type.
+* Forge gave a null reference exception when a root folder was selected when opening or creating a project folder.
+* After removing an extension the extension parent cardinality was not recalculated.
+* In rare occasions entries in the **Recent Files** were cleared. 
+* Constraint **eld-14** and **eld-20** were not validated. Improved validation for constraint **eld-19**.
+* **[R4,R4B]** Constraint **eld-21** was not validated.
+
 Release 32.0.3
 --------------
 Changes
@@ -25,13 +112,14 @@ Bug fixes
 * Fixed regression bug introduced in version 32.0 regarding using complex child elements when defining extensions.
   Some of the elements were serialized to xml/json in the wrong order. 
   Saving and reopening the extension would result in errors similar to this: 
-    *Element 'Extension.extension.extension' is not available in the corresponding resource*
+
+  *Element 'Extension.extension.extension' is not available in the corresponding resource*
 * Fixed incorrect removal of constrained extension elements from the differential.
-* When adding an extension to create a complex sub extension, the extension element was shown below the **value[x]** element but should
+* When adding an extension to create a complex sub extension, the extension element was shown below the **value[x]** element but should 
   have been shown below the **id** element. After reloading the resource the extension was shown at the correct position.
 * Complex extension icon for an extension element was not updated after adding or removing sub-extension elements.
 * Forge now also checks the cardinality for **extension** elements in addition to **value[x]** elements to enforce *'An extension SHALL have either a value (i.e. a value[x] element) or sub-extensions, but not both.'*.
-  Elements **extension** and **value[x]** with cardinality 0..0 are no longer hidden in the Element Tree.
+  Elements **extension** and **value[x]** with cardinality 0..0 are no longer hidden in the **Element Tree**.
 
 Release 32.0.1
 --------------
@@ -84,7 +172,7 @@ Bug fixes
   This would result in an error message similar to: '2024-04-22T08.41.08.303414+00:00' cannot be parsed as an instant.
   It only affects Windows users that have a regional date/time setting that is incompatible with the FHIR standard (e.g. Finish).
 * When adding an extension to a sliced element an error message would popup and in some case the added extension would not be correct.
-* Forge now correctly processes files with an ampersand character (%) in the file name (e.g. MyPatient_%C3%A9.xml). 
+* Forge now correctly processes files with an ampersand character (%) in the file name (e.g. **MyPatient_%C3%A9.xml**). 
   Having files with a % in the file name would result in an error when trying to synchronize with Simplifier.
 * Changing a slicing rules value in derived profile to a less strict value than the base profile did not trigger an error.
 * The narrative html was not sanitized before displaying it in the preview window.
@@ -293,42 +381,3 @@ Bug fixes
 
   - R4B - 4.3.0-cibuild
   - R5 - 5.0.0-cibuild
-
-Release 28.1
-------------
-Changes
-^^^^^^^
-* Logical model: the **Add element** button now features a drop down list to add an element with a default type already selected (only for most frequent used types).
-* Synchronizing with Simplifier.net: more elegant handling of the **Not Found** response. Possible causes for this response are:
-
-  - The project url key has changed
-  - The project no longer exists on Simplifier
-  - You no longer have access to the project
-* Files with the extension **.fsh** and **.ico** can now be synchronized with Simplifier as well.
-* Forge bootstrapper now detects Windows Arm64 for the installation of the correct .NET 5 Desktop Runtime
-
-Bug fixes
-^^^^^^^^^
-* Fixed various minor UI styling issues
-
-  - Some element labels were shown twice since version 28.0
-* When opening a bundle with a constrained **entry.resource**, the resource was not shown in the element tree.
-* The **Save** button is now always available and the save operation is always executed. This solves: 
-
-  - not being able to click the **Save** button while editing a text field
-  - after toggling the **Save snapshot component** option and clicking **Save** the file is not saved unless there are pending changes
-* Fixed incorrect calculation of the minimum cardinality for extension arrays where an extension already has a minimum cardinality value set.
-* Fixed inherited example values being allowed to be edited or deleted. They are now disabled for editing.
-* When creating a new profile and the file has not been saved yet and Forge detected a file change outside of Forge, Forge would incorrectly show a message that the profile was deleted outside of Forge.
-* Fixed not being able to open a resource with duplicate element ids since version 28.0 
-* Logical model:
-
-  - content reference field could not be edited
-  - type property was not visible after (re)loading the resource when no type was selected
-  - an added type could not be removed after (re)loading the resource
-  - type emptiness validation did not evaluate properly after (re)loading the resource
-* **[STU3]** Not possible to save logical models in version 28.0
-* **[R4B-R5]** Fixed inability to create new profiles in version 28.0. Now using the most recent FHIR version:
-
-  - R4B - 4.3.0-snapshot1
-  - R5 - 5.0.0-snapshot1

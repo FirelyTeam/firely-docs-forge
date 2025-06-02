@@ -6,7 +6,7 @@ Forge provides several options regarding rendering and saving in the
 
 .. figure:: ../images/OptionsForge.png
    :alt: The options menu in Forge
-   :width: 554
+   :width: 596
 
 Application Settings
 --------------------
@@ -16,7 +16,7 @@ User Interface
 
 .. figure:: ../images/Settings_UserInterface.png
    :alt: The user interface settings
-   :width: 574
+   :width: 703
 
 -  **Night Time**
 
@@ -34,14 +34,37 @@ User Interface
 
        - *Night Time On*
 
--  **Force garbage collection on unload**
+-  **Show element properties details**
 
-   When switched on this option will try to free up system memory when you close a document.
+   - **On command only** (Ctrl+1)
 
--  **Disable hardware rendering**
+     Extensions are only displayed when you click the details button next to the element property.
+   - **When Constrained** (Ctrl+2)
 
-   If you encounter rendering issues with the Forge user interface then those are most likely caused by the video driver.
-   In that case you can turn off hardware rendering.
+     Extensions are displayed when they have one or more constraints. This is the default selection.
+   - **When Constrained Or Inherited** (Ctrl+3)
+
+     Extensions are displayed when they have one or more constraints or when the base profile has defined one or more extensions.
+
+   - **Element Id** (Ctrl+4)
+
+     Show or hide all **Element Id** fields for extensions. By default **Element Id** fields for extensions are hidden.
+
+-  **Element tree modified style**
+
+   Selects how modified elements in the **Element Tree** are displayed.
+
+ .. list-table:: 
+
+     * - .. image:: ../images/Settings_ModifiedStyle_Dimmed.png
+            :width: 425
+
+       - .. image:: ../images/Settings_ModifiedStyle_Pen.png
+            :width: 425
+
+     * - *Unmodified elements are displayed dimmed*
+
+       - *Modified elements are indicated with a pen*
 
 -  **Show file preview tab**
 
@@ -117,28 +140,37 @@ User Interface
 
        - *Expand constrained elements On*
 
--  **Element Tree modified style**
+-  **Expand all constrained extensions on element properties on load**
 
-   Selects how modified elements in the **Element Tree** are displayed.
+   This option will expand constrained extensions in the **Element Properties** panel when a resource is loaded.
 
  .. list-table:: 
 
-     * - .. image:: ../images/Settings_ModifiedStyle_Dimmed.png
-            :width: 425
+     * - .. image:: ../images/Settings_ExpandElementExtensions_Off.png
+            :width: 532
 
-       - .. image:: ../images/Settings_ModifiedStyle_Pen.png
-            :width: 425
+       - .. image:: ../images/Settings_ExpandElementExtensions_On.png
+            :width: 532
 
-     * - *Unmodified elements are displayed dimmed*
+     * - *Expand constrained extensions on element properties Off*
 
-       - *Modified elements are indicated with a pen*
+       - *Expand constrained extensions on element properties On*
+
+-  **Force garbage collection on unload**
+
+   When switched on this option will try to free up system memory when you close a document.
+
+-  **Disable hardware rendering**
+
+   If you encounter rendering issues with the Forge user interface then those are most likely caused by the video driver.
+   In that case you can turn off hardware rendering.
 
 Persistence
 ~~~~~~~~~~~
 
 .. figure:: ../images/Settings_Persistence.png
    :alt: The persistence settings
-   :width: 574
+   :width: 703
 
 -  **Auto update publication data**
 
@@ -155,7 +187,10 @@ Persistence
 
 -  **Xml declaration**
 
-   Xml documents can contain an Xml declaration that if present, must be the first construct in the document and it looks like this: ``<?xml version="1.0" encoding="utf-8"?>``.
+   Xml documents can contain an Xml declaration that if present, must be the first construct in the document and it looks like this: 
+   
+   ``<?xml version="1.0" encoding="utf-8"?>``
+
    Forge has three options that allow you to specify when Xml declarations are saved to a resource:
 
    - Same as source
@@ -177,7 +212,7 @@ FHIR
 
 .. figure:: ../images/Settings_FHIR.png
    :alt: The FHIR settings
-   :width: 574
+   :width: 703
 
 -  **Validate FHIRPath expressions**
 
@@ -199,12 +234,21 @@ FHIR
  .. image:: ../images/Settings_DiscardResourceText.png
     :width: 490
 
+-  **Repeat slicing discriminators om the differential to suppress eld-1 warnings** (R4)
+
+   Check this option to prevent **eld-1** validator warnings.
+
+-  **Correct the content type for translation extensions to match the context in which they are used**
+
+   It is recommended to match the data type for the content property of the translation extension,
+   with the data type of the property to which the translation extension was added.
+
 Folders
 ~~~~~~~
 
 .. figure:: ../images/Settings_Folders.png
    :alt: The folders settings
-   :width: 573
+   :width: 703
 
 -  **Parent folder FHIR projects**
 

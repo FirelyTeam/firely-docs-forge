@@ -1,11 +1,6 @@
 Quality Control
 ===============
 
-.. important::
-   `This feature is available from the Professional plan and up <https://simplifier.net/pricing>`_.
-
-In the Forge **Community Edition** you can only run **free** rules.
-
 Introduction
 ------------
 
@@ -17,7 +12,7 @@ located at the right bottom of Forge.
 
 .. figure:: ../images/QualityControl.png
    :alt: QualityControl
-   :width: 747
+   :width: 745
 
 Clicking on the button wil open a drop down menu with the available
 validation rulesets you can run on your project.
@@ -74,7 +69,7 @@ Control** panel.
 
 .. figure:: ../images/QualityControl_Messages.png
    :alt: QualityControl_Messages
-   :width: 1296
+   :width: 1297
    
 If you double click on a message then the associated file is opened in
 Forge. When available, the context information is used to select the

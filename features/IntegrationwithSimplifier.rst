@@ -85,7 +85,7 @@ project folder name if you want.
 
 .. figure:: ../images/SyncConnect.png
    :alt: Open a project from Simplifier
-   :width: 914
+   :width: 1302
 
 The project item tooltip displays the project title, description, |URL
 Key| URL Key and folder icon information:
@@ -119,7 +119,7 @@ the following dialog will open.
 
 .. figure:: ../images/SyncConnectOptions.png
    :alt: Options when open a project from Simplifier
-   :width: 974
+   :width: 1302
 
 You have three options to specify what you would like to do:
 
@@ -155,7 +155,7 @@ listed file conflict:
 
 .. figure:: ../images/SyncConnectOptionsAdvanced.png
    :alt: Advanced optionsSimplifier
-   :width: 1217
+   :width: 1302
 
 Click ``Continue`` to create a backup of your local project folder and
 download the relevant project files from Simplifier.
@@ -177,7 +177,7 @@ you can open.
 
 .. figure:: ../images/SyncLink.png
    :alt: Link to project on Simplifier
-   :width: 874
+   :width: 1302
 
 You cannot change the project folder here because you are linking a
 Simplifier project to your current project folder. Select the correct
@@ -219,7 +219,7 @@ summary of what will be synchronized.
 
 .. figure:: ../images/SyncSummaryBasicView.png
    :alt: Summary Basic view
-   :width: 936
+   :width: 1302
 
 By default, the Basic view is displayed. This view will simply describe
 what will happen without details. If you want to see more details you
@@ -227,7 +227,7 @@ can switch to the Advanced view by clicking ``Advanced view``.
 
 .. figure:: ../images/SyncSummaryAdvancedView.png
    :alt: Summary Advanced view
-   :width: 1510
+   :width: 1302
 
 You can return to the Basic view by clicking ``Basic view``. Click
 ``Continue`` to synchronize with Simplifier.
@@ -242,7 +242,7 @@ resources will not be synchronized.
 
 .. figure:: ../images/SyncConflictsBasicView.png
    :alt: Summary conflicts Basic view
-   :width: 822
+   :width: 1302
 
 To resolve conflicts you have to switch to the Advanced view by
 clicking ``Advanced view``. For each listed file conflict you have
@@ -266,7 +266,7 @@ three choices:
 
 .. figure:: ../images/SyncConflictsAdvancedView.png
    :alt: Summary conflicts Advanced view
-   :width: 974
+   :width: 1302
 
 Miscellaneous options
 ---------------------
@@ -279,6 +279,106 @@ The ``Remove link...`` button allows you to remove the link between your
 project folder and Simplfiier.
 
 .. |URL Key| image:: ../images/UrlKey.png
+.. |Ignore Icon| image:: ../images/IgnoreIcon.png
 .. |Folder is empty| image:: ../images/FolderEmpty.png
 .. |Folder is not empty| image:: ../images/FolderFull.png
 .. |Folder already linked| image:: ../images/FolderSimplifier.png
+
+Specifying folders and/or files to ignore when uploading
+--------------------------------------------------------
+
+You can add a special file named **.simplifierupload** to the root of your project folder
+that specifies intentionally untracked files that Forge should ignore when uploading files to Simplifier. 
+Files already tracked by Forge are not affected. A file is tracked when it exists on Simplifier or 
+existed on Simplifier the last time you synchronized.
+
+The purpose of ignoring files is to ensure that certain files not tracked by Forge/Simplifier remain untracked.
+
+.. figure:: ../images/ProjectWithIgnoredFiles.png
+   :alt: Project with ignored files
+   :width: 1302
+
+Ignored files and folders are indicated with the following icon: |Ignore Icon|
+
+Pattern Format
+~~~~~~~~~~~~~~
+
+The format used is identical to the format used in :ref:`Simplifier to include/exclude files from being synced from GitHub to Simplifier<simplifier_docs:gh_include>`.
+
+* A blank line matches no files, so it can serve as a separator for readability. 
+* A line starting with ``#`` serves as a comment.
+* A line starting with a pattern (e.g. ``*.txt``) **includes** matching files when uploading.
+* A line starting with ``!`` followed by a pattern (e.g. ``!*.txt``) **excludes** matching files when uploading.
+
+Include examples::
+
+   FHIR/IG/*
+   *.xml
+
+Exclude examples::
+
+   !FHIR/*.img
+   !*.cs
+   !FHIR/examples/*
+
+.. note:: If you have one or more inclusion patterns specified then by default all files **not** matching
+   any of your inclusion patterns are excluded and therefor **not** uploaded to Simplfier.
+
+The patterns that you can specify can use the following formats to match multiple files or directories.
+
+-  Exact directory or file name
+
+   * ``some-file.txt``
+   * ``path/to/file.txt`` 
+
+|vspace|
+
+-  Wildcards ``*`` in file and directory names that represent zero to many characters not including 
+   separator characters.
+
+  .. list-table:: 
+     :widths: 25 99
+     :header-rows: 1
+
+     * - Value
+       - Description
+     * - ``*.txt``
+       - All files with .txt file extension.
+     * - ``*.*``
+       - All files with an extension.
+     * - ``*``
+       - All files in top-level directory.
+     * - ``.*``
+       - File names beginning with '.'.
+     * - ``*word*``
+       - All files with 'word' in the filename.
+     * - ``readme.*``
+       - All files named 'readme' with any file extension.
+     * - ``styles/*.css``
+       - All files with extension '.css' in the directory 'styles/'.
+     * - ``scripts/*/*``
+       - All files in 'scripts/' or one level of subdirectory under 'scripts/'.
+     * - ``images*/*``
+       - All files in a folder with name that is or begins with 'images'.
+
+- Arbitrary directory depth (``/**/``).
+
+  .. list-table:: 
+     :widths: 40 99
+     :header-rows: 1
+
+     * - Value
+       - Description
+     * - ``**/*``
+       - All files in any subdirectory.
+     * - ``dir/``
+       - All files in any subdirectory under 'dir/'.
+     * - ``dir/**/*``
+       - All files in any subdirectory under 'dir/'.
+
+
+More (technical) information can be found on the Microsoft website on `File globbing in .NET <https://learn.microsoft.com/en-us/dotnet/core/extensions/file-globbing>`_.
+
+.. |vspace| raw:: latex
+
+   \vspace{5mm}
