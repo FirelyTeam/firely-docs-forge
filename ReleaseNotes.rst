@@ -7,7 +7,7 @@
 
    OldReleaseNotes
 
-Release 2025.0.5
+Release 2025.1.0
 ----------------
 
 .. important::
