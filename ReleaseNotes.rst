@@ -7,6 +7,13 @@
 
    OldReleaseNotes
 
+Release 2025.1.1
+----------------
+Bug fixes
+^^^^^^^^^
+* **[STU3]** Forge could not open profiles that contain one or more Annotation elements. 
+  The following error message was shown: *"Annotation.text: invalid property type"*.
+
 Release 2025.1.0
 ----------------
 
@@ -169,7 +176,7 @@ Bug fixes
 ^^^^^^^^^
 * Opening a project with large dependencies was very slow. Package summary information is now cached to improve startup performance.
 * Forge did not serialize date/time information in a region/language independent way when caching resource and summary information on disk. 
-  This would result in an error message similar to: '2024-04-22T08.41.08.303414+00:00' cannot be parsed as an instant.
+  This would result in an error message similar to: *"2024-04-22T08.41.08.303414+00:00"* cannot be parsed as an instant.
   It only affects Windows users that have a regional date/time setting that is incompatible with the FHIR standard (e.g. Finish).
 * When adding an extension to a sliced element an error message would popup and in some case the added extension would not be correct.
 * Forge now correctly processes files with an ampersand character (%) in the file name (e.g. **MyPatient_%C3%A9.xml**). 
@@ -282,7 +289,7 @@ Bug fixes
 * If an element had a value for mustSupport then Forge would not allow you to change the value anymore.
   However changing the value from false to true is allowed.
 * References to files on disk were not resolved properly.
-* Fixed bug that would lead to error message: "Unable to cast object of type 'Integer' to 'UnsignedInt'".
+* Fixed bug that would lead to error message: *"Unable to cast object of type 'Integer' to 'UnsignedInt'"*.
 * Fixed regression bug introduced in version 30.0 where inherited extensions were added to the differential.
 * Relative values in contentReference are now handled correctly (they should be absolute).
   This would result in elements wrongly added to the differential (e.g. ReferenceRange).
