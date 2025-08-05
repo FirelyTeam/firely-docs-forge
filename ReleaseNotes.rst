@@ -7,6 +7,49 @@
 
    OldReleaseNotes
 
+Release 2025.2.0
+----------------
+Changes
+^^^^^^^
+* Upgraded to Firely .NET SDK 5.12.1
+* Added support for clearing elements. In effect this removes any differential values for the element.
+
+  - Clear element and its children
+  - Clear element properties
+
+* Added support in the user-interface for the following (choice) data types:
+
+  - Annotation
+  - Attachment
+  - Availability **[R5]**
+  - Base64binary
+  - Contributor
+  - DataRequirement
+  - Dosage
+  - Expression **[R4/R4B/R5]**
+  - ExtendedContactDetail **[R5]**
+  - Meta
+  - MonetaryComponent **[R5]**
+  - Integer64
+  - ParameterDefinition
+  - RelatedArtifact
+  - Signature
+  - TriggerDefinition
+  - VirtualServiceDetail **[R5]**
+
+* Added support for package feeds. See `Simplifier documentation for more information <https://docs.fire.ly/projects/Simplifier/data_governance_and_quality_control/simplifierPackageFeeds.html>`_.
+* Added type information to the element property tooltip. For some data types range information and examples are shown too.
+* Added display of a status flag in the element tree view for the obligation extension.
+* By default the new Firely validator is now used as the engine for Quality Control validation rules.
+  If you want to run the legacy validator, then you can use the action *legacy-validate* in your custom rules instead of *validate*.
+* FHIR specifications errors are now automatically corrected when resolving resources.
+
+Bug fixes
+^^^^^^^^^
+* After adding a simple extension that supports multiple types to an element property, the type selection combobox was not shown.
+* For some elements, the binding properties were shown in the element properties panel even though the element was not bindable.
+* Profiles derived from a profile where a user defined structure definition type was used could not be opened resulting in a "Null reference exception" error message.
+
 Release 2025.1.1
 ----------------
 Bug fixes
