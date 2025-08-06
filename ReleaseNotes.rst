@@ -7,6 +7,12 @@
 
    OldReleaseNotes
 
+Release 2025.1.2
+----------------
+Changes
+^^^^^^^^^
+* Improved performance when opening, editing and closing resources.
+
 Release 2025.1.1
 ----------------
 Bug fixes
