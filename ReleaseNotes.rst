@@ -11,7 +11,7 @@ Release 2025.2.0
 ----------------
 Changes
 ^^^^^^^
-* Upgraded to Firely .NET SDK 5.12.1
+* Upgraded to Firely .NET SDK 5.12.2
 * Added support for clearing elements. In effect this removes any differential values for the element.
 
   - Clear element and its children
@@ -49,6 +49,21 @@ Bug fixes
 * After adding a simple extension that supports multiple types to an element property, the type selection combobox was not shown.
 * For some elements, the binding properties were shown in the element properties panel even though the element was not bindable.
 * Profiles derived from a profile where a user defined structure definition type was used could not be opened resulting in a "Null reference exception" error message.
+* Fixed various minor UI (styling) issues.
+
+Release 2025.1.3
+----------------
+Bug fixes
+^^^^^^^^^
+* Forge did not always remove non-inheritable extensions like 
+  `SDNormativeVersion <https://hl7.org/fhir/extensions/StructureDefinition-structuredefinition-normative-version.html>`_,
+  which would result in those extension ending up in the differential.
+
+Release 2025.1.2
+----------------
+Changes
+^^^^^^^^^
+* Improved performance when opening, editing and closing resources.
 
 Release 2025.1.1
 ----------------
