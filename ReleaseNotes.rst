@@ -7,6 +7,14 @@
 
    OldReleaseNotes
 
+Release 2025.1.3
+----------------
+Bug fixes
+^^^^^^^^^
+* Forge did not always remove non-inheritable extensions like 
+  `SDNormativeVersion <https://hl7.org/fhir/extensions/StructureDefinition-structuredefinition-normative-version.html>`_,
+  which would result in those extension ending up in the differential.
+
 Release 2025.1.2
 ----------------
 Changes
