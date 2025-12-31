@@ -7,7 +7,7 @@
 
    OldReleaseNotes
 
-Release 2025.2.0.5
+Release 2025.2.0.6
 ------------------
 Changes
 ^^^^^^^
