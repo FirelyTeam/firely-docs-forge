@@ -67,6 +67,8 @@ Bug fixes
 * Forge could not handle elements defined after a choice type, that start with the name of that choice type.
 * When creating a new profile, elements could sometimes be initially expanded even though there were no modifications.
 * Extensions on **Slicing Details** were not loaded and could not be added.
+* When removing a type profile that contains slices, the slicing element of the slice intro was always cleared
+  even when the profile itself contained additional slices which resulted in the slices being merged.
 * **[STU3]** Fixed adding unnecessary elements to the differential for choice types.
 * **[STU3]** The **Add Type** dialog now only lists the allowed types.
 * **[R5]** Interface resources **CanonicalResource** and **MetadataResource** could be selected to create derive profiles from.
