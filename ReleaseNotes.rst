@@ -7,7 +7,7 @@
 
    OldReleaseNotes
 
-Release 2025.2.0.6
+Release 2025.2.0.8
 ------------------
 Changes
 ^^^^^^^
@@ -69,6 +69,8 @@ Bug fixes
 * Extensions on **Slicing Details** were not loaded and could not be added.
 * When removing a type profile that contains slices, the slicing element of the slice intro was always cleared
   even when the profile itself contained additional slices which resulted in the slices being merged.
+* Simple values in lists (e.g. Timing.event) were not validated.
+* The **Key** field of a **Constraint** was not validated.
 * **[STU3]** Fixed adding unnecessary elements to the differential for choice types.
 * **[STU3]** The **Add Type** dialog now only lists the allowed types.
 * **[R5]** Interface resources **CanonicalResource** and **MetadataResource** could be selected to create derive profiles from.

@@ -4,8 +4,6 @@ Create or Open a Project Folder
 When you want to start working in Forge, you will first need to create or open a
 project folder (i.e. the working directory containing your profiles).
 
-
-
 .. note::
    When you select an item from your recent files, Forge will automatically open its associated project folder.
 
@@ -28,12 +26,14 @@ The **Create FHIR Project Folder** dialog is opened.
    :width: 470
 
 Enter a name for your new FHIR project folder here. You can change the default parent folder for your FHIR project. 
-The core package will be be added as a dependency to your project automatically.
-
 The following project settings are available: 
 
 * Resolve resources from subfolders
 * Preferred file format (XML or JSON)
+
+By default the feed for public packages is selected. 
+The core package will be be added as a dependency to your project automatically.
+Select/deselect optional packages as required.
 
 Click ``OK`` to create your FHIR project.
 
