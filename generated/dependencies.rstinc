@@ -7,6 +7,14 @@
      - MIT
    * - `Firely.Fhir.Packages <https://www.nuget.org/packages/Firely.Fhir.Packages>`__
      - BSD-3-Clause
+   * - `Firely.Fhir.Validation.R4 <https://www.nuget.org/packages/Firely.Fhir.Validation.R4>`__
+     - BSD-3-Clause
+   * - `Firely.Fhir.Validation.R4B <https://www.nuget.org/packages/Firely.Fhir.Validation.R4B>`__
+     - BSD-3-Clause
+   * - `Firely.Fhir.Validation.R5 <https://www.nuget.org/packages/Firely.Fhir.Validation.R5>`__
+     - BSD-3-Clause
+   * - `Firely.Fhir.Validation.STU3 <https://www.nuget.org/packages/Firely.Fhir.Validation.STU3>`__
+     - BSD-3-Clause
    * - `Hl7.Fhir.Base <https://www.nuget.org/packages/Hl7.Fhir.Base>`__
      - BSD-3-Clause
    * - `Hl7.Fhir.R4 <https://www.nuget.org/packages/Hl7.Fhir.R4>`__
