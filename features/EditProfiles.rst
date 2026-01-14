@@ -7,7 +7,7 @@ detail.
 
 .. figure:: ../images/EditProfileTabs.png
    :alt: The tabs in Forge for editing a profile
-   :width: 825
+   :width: 904
 
 Properties
 ----------
@@ -47,7 +47,7 @@ Element Tree
 
 .. figure:: ../images/ElementTree.png
    :alt: The Element Tree overview in Forge
-   :width: 928
+   :width: 1105
 
 Via the ``Element Tree`` tab you can edit Element Properties, slice
 Elements, or add extensions.

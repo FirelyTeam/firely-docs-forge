@@ -22,7 +22,7 @@ happens.
 
 .. figure:: ../images/ConstraintsCardinality.png
    :alt: Set element cardinality in Forge
-   :width: 1037
+   :width: 1132
    
 Element Type
 ------------
@@ -40,14 +40,14 @@ the profile as a Type option if the profile is opened in the session
 explorer and the profile's base Resource fits the element.
 
 .. figure:: ../images/ConstraintsType.png
-   :alt: Setting valueset binding in Forge
-   :width: 1037
+   :alt: Setting a element type
+   :width: 1132
 
    *Setting Observation.value[x] types in Forge* 
 
 .. figure:: ../images/ConstraintsTypeReference.png
-   :alt: Setting valueset binding in Forge
-   :width: 1037
+   :alt: Setting a element type reference
+   :width: 1132
 
    *Setting Observation.subject reference type in Forge*
 
@@ -62,8 +62,8 @@ binding strength. The value must be equal to or strichter than the base
 value.
 
 .. figure:: ../images/ConstraintsValueSetBinding.png
-   :alt: Setting valueset binding in Forge
-   :width: 1037
+   :alt: Setting valueset binding
+   :width: 1132
 
 Inline constraints
 ------------------
@@ -83,8 +83,8 @@ This feature allows you to specify inline constraints that “walk into”
 elements defined by external type profiles.
 
 .. figure:: ../images/Inlineconstraintontypeslice.png
-   :alt: Setting an inline constraint on an element in Forge
-   :width: 1037
+   :alt: Setting an inline constraint on an element
+   :width: 1132
 
 This behavior also applies to Extension Definitions, as technically they
 are also external type profiles. Suppose you author a profile with an
@@ -97,5 +97,31 @@ in the underlying extension definition.
 
 .. figure:: ../images/Inlineconstraintonprofileextension.png
    :alt: Setting an inline constraint on an extension in Forge
-   :width: 1037
+   :width: 1131
 
+Clear constraints
+-----------------
+
+Select the element that you want to clear and click on ``Clear``.
+
+.. figure:: ../images/ClearElement.png
+   :alt: Clearing element constraints
+   :width: 553
+
+A drop down combobox opens with two clear options:
+
+* Element and children
+* Element properties
+
+^^^^^^^^^^^^^^^^^^^^
+Element and children
+^^^^^^^^^^^^^^^^^^^^
+
+With this option the element properties of the selected element and the element properties of
+all its children are cleared. In addition, all extensions and slices are removed.
+
+^^^^^^^^^^^^^^^^^^
+Element properties
+^^^^^^^^^^^^^^^^^^
+
+With this option only the element properties of the selected element are cleared.

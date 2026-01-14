@@ -28,7 +28,7 @@ options.
 
 .. figure:: ../images/SyncProjectToolbar.png
    :alt: Project tab
-   :width: 875
+   :width: 886
 
 The following paragraphs describe the options in more detail.
 

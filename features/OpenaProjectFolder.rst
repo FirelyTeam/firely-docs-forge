@@ -68,7 +68,7 @@ A dialog with settings for your project folder can be opened from the ``Project`
 
 .. figure:: ../images/ProjectSettings.png
    :alt: Project SettingsS
-   :width: 320
+   :width: 470
 
 Deselect the **Resolve resources from subfolders** option if you want to exclude all subdirectories of the selected folder. 
 This may be convenient if you have a subdirectory containing old versions of your
