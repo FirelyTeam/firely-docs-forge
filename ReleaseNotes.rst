@@ -37,7 +37,7 @@ Changes
   - TriggerDefinition
   - VirtualServiceDetail **[R5]**
 
-* Added support for package feeds. See `Simplifier documentation for more information <https://docs.fire.ly/projects/Simplifier/data_governance_and_quality_control/simplifierPackageFeeds.html>`_.
+* Added support for package feeds. See `Simplifier documentation for more information <simplifier_docs:package_feeds>`_.
 * Elements with a content reference are no longer automatically expanded one level deep. Instead, you can expand these elements manually
   by opening the context menu for that element and clicking **Expand**.
 * Forge now also validates extensions in the element tree to check if the extension is used in a valid context.

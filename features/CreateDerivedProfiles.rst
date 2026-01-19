@@ -55,7 +55,7 @@ Adding a package from a feed
 ----------------------------
 
 Package feeds allow organizations to manage private FHIR packages using controlled dependencies and distribution boundaries.
-See the `Simplifier documentation for more information <https://docs.fire.ly/projects/Simplifier/data_governance_and_quality_control/simplifierPackageFeeds.html>`_.
+See the `Simplifier documentation for more information <simplifier_docs:package_feeds>`_.
 
 Click ``Open...`` to go to Simplfier and open the **Feeds** tab of your Portal. This page
 lists all the feeds that you have access to.

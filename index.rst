@@ -7,7 +7,7 @@ Welcome to Forge's documentation!
    :caption: Firely Products
    :hidden:
 
-   Back to all Firely Products <https://docs.fire.ly>
+   Back to all Firely Products <main_docs>
 
 .. image:: ./images/Forge-illustration.png
   :align: right
