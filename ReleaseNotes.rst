@@ -7,11 +7,11 @@
 
    OldReleaseNotes
 
-Release 2025.2.0.8
-------------------
+Release 2025.2.0.12
+-------------------
 Changes
 ^^^^^^^
-* Upgraded to Firely .NET SDK 5.13.1
+* Upgraded to Firely .NET SDK 5.13.3
 * Added support for clearing elements. In effect this removes any differential values for the element.
 
   - Clear element and its children
@@ -49,6 +49,7 @@ Changes
 * When creating a new project, package pre-release versions are no longer selected by default unless there are only pre-release versions.
 * Packages on Simplifier that are marked as unlisted can now be added to your project as a dependency.
 * Added extension support for ElementDefinition constraint and mapping elements.
+* Inherited constraints and mappings are now shown ordered by their key in the **Element Properties** panel.
 * Added support for additional file types supported in Simplifier:
 
   - *.ini*
@@ -71,6 +72,10 @@ Bug fixes
   even when the profile itself contained additional slices which resulted in the slices being merged.
 * Simple values in lists (e.g. Timing.event) were not validated.
 * The **Key** field of a **Constraint** was not validated.
+* When searching for packages and the search result contained a package with a non-compliant version specification then no packages were shown in the search results.
+* When running Forge Validation, non structure definition resources were not validated. 
+* Fixed regression bug introduced in version 2025.1.2: a validation error was not always cleared after correcting the value of an element property and
+  the validation rule involved multiple element properties.
 * **[STU3]** Fixed adding unnecessary elements to the differential for choice types.
 * **[STU3]** The **Add Type** dialog now only lists the allowed types.
 * **[R5]** Interface resources **CanonicalResource** and **MetadataResource** could be selected to create derive profiles from.
