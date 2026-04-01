@@ -61,6 +61,13 @@ you have the option to automatically correct and update your resources.
 Click ``Correct Resources...`` to automatically correct and update your resources
 or click ``Close`` to inspect the Quality Control messages.
 
+.. attention:: 
+   Forge validation validates and corrects resources sequentially. That means that 
+   if you have a profile A that depends on profile B, profile A will be corrected before profile B
+   and corrections for profile B relevant for profile A are not automatically applied to profile A.
+   To fix this you may need to run Forge validation multiple times to make sure corrections for 
+   all dependencies are applied. 
+
 Quality Control messages
 ------------------------
 

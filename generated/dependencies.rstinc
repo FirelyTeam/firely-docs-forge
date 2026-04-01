@@ -47,6 +47,8 @@
      - MIT
    * - `Markdig <https://www.nuget.org/packages/Markdig>`__
      - BSD-2-Clause
+   * - `MessagePack <https://www.nuget.org/packages/MessagePack>`__
+     - MIT
    * - `Microsoft-WindowsAPICodePack-Core <https://www.nuget.org/packages/Microsoft-WindowsAPICodePack-Core>`__
      - 
    * - `Microsoft-WindowsAPICodePack-Shell <https://www.nuget.org/packages/Microsoft-WindowsAPICodePack-Shell>`__
@@ -54,6 +56,10 @@
    * - `Microsoft.CSharp <https://www.nuget.org/packages/Microsoft.CSharp>`__
      - MIT
    * - `Microsoft.Extensions.DependencyInjection <https://www.nuget.org/packages/Microsoft.Extensions.DependencyInjection>`__
+     - MIT
+   * - `Microsoft.Extensions.DependencyInjection.Abstractions <https://www.nuget.org/packages/Microsoft.Extensions.DependencyInjection.Abstractions>`__
+     - MIT
+   * - `Microsoft.Extensions.FileProviders.Abstractions <https://www.nuget.org/packages/Microsoft.Extensions.FileProviders.Abstractions>`__
      - MIT
    * - `Microsoft.Extensions.FileSystemGlobbing <https://www.nuget.org/packages/Microsoft.Extensions.FileSystemGlobbing>`__
      - MIT
