@@ -7,8 +7,8 @@
 
    OldReleaseNotes
 
-Release 2025.2.0.12
--------------------
+Release 2026.1.0
+----------------
 Changes
 ^^^^^^^
 * Upgraded to Firely .NET SDK 5.13.3
