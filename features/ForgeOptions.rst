@@ -234,7 +234,7 @@ FHIR
  .. image:: ../images/Settings_DiscardResourceText.png
     :width: 490
 
--  **Repeat slicing discriminators om the differential to suppress eld-1 warnings** (R4)
+-  **Repeat slicing discriminators om the differential to suppress eld-1 warnings (R4)** 
 
    Check this option to prevent **eld-1** validator warnings.
 

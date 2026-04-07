@@ -2,6 +2,7 @@
 _build/
 ._buildhtml/
 .vscode/
+.vs/
 ._buildhtml/
 /.vs/slnx.sqlite
 /.vs/slnx.sqlite-journal

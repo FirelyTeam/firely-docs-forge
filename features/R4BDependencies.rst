@@ -55,5 +55,5 @@ Installing packages with Firely Terminal
 It is also possible to use Firely Terminal to install packages. While Firely Terminal also uses Simplifier as a package repository when looking for packages, 
 it is able to install packages from local **tgz** files as well. Using Firely Terminal, the package tgz is automatically extracted with the correct name and 
 folder structure and a **package.json** is also automatically generated for your project. For more information you can check out 
-our `documentation on Firely Terminal <https://docs.fire.ly/projects/Firely-Terminal/Managing-Packages.html#install-a-file>`__.
+our `documentation on Firely Terminal <firely_terminal_docs:Package_management>`__.
 

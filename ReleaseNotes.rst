@@ -7,6 +7,81 @@
 
    OldReleaseNotes
 
+Release 2026.1.0
+----------------
+Changes
+^^^^^^^
+* Upgraded to Firely .NET SDK 5.13.3
+* Added support for clearing elements. In effect this removes any differential values for the element.
+
+  - Clear element and its children
+  - Clear element properties
+
+* Added support in the user-interface for the following (choice) data types:
+
+  - Annotation
+  - Attachment
+  - Availability **[R5]**
+  - Base64binary
+  - Contributor
+  - DataRequirement
+  - Dosage
+  - Expression **[R4/R4B/R5]**
+  - ExtendedContactDetail **[R5]**
+  - Meta
+  - MonetaryComponent **[R5]**
+  - Integer64
+  - ParameterDefinition
+  - RelatedArtifact
+  - Signature
+  - TriggerDefinition
+  - VirtualServiceDetail **[R5]**
+
+* Added support for package feeds. See `Simplifier documentation for more information <simplifier_docs:package_feeds>`_.
+* Elements with a content reference are no longer automatically expanded one level deep. Instead, you can expand these elements manually
+  by opening the context menu for that element and clicking **Expand**.
+* Forge now also validates extensions in the element tree to check if the extension is used in a valid context.
+* Added type information to the element property tooltip. For some data types range information and examples are shown too.
+* Added display of a status flag in the element tree view for the obligation extension.
+* By default the new Firely validator is now used as the engine for Quality Control validation rules.
+  If you want to run the legacy validator, then you can use the action *validate* in your custom rules with the option of *flavor=legacy*.
+* FHIR specifications errors are now automatically corrected when opening and resolving resources.
+* When creating a new project, package pre-release versions are no longer selected by default unless there are only pre-release versions.
+* Packages on Simplifier that are marked as unlisted can now be added to your project as a dependency.
+* Added extension support for ElementDefinition constraint and mapping elements.
+* Inherited constraints and mappings are now shown ordered by their key in the **Element Properties** panel.
+* Added support for additional file types supported in Simplifier:
+
+  - *.ini*
+  - *.svg*
+  - *.plantuml, .pu, .puml*
+  - *.yml*
+* **[STU3]** Forge now fully supports all choice types for **Binding value set reference** in the UI.
+
+Bug fixes
+^^^^^^^^^
+* After adding a simple extension that supports multiple types to an element property, the type selection combobox was not shown.
+* For some elements, the binding properties were shown in the element properties panel even though the element was not bindable.
+* Profiles derived from a profile where a user defined structure definition type was used could not be opened resulting in a "Null reference exception" error message.
+* When creating profiles where the base profile is using the text append feature (e.g. "... this text is to be appended"), the appended
+  text was appended multiple times resulting in a modified status.
+* Forge could not handle elements defined after a choice type, that start with the name of that choice type.
+* When creating a new profile, elements could sometimes be initially expanded even though there were no modifications.
+* Extensions on **Slicing Details** were not loaded and could not be added.
+* When removing a type profile that contains slices, the slicing element of the slice intro was always cleared
+  even when the profile itself contained additional slices which resulted in the slices being merged.
+* Simple values in lists (e.g. Timing.event) were not validated.
+* The **Key** field of a **Constraint** was not validated.
+* When searching for packages and the search result contained a package with a non-compliant version specification then no packages were shown in the search results.
+* When running Forge Validation, non structure definition resources were not validated. 
+* Fixed regression bug introduced in version 2025.1.2: a validation error was not always cleared after correcting the value of an element property and
+  the validation rule involved multiple element properties.
+* **[STU3]** Fixed adding unnecessary elements to the differential for choice types.
+* **[STU3]** The **Add Type** dialog now only lists the allowed types.
+* **[R5]** Interface resources **CanonicalResource** and **MetadataResource** could be selected to create derive profiles from.
+* **[R5]** Forge could not create an **ImagingSelection** profile due to an error in the core specification. 
+* Fixed various minor UI (styling) issues.
+
 Release 2025.1.3
 ----------------
 Bug fixes

@@ -77,7 +77,7 @@ to your project folder or add a package to your project folder.
 
 .. figure:: ../images/AddPackage.png
    :alt: Adding a package to your project
-   :width: 797
+   :width: 1123
 
 Select the element in the Element Tree of your profile where you want to
 add the extension. Then, click ``Extend`` which is shown in the tool
@@ -85,7 +85,7 @@ section above the element tree.
 
 .. figure:: ../images/SelectElement.png
    :alt: Adding an extension to a profile in Forge
-   :width: 474
+   :width: 552
 
 Forge shows the extensions that are available in your project folder.
 
@@ -103,6 +103,12 @@ extensions by clicking ``Filter`` to turn off filtering.
    :alt: Showing only compatible extensions in Forge
    :width: 359
 
+Click ``OK`` to add the selected extension to your profile.
+
+.. figure:: ../images/ExtensionSelected.png
+   :alt: Selected extension added to a profile
+   :width: 370
+
 Add the extension to an element property
 ----------------------------------------
 
@@ -111,7 +117,7 @@ you can also add extensions to some of the element properties.
 
 .. figure:: ../images/ElementPropertiesExtension.png
    :alt: Extensions on element properties
-   :width: 673
+   :width: 550
 
 If an element property can be extended then a details button is shown next to it. 
 The color indicates if the element property has extensions:
@@ -139,6 +145,8 @@ Extensions on element properties are supported for:
   - Binding
 
     - Additional **(R5)** 
+  - Constraint
+  - Mapping
   - Slicing
   - Type
 

@@ -32,12 +32,17 @@ profile.
    :alt: The hierarchy between FHIR profiles
    :width: 674
 
-Adding dependencies
--------------------
+Dependencies
+------------
 
-To do this in Forge you first need to add one or more Core Packages. The
-following example adds the **hl7.fhir.us.core** package to the project.
-Select the ``Dependencies`` tab, then click ``Simplifier``, then type
+To do this in Forge you first need to add one or more Core Packages.
+
+Adding a public package
+-----------------------
+
+The following example adds the **hl7.fhir.us.core** package to the project.
+
+Select the ``Dependencies`` tab, click ``Public``, then type
 *hl7.fhir.us* in the **Search** field and finally click ``Search``.
 Select **hl7.fhir.us.core** in the list and then select package version
 **6.1.0**. Finally click ``Add`` to add the package to the project.
@@ -45,6 +50,44 @@ Select **hl7.fhir.us.core** in the list and then select package version
 .. figure:: ../images/DerivedAddPackage.png
    :alt: Add a core package
    :width: 850
+
+Adding a package from a feed
+----------------------------
+
+Package feeds allow organizations to manage private FHIR packages using controlled dependencies and distribution boundaries.
+See the `Simplifier documentation for more information <simplifier_docs:package_feeds>`_.
+
+Click ``Open...`` to go to Simplfier and open the **Feeds** tab of your Portal. This page
+lists all the feeds that you have access to.
+
+.. figure:: ../images/SimplifierFeeds.png
+   :alt: Simplifier feeds
+   :width: 1155
+
+Click ``Feeds`` to open the **Package feed selection** dialog.
+
+.. figure:: ../images/PackageFeedSelection.png
+   :alt: Package feed selection
+   :width: 470
+
+Use the drop down combobox to select a feed. You can use the ``...`` button
+to see what packages are contained in the selected feed.
+Click ``OK`` to select the feed.
+
+.. figure:: ../images/PackageFeedListing.png
+   :alt: Package feed listing
+   :width: 1323
+
+You can now add one or more packages from the selected feed to your project.
+
+Click ``Open...`` to go to Simplfier and open the page for the selected feed.
+
+.. figure:: ../images/SimplifierFeed.png
+   :alt: Simplifier feed
+   :width: 1153
+
+Project
+-------
 
 Click the ``Project`` tab to see what packages are installed. Notice
 that dependent packages are installed too.
@@ -73,7 +116,7 @@ is created and opened. You can now make your own modifications.
 
 .. figure:: ../images/DerivedUSCorePatientProfile.png
    :alt: US Core Patient profile
-   :width: 853
+   :width: 900
 
 Things to keep in mind are that you can only further constrain (or add
 extensions to) profiles. This means that each derived profile is more

@@ -6,7 +6,7 @@ Integration with Simplifier
 `Simplifier.net <https://simplifier.net/>`__ is a FHIR specification
 development, collaboration and publishing platform. The documentation
 for the platform can be found
-`here <https://docs.fire.ly/projects/Simplifier/>`__.
+`here <simplifier_docs>`__.
 
 Forge can synchronize the project files in your local folder with the
 files in your project on Simplifier. The following menu options are
@@ -28,7 +28,7 @@ options.
 
 .. figure:: ../images/SyncProjectToolbar.png
    :alt: Project tab
-   :width: 875
+   :width: 886
 
 The following paragraphs describe the options in more detail.
 

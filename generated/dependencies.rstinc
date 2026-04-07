@@ -7,6 +7,14 @@
      - MIT
    * - `Firely.Fhir.Packages <https://www.nuget.org/packages/Firely.Fhir.Packages>`__
      - BSD-3-Clause
+   * - `Firely.Fhir.Validation.R4 <https://www.nuget.org/packages/Firely.Fhir.Validation.R4>`__
+     - BSD-3-Clause
+   * - `Firely.Fhir.Validation.R4B <https://www.nuget.org/packages/Firely.Fhir.Validation.R4B>`__
+     - BSD-3-Clause
+   * - `Firely.Fhir.Validation.R5 <https://www.nuget.org/packages/Firely.Fhir.Validation.R5>`__
+     - BSD-3-Clause
+   * - `Firely.Fhir.Validation.STU3 <https://www.nuget.org/packages/Firely.Fhir.Validation.STU3>`__
+     - BSD-3-Clause
    * - `Hl7.Fhir.Base <https://www.nuget.org/packages/Hl7.Fhir.Base>`__
      - BSD-3-Clause
    * - `Hl7.Fhir.R4 <https://www.nuget.org/packages/Hl7.Fhir.R4>`__
@@ -39,6 +47,8 @@
      - MIT
    * - `Markdig <https://www.nuget.org/packages/Markdig>`__
      - BSD-2-Clause
+   * - `MessagePack <https://www.nuget.org/packages/MessagePack>`__
+     - MIT
    * - `Microsoft-WindowsAPICodePack-Core <https://www.nuget.org/packages/Microsoft-WindowsAPICodePack-Core>`__
      - 
    * - `Microsoft-WindowsAPICodePack-Shell <https://www.nuget.org/packages/Microsoft-WindowsAPICodePack-Shell>`__
@@ -46,6 +56,10 @@
    * - `Microsoft.CSharp <https://www.nuget.org/packages/Microsoft.CSharp>`__
      - MIT
    * - `Microsoft.Extensions.DependencyInjection <https://www.nuget.org/packages/Microsoft.Extensions.DependencyInjection>`__
+     - MIT
+   * - `Microsoft.Extensions.DependencyInjection.Abstractions <https://www.nuget.org/packages/Microsoft.Extensions.DependencyInjection.Abstractions>`__
+     - MIT
+   * - `Microsoft.Extensions.FileProviders.Abstractions <https://www.nuget.org/packages/Microsoft.Extensions.FileProviders.Abstractions>`__
      - MIT
    * - `Microsoft.Extensions.FileSystemGlobbing <https://www.nuget.org/packages/Microsoft.Extensions.FileSystemGlobbing>`__
      - MIT
