@@ -43,8 +43,8 @@ Changes
 * Forge now also validates extensions in the element tree to check if the extension is used in a valid context.
 * Added type information to the element property tooltip. For some data types range information and examples are shown too.
 * Added display of a status flag in the element tree view for the obligation extension.
-* By default the new Firely validator is now used as the engine for Quality Control validation rules.
-  If you want to run the legacy validator, then you can use the action *validate* in your custom rules with the option of *flavor=legacy*.
+* By default the new **Firely .NET Validator** is now used as the engine for Quality Control validation rules.
+  If you want to run the **Legacy SDK .NET Validator**, then you can use the action *validate* in your custom rules with the option of *flavor=netsdk*.
 * FHIR specifications errors are now automatically corrected when opening and resolving resources.
 * When creating a new project, package pre-release versions are no longer selected by default unless there are only pre-release versions.
 * Packages on Simplifier that are marked as unlisted can now be added to your project as a dependency.
