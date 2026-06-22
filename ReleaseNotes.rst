@@ -9,15 +9,8 @@
 
 Release 2026.2.0
 ----------------
-R6 Support
-^^^^^^^^^^
-The first release of Forge for FHIR R6. This alpha release is based on FHIR R6 Ballot (3rd Draft), 
-which is part of the FHIR R6 version range.
-
-.. note::
-  Please note that as both the FHIR version and this Forge alpha version are 
-  far from definitive, Forge may or may not contain unexpected errors 
-  and missing functionality.
+.. important::
+  The **Legacy SDK .NET Validator** is no longer supported in Quality Control.
 
 Changes
 ^^^^^^^
@@ -26,6 +19,12 @@ Changes
 * Added support for the suppression extension.
 * Optimized loading of profiles with many expanded content reference elements.
 * The **Legacy SDK .NET Validator** is no longer supported in Quality Control.
+* In the **Project** view, the **Structure Type** filter now only shows Abstract Types, Data Types and Resource Types.
+
+Bug fixes
+^^^^^^^^^
+* The **Navigate to...** command in the context menu of an issue listed after running **Quality Control**
+  was not working for elements of a conformance resource like **OperationDefinition**.
 
 Release 2026.1.0
 ----------------
