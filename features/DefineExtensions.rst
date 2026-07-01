@@ -156,11 +156,12 @@ The following buttons are available to add a new extension to the element proper
 
 .. figure:: ../images/ElementPropertiesExtensionButtons.png
    :alt: Buttons for adding a new extension to the element property
-   :width: 180
+   :width: 207
 
 The ``+`` button creates a new empty extension. 
 The ``+ Select...`` button opens a dialog showing the matching extensions that are available in your project folder.
 The |Translation extension| button is only available for **string** and **markdown** properties and provides a shortcut for the translation extension.
+When available, the |Suppression extension| button provides a shortcut for the suppression extension.
 
 For simple extensions only the **value** field is available.
 
@@ -208,3 +209,4 @@ from the ``Options`` menu.
 .. |Inherited extensions| image:: ../images/DetailsInherited.png
 .. |Constrained extensions| image:: ../images/DetailsConstrained.png
 .. |Translation extension| image:: ../images/TranslationExtension.png
+.. |Suppression extension| image:: ../images/SuppressionExtension.png
