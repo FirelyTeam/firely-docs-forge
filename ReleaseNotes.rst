@@ -14,7 +14,7 @@ Release 2026.2.0
 
 Changes
 ^^^^^^^
-* Upgrade to Firely .NET SDK 6.2.0.
+* Upgrade to Firely .NET SDK 6.2.1.
 * Upgrade to .NET 10.
 * Added support for the suppression extension.
 * Optimized loading of profiles with many expanded content reference elements.
