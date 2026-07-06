@@ -7,6 +7,25 @@
 
    OldReleaseNotes
 
+Release 2026.2.0
+----------------
+.. important::
+  The **Legacy SDK .NET Validator** is no longer supported in Quality Control.
+
+Changes
+^^^^^^^
+* Upgrade to Firely .NET SDK 6.2.1.
+* Upgrade to .NET 10.
+* Added support for the suppression extension.
+* Optimized loading of profiles with many expanded content reference elements.
+* The **Legacy SDK .NET Validator** is no longer supported in Quality Control.
+* In the **Project** view, the **Structure Type** filter now only shows Abstract Types, Data Types and Resource Types.
+
+Bug fixes
+^^^^^^^^^
+* The **Navigate to...** command in the context menu of an issue listed after running **Quality Control**
+  was not working for elements of a conformance resource like **OperationDefinition**.
+
 Release 2026.1.0
 ----------------
 Changes
@@ -416,64 +435,3 @@ Bug fixes
 * Opening a resource with no FHIR version resulted in an error message.
 * Saving all documents after duplicating a resource multiple times would result in an error message. 
 * Fixed various minor UI styling issues.
-
-Release 29.1.1
---------------
-Bug fixes
-^^^^^^^^^
-* Fixed creating duplicate slices when loading a profile with slices that have an invalid path (now all child element definitions are processed correctly).
-
-Release 29.1
-------------
-Changes
-^^^^^^^
-* Upgrade to Firely .NET SDK 4.2.1.
-* Added **Simplifier** menu and **Repair link...** option.
-* Added a **File format settings** menu option for specifying the indent size used in Xml and Json files.
-* The **Create a new StructureDefinition** dialog now checks for an already existing canonical url and/or file name in your project.
-* You can now run Forge when your internet connection is down (requires a previously successful login).
-* The **Resolve resources from subdirectories** option is now turned on by default.
-* When Forge corrects the differential of your profile after opening it, Forge now reports what has changed in more detail.
-* Multiple selection is now available when resolving file change conflicts in the Simplifier link and synchronize dialogs.
-* There are now two menu options for **Save All** in the context menu for a project item in the **Session Explorer**:
-
-  - **Save All Changed** only saves documents with pending changes.
-  - **Save All** saves all documents even if there are no pending changes.
-
-Bug fixes
-^^^^^^^^^
-* User settings were not retained when updating to a new version of Forge.
-* The **Save As...** option now works as expected (the document properties are updated to the new file name).
-* Quality Control no longer unjustifiably reports *Internal logic failure* messages.
-* When selecting the **Extension** type in the **Select Extension Context** dialog, the element tree was not rendered correctly.
-* Slice naming checks were incorrectly applied to element names for logical models.
-* When the source of an element constraint is empty it is no longer initialized to the canonical url of profile itself when it is opened in Forge.
-* Forge now suggests **extension.value** for *slicing.discriminator.path* instead of **extension.value[x]**.
-* Fixed invalid slice path when creating slices on a choice type element.
-* Fixed creating duplicate slices when loading a profile with slices that have an invalid path.
-* When linking a project folder to a project on Simplifier, double clicking a disabled item would still allow you to continue.
-* The project list view was not updated correctly after installing a package in an empty project folder.
-* Columns of list views can no longer be collapsed completely.
-* Fixed Forge not starting because it was repeatedly trying to install .NET6 and failing.
-* Fixed various minor UI styling issues.
-* **[R4B-R5]** Added support for opening files with an unknown FHIR version. The unknown FHIR version must be a variant of a known published FHIR versions (e.g. "4.3.0-unknown" or "4.3.0"). The version in the resource is updated to the latest version known by Forge.
-
-Release 29.0
-------------
-Changes
-^^^^^^^
-* Upgrade to Firely .NET SDK 4.0.0.
-* Upgrade to .NET 6.
-* Added project quality control similar to the functionality found on Simplifier.
-* The project list view now lists all document types supported by Simplifier.
-* Added **Open in external application** menu item in the project list context menu. The **Refresh** command has been moved from the project toolbar to the context menu.
-
-Bug fixes
-^^^^^^^^^
-* Improved message when trying to sign in with an unverified user account.
-* Fixed not being able to link a project folder with a Simplifier project when the project folder has subfolders with files in it.
-* Fixed various minor UI styling issues.
-* **[R4B-R5]** Added support for CI build version:
-
-  - R4B - 4.3.0-cibuild
-  - R5 - 5.0.0-cibuild

@@ -7,6 +7,8 @@
      - MIT
    * - `Firely.Fhir.Packages <https://www.nuget.org/packages/Firely.Fhir.Packages>`__
      - BSD-3-Clause
+   * - `Firely.Fhir.Validation.Compilation <https://www.nuget.org/packages/Firely.Fhir.Validation.Compilation>`__
+     - BSD-3-Clause
    * - `Firely.Fhir.Validation.R4 <https://www.nuget.org/packages/Firely.Fhir.Validation.R4>`__
      - BSD-3-Clause
    * - `Firely.Fhir.Validation.R4B <https://www.nuget.org/packages/Firely.Fhir.Validation.R4B>`__
@@ -34,14 +36,6 @@
    * - `Hl7.Fhir.Specification.R4 <https://www.nuget.org/packages/Hl7.Fhir.Specification.R4>`__
      - BSD-3-Clause
    * - `Hl7.Fhir.STU3 <https://www.nuget.org/packages/Hl7.Fhir.STU3>`__
-     - BSD-3-Clause
-   * - `Hl7.Fhir.Validation.Legacy.R4 <https://www.nuget.org/packages/Hl7.Fhir.Validation.Legacy.R4>`__
-     - BSD-3-Clause
-   * - `Hl7.Fhir.Validation.Legacy.R4B <https://www.nuget.org/packages/Hl7.Fhir.Validation.Legacy.R4B>`__
-     - BSD-3-Clause
-   * - `Hl7.Fhir.Validation.Legacy.R5 <https://www.nuget.org/packages/Hl7.Fhir.Validation.Legacy.R5>`__
-     - BSD-3-Clause
-   * - `Hl7.Fhir.Validation.Legacy.STU3 <https://www.nuget.org/packages/Hl7.Fhir.Validation.Legacy.STU3>`__
      - BSD-3-Clause
    * - `HtmlSanitizer <https://www.nuget.org/packages/HtmlSanitizer>`__
      - MIT
