@@ -32,12 +32,23 @@ Installing on other operating systems
 The .NET Framework and WPF are only supported on the Windows operating
 system. For users using other platforms, generally the best solution is
 to **run Windows in a Virtual Machine**, on your own machine or in the
-cloud, and install Forge on that.
-`VirtualBox <https://www.virtualbox.org/>`__ is an example of a great,
-free application to run virtual machines on your computer. Example
-instructions for `installing Windows on MacOS with VirtualBox can be
-found
-here <https://www.howtogeek.com/657464/how-to-install-a-windows-10-virtualbox-vm-on-macos/>`__.
+cloud, and install Forge on that. Which virtualization software you can
+use depends on your hardware:
+
+- **Mac with Apple silicon (M1 and newer)**: you need Windows 11 for ARM.
+  `Parallels Desktop <https://www.parallels.com/products/desktop/>`__ is
+  the `Microsoft-authorized solution
+  <https://www.parallels.com/products/desktop/microsoft-authorized-solution-windows-11-arm/>`__
+  and downloads and installs Windows 11 for you (commercial, free trial).
+  `UTM <https://mac.getutm.app/>`__ is a free alternative; see their
+  `Windows guide <https://docs.getutm.app/guides/windows/>`__.
+- **Mac with Intel processor, Linux or Windows host**:
+  `VirtualBox <https://www.virtualbox.org/>`__ is a great, free option.
+  Note that VirtualBox does not support Macs with Apple silicon.
+
+Forge runs in these virtual machines like it does on a physical Windows
+machine. Give the virtual machine enough memory and disk space to install
+.NET and your FHIR packages.
 
 Resolving installation Security Warning
 ---------------------------------------
