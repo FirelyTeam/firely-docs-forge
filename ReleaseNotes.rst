@@ -14,7 +14,7 @@ Changes
 * Upgrade to Firely .NET SDK 6.5.0 and Firely .NET Validator 3.3.1.
 * Added support for version-pinned canonical references (e.g. *http://example.org/fhir/StructureDefinition/my-extension|1.0.0*).
   Previously the version was ignored. Forge now resolves the exact version from the project and its dependencies,
-  and reports the reference as unresolved when that version is not available. Not available in **[STU3]**.
+  and reports the reference as unresolved when that version is not available. Canonical pinning is not supported in STU3.
 * A project can now have multiple versions of the same package as a dependency. In the **Dependencies** tab,
   the toolbar and context menu now offer three commands:
 
@@ -23,11 +23,11 @@ Changes
   - **Remove** removes the selected version.
 
   Packages installed in more than one version are marked *(side by side)* and list every installed version.
-* The profile and extension pickers (e.g. **New...** and **Extend element**) now show one row per artifact
-  and an **Available versions** column. When an artifact is available in more than one version, you can select the version in the
-  details panel and choose whether the reference is pinned to that version.
-* Extensions defined for another FHIR version are now shown disabled in the extension picker, with the reason,
-  instead of being hidden. The FHIR version column now shows the FHIR release (e.g. *STU3*, *R4*).
+* The **Create a new StructureDefinition** and **Add Extension** dialogs now show one row per definition
+  and an **Available versions** column. When a definition is available in more than one version, you can select the version
+  in the details panel and use **Enable version pinning** to pin the reference to that version.
+* Extension definitions for another FHIR version are now shown disabled in the **Add Extension** dialog, with the reason,
+  instead of being hidden. The **FHIR Version** column now shows the FHIR release (e.g. *STU3*, *R4*).
 * For artifacts in a package where the FHIR version of the artifact differs from the FHIR version of the package
   (e.g. the HL7 extension packs), Forge now uses the FHIR version of the package.
 * Quality Control now reports files that it cannot validate, instead of skipping them silently.
@@ -45,8 +45,8 @@ Bug fixes
 * When replacing a package dependency with another version failed, the package was removed from the project.
 * In the **Public** and **Feeds** views of the **Dependencies** tab, a package that was installed directly and also as a dependency of another package
   in a higher version, showed the higher version and **Remove** was disabled.
-* The extension picker could not be opened when the project contained two resources with the same canonical url.
-  Forge now opens the picker and shows a warning.
+* The **Add Extension** dialog could not be opened when the project contained two resources with the same canonical url.
+  Forge now opens the dialog and shows a warning.
 * Canonical urls in the **JSON** tab were not shown as links.
 
 Release 2026.2.0
