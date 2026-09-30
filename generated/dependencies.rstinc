@@ -5,6 +5,8 @@
      - License
    * - `CompilerAttributes <https://www.nuget.org/packages/CompilerAttributes>`__
      - MIT
+   * - `Fhir.Metrics <https://www.nuget.org/packages/Fhir.Metrics>`__
+     - BSD-3-Clause
    * - `Firely.Fhir.Packages <https://www.nuget.org/packages/Firely.Fhir.Packages>`__
      - BSD-3-Clause
    * - `Firely.Fhir.Validation.Compilation <https://www.nuget.org/packages/Firely.Fhir.Validation.Compilation>`__
@@ -18,6 +20,8 @@
    * - `Firely.Fhir.Validation.STU3 <https://www.nuget.org/packages/Firely.Fhir.Validation.STU3>`__
      - BSD-3-Clause
    * - `Hl7.Fhir.Base <https://www.nuget.org/packages/Hl7.Fhir.Base>`__
+     - BSD-3-Clause
+   * - `Hl7.Fhir.Conformance <https://www.nuget.org/packages/Hl7.Fhir.Conformance>`__
      - BSD-3-Clause
    * - `Hl7.Fhir.R4 <https://www.nuget.org/packages/Hl7.Fhir.R4>`__
      - BSD-3-Clause
@@ -43,11 +47,19 @@
      - BSD-2-Clause
    * - `MessagePack <https://www.nuget.org/packages/MessagePack>`__
      - MIT
+   * - `MessagePack.Annotations <https://www.nuget.org/packages/MessagePack.Annotations>`__
+     - MIT
+   * - `MessagePackAnalyzer <https://www.nuget.org/packages/MessagePackAnalyzer>`__
+     - MIT
    * - `Microsoft-WindowsAPICodePack-Core <https://www.nuget.org/packages/Microsoft-WindowsAPICodePack-Core>`__
      - 
    * - `Microsoft-WindowsAPICodePack-Shell <https://www.nuget.org/packages/Microsoft-WindowsAPICodePack-Shell>`__
      - 
    * - `Microsoft.CSharp <https://www.nuget.org/packages/Microsoft.CSharp>`__
+     - MIT
+   * - `Microsoft.Extensions.Caching.Abstractions <https://www.nuget.org/packages/Microsoft.Extensions.Caching.Abstractions>`__
+     - MIT
+   * - `Microsoft.Extensions.Caching.Memory <https://www.nuget.org/packages/Microsoft.Extensions.Caching.Memory>`__
      - MIT
    * - `Microsoft.Extensions.DependencyInjection <https://www.nuget.org/packages/Microsoft.Extensions.DependencyInjection>`__
      - MIT
@@ -57,9 +69,21 @@
      - MIT
    * - `Microsoft.Extensions.FileSystemGlobbing <https://www.nuget.org/packages/Microsoft.Extensions.FileSystemGlobbing>`__
      - MIT
+   * - `Microsoft.Extensions.Logging.Abstractions <https://www.nuget.org/packages/Microsoft.Extensions.Logging.Abstractions>`__
+     - MIT
+   * - `Microsoft.Extensions.Options <https://www.nuget.org/packages/Microsoft.Extensions.Options>`__
+     - MIT
+   * - `Microsoft.Extensions.Primitives <https://www.nuget.org/packages/Microsoft.Extensions.Primitives>`__
+     - MIT
+   * - `Microsoft.NET.StringTools <https://www.nuget.org/packages/Microsoft.NET.StringTools>`__
+     - MIT
+   * - `Microsoft.Win32.SystemEvents <https://www.nuget.org/packages/Microsoft.Win32.SystemEvents>`__
+     - MIT
    * - `Microsoft.Windows.Compatibility <https://www.nuget.org/packages/Microsoft.Windows.Compatibility>`__
      - MIT
    * - `Microsoft.Xaml.Behaviors.Wpf <https://www.nuget.org/packages/Microsoft.Xaml.Behaviors.Wpf>`__
+     - MIT
+   * - `Newtonsoft.Json <https://www.nuget.org/packages/Newtonsoft.Json>`__
      - MIT
    * - `Nito.AsyncEx <https://www.nuget.org/packages/Nito.AsyncEx>`__
      - MIT
@@ -75,11 +99,21 @@
      - MIT
    * - `System.ComponentModel.Annotations <https://www.nuget.org/packages/System.ComponentModel.Annotations>`__
      - MIT
+   * - `System.Configuration.ConfigurationManager <https://www.nuget.org/packages/System.Configuration.ConfigurationManager>`__
+     - MIT
+   * - `System.Drawing.Common <https://www.nuget.org/packages/System.Drawing.Common>`__
+     - MIT
    * - `System.IdentityModel.Tokens.Jwt <https://www.nuget.org/packages/System.IdentityModel.Tokens.Jwt>`__
      - MIT
    * - `System.Net.Http.WinHttpHandler <https://www.nuget.org/packages/System.Net.Http.WinHttpHandler>`__
      - MIT
+   * - `System.Security.Cryptography.ProtectedData <https://www.nuget.org/packages/System.Security.Cryptography.ProtectedData>`__
+     - MIT
+   * - `System.Security.Permissions <https://www.nuget.org/packages/System.Security.Permissions>`__
+     - MIT
    * - `System.Text.Json <https://www.nuget.org/packages/System.Text.Json>`__
+     - MIT
+   * - `System.Windows.Extensions <https://www.nuget.org/packages/System.Windows.Extensions>`__
      - MIT
    * - `YamlDotNet <https://www.nuget.org/packages/YamlDotNet>`__
      - MIT
@@ -95,10 +129,30 @@ For unit testing:
      - MIT
    * - `FluentAssertions <https://www.nuget.org/packages/FluentAssertions>`__
      - Apache-2.0
+   * - `Microsoft.ApplicationInsights <https://www.nuget.org/packages/Microsoft.ApplicationInsights>`__
+     - MIT
+   * - `Microsoft.CodeCoverage <https://www.nuget.org/packages/Microsoft.CodeCoverage>`__
+     - MIT
    * - `Microsoft.NET.Test.Sdk <https://www.nuget.org/packages/Microsoft.NET.Test.Sdk>`__
+     - MIT
+   * - `Microsoft.Testing.Extensions.Telemetry <https://www.nuget.org/packages/Microsoft.Testing.Extensions.Telemetry>`__
+     - MIT
+   * - `Microsoft.Testing.Extensions.TrxReport.Abstractions <https://www.nuget.org/packages/Microsoft.Testing.Extensions.TrxReport.Abstractions>`__
+     - MIT
+   * - `Microsoft.Testing.Extensions.VSTestBridge <https://www.nuget.org/packages/Microsoft.Testing.Extensions.VSTestBridge>`__
+     - MIT
+   * - `Microsoft.Testing.Platform <https://www.nuget.org/packages/Microsoft.Testing.Platform>`__
+     - MIT
+   * - `Microsoft.Testing.Platform.MSBuild <https://www.nuget.org/packages/Microsoft.Testing.Platform.MSBuild>`__
+     - MIT
+   * - `Microsoft.TestPlatform.ObjectModel <https://www.nuget.org/packages/Microsoft.TestPlatform.ObjectModel>`__
+     - MIT
+   * - `Microsoft.TestPlatform.TestHost <https://www.nuget.org/packages/Microsoft.TestPlatform.TestHost>`__
      - MIT
    * - `Moq <https://www.nuget.org/packages/Moq>`__
      - BSD-3-Clause
+   * - `MSTest.Analyzers <https://www.nuget.org/packages/MSTest.Analyzers>`__
+     - MIT
    * - `MSTest.TestAdapter <https://www.nuget.org/packages/MSTest.TestAdapter>`__
      - MIT
    * - `MSTest.TestFramework <https://www.nuget.org/packages/MSTest.TestFramework>`__
