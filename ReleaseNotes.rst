@@ -7,6 +7,48 @@
 
    OldReleaseNotes
 
+Release 2026.3.0
+----------------
+Changes
+^^^^^^^
+* Upgrade to Firely .NET SDK 6.5.0 and Firely .NET Validator 3.3.1.
+* Added support for version-pinned canonical references (e.g. *http://example.org/fhir/StructureDefinition/my-extension|1.0.0*).
+  Previously the version was ignored. Forge now resolves the exact version from the project and its dependencies,
+  and reports the reference as unresolved when that version is not available. Not available in **[STU3]**.
+* A project can now have multiple versions of the same package as a dependency. In the **Dependencies** tab,
+  the toolbar and context menu now offer three commands:
+
+  - **Add** installs the selected version alongside any version already installed.
+  - **Replace** replaces the installed version with the selected version.
+  - **Remove** removes the selected version.
+
+  Packages installed in more than one version are marked *(side by side)* and list every installed version.
+* The profile and extension pickers (e.g. **New...** and **Extend element**) now show one row per artifact
+  and an **Available versions** column. When an artifact is available in more than one version, you can select the version in the
+  details panel and choose whether the reference is pinned to that version.
+* Extensions defined for another FHIR version are now shown disabled in the extension picker, with the reason,
+  instead of being hidden. The FHIR version column now shows the FHIR release (e.g. *STU3*, *R4*).
+* For artifacts in a package where the FHIR version of the artifact differs from the FHIR version of the package
+  (e.g. the HL7 extension packs), Forge now uses the FHIR version of the package.
+* Quality Control now reports files that it cannot validate, instead of skipping them silently.
+* Updated the built-in Quality Control rule sets:
+
+  - Added the *explicit-version* rule, which reports an informational message for each resource that specifies its own version.
+  - *package.json* files are now excluded in all folders, not only in the root folder.
+
+* Validation in Quality Control now resolves references to other resources in the project (e.g. examples), like Simplifier does.
+  Constraints that check the referenced resource, e.g. using *resolve()*, are now evaluated correctly.
+* Improved accessibility: screen readers now announce meaningful names for tabs, list rows, element tree items and dialog buttons.
+
+Bug fixes
+^^^^^^^^^
+* When replacing a package dependency with another version failed, the package was removed from the project.
+* In the **Public** and **Feeds** views of the **Dependencies** tab, a package that was installed directly and also as a dependency of another package
+  in a higher version, showed the higher version and **Remove** was disabled.
+* The extension picker could not be opened when the project contained two resources with the same canonical url.
+  Forge now opens the picker and shows a warning.
+* Canonical urls in the **JSON** tab were not shown as links.
+
 Release 2026.2.0
 ----------------
 .. important::
