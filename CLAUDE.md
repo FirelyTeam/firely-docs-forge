@@ -76,7 +76,7 @@ Conventions:
 - Only include the `Changes` / `Bug fixes` sections that have content. Other optional sections seen in the past: a feature section (e.g. `R6 Support`) with a `.. note::`.
 - The first `Changes` bullet is usually the Firely .NET SDK / .NET upgrade.
 - Write bug fixes in past tense describing the faulty behavior ("... was not shown."); changes in present/past tense describing the new behavior.
-- Mark UI elements, menu items, dialogs, panels and FHIR resource names in **bold**; file extensions and literal values in *italics*.
+- Mark UI elements (including buttons and menu items), dialogs, panels and FHIR resource names in **bold**; file extensions and literal values in *italics*. The release notes never use ``code`` style for UI names, unlike the feature pages (see *Use Forge UI names*).
 - Prefix items that apply to one FHIR version only with **[STU3]**, **[R4]**, **[R4B]**, **[R5]** (or a combination such as **[R4/R4B/R5]**).
 - Nested lists need a blank line before and after and a two-space indent.
 - Link to other Firely docs via intersphinx, e.g. `` `text <simplifier_docs:package_feeds>`_ ``; external links as `` `text <https://...>`_ ``.
@@ -98,7 +98,7 @@ Conventions:
 - Licenses are read from the `.nuspec` of the exact version in the local NuGet package cache first, then from nuget.org, so the license matches the version Forge ships.
 - Private packages (not on nuget.org, e.g. Simplifier.*) and packages without files in the output (meta packages, packages provided by .NET itself) are not listed.
 - The `runtime.*` packages (platform-specific native parts of packages that are listed, e.g. `System.Data.SqlClient`) are ignored in the Forge config.
-- Requires the .NET 8 runtime for SPDXtoRST, and an SPDXtoRST version with `.deps.json`, `--config` and `--section` support (FirelyTeam/SPDXtoRST#1).
+- Requires the .NET SDK (8 or later, to build SPDXtoRST with `dotnet run`) and the .NET 8 runtime (to run it), and an SPDXtoRST version with `.deps.json`, `--config` and `--section` support (FirelyTeam/SPDXtoRST#1).
 - Never edit the generated file by hand. Configure it instead:
   - Forge specific settings go in `tools/dependencies.config.json`, passed to SPDXtoRST with `--config` (e.g. `Hl7.Fhir.R6` is ignored because there is no R6 release of Forge; remove that entry once there is).
   - General settings that apply to every product (e.g. a license missing from nuget.org) go in SPDXtoRST's own `Config.json`.
@@ -109,9 +109,12 @@ Conventions:
 In release notes and documentation, refer to the UI by the labels and titles Forge actually shows: dialog titles, menu items, buttons, tabs, views, column headers and field labels. Do not use names from Jira tickets, PR descriptions, commit messages or code (e.g. "profile picker", "extension picker", "package manager", "browse row", class or view model names).
 
 - Look the text up in the Forge repository: `Forge.ViewModels/Properties/Resources.resx` holds most labels; the XAML under `Forge.UI` shows where each is used. Drop access-key underscores and shortcut suffixes (`_New Profile...|Ctrl+N` is **New Profile...**).
-- Examples: the "profile picker" is the **Create a new StructureDefinition** dialog; the "extension picker" is the **Add Extension** dialog (opened with **Extend...**); the "package manager" is the **Dependencies** tab with its **Installed**, **Public** and **Feeds** views.
+- Examples: the "profile picker" is the **Create a new StructureDefinition** dialog; the "extension picker" is the **Add Extension** dialog (opened with ``Extend...``); the "package manager" is the ``Dependencies`` tab with its ``Installed``, ``Public`` and ``Feeds`` views.
 - Where the UI has no name for something, describe it in plain words the user can recognize on screen instead of inventing a term.
-- Write UI names in **bold**, spelled and capitalized exactly as shown.
+- Spell and capitalize UI names exactly as shown. In the feature pages (`features/*.rst`), the markup depends on what the name is:
+  - ``code`` style for things you click or choose: buttons, menu items, menus, tabs and views, e.g. click ``OK``, click ``Extend...``, the ``Dependencies`` tab, the ``Public`` view, the ``Options`` menu.
+  - **bold** for named parts of the window and for values: dialogs, panels, fields, options and check boxes, columns, toolbars and statuses, and values you select or type, e.g. the **Add Extension** dialog, the **Element Properties** panel, the **Search** field, **Enable version pinning**, the **Available versions** column, **hl7.fhir.us.core**.
+  - In the release notes, all UI names are **bold** (see *Release notes format*).
 
 ## Style
 

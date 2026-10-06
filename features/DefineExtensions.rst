@@ -80,7 +80,7 @@ to your project folder or add a package to your project folder.
    :width: 1123
 
 Select the element in the Element Tree of your profile where you want to
-add the extension. Then, click ``Extend...`` which is shown in the tool
+add the extension. Then, click ``Extend...``, which is shown in the tool
 section above the element tree.
 
 .. figure:: ../images/SelectElement.png

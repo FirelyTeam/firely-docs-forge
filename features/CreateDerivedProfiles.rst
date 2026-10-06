@@ -93,7 +93,7 @@ Click ``Open...`` to go to Simplfier and open the page for the selected feed.
 Managing package versions
 -------------------------
 
-Click **Installed** to see the packages your project depends on. The icon in front of each package shows its
+Click ``Installed`` to see the packages your project depends on. The icon in front of each package shows its
 status, which is also shown in its tooltip:
 
 - |Package installed| **Installed**: your project depends on this package. Its name is shown in bold.
@@ -104,13 +104,13 @@ status, which is also shown in its tooltip:
 .. |Package installed| image:: ../images/PackageStatusInstalled.png
 .. |Package missing| image:: ../images/PackageStatusMissing.png
 
-In the **Public** and **Feeds** views, select a package and a version in the **Version** list, then click:
+In the ``Public`` and ``Feeds`` views, select a package and a version in the **Version** list, then click:
 
-- **Add** to add the selected version to your project. If your project already depends on another version of
+- ``Add`` to add the selected version to your project. If your project already depends on another version of
   this package, both versions are kept.
-- **Replace** to replace the installed version of the selected package with the selected version. This is
+- ``Replace`` to replace the installed version of the selected package with the selected version. This is
   available when your project depends on one version of the package.
-- **Remove** to remove the selected version from your project. Other versions of the package stay.
+- ``Remove`` to remove the selected version from your project. Other versions of the package stay.
 
 A package that is installed in more than one version is marked *(side by side)*. Its tooltip lists the
 installed versions. An unpinned reference resolves to the highest installed version. To use another
