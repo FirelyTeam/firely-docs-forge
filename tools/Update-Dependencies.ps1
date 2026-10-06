@@ -1,106 +1,93 @@
 <#
 .SYNOPSIS
-    Regenerates generated/dependencies.rstinc from the GitHub SBOMs of Forge and the Firely packages it uses.
+    Regenerates generated/dependencies.rstinc from the .deps.json files of Forge Release builds.
 
 .DESCRIPTION
-    Downloads the SPDX SBOM of each repository through the GitHub REST API
-    (GET /repos/{owner}/{repo}/dependency-graph/sbom), which returns the same document as
-    Insights > Dependency graph > Export SBOM, wrapped in an "sbom" property.
+    A .deps.json file in the build output of Forge.UI lists every NuGet package the build ships,
+    with its exact version. The .deps.json files of the Release build of each FHIR version are
+    passed to SPDXtoRST (https://github.com/FirelyTeam/SPDXtoRST), which looks up the license of
+    each package and writes the rst include file, with a Version column.
 
-    Each SBOM is unwrapped. By default all packages it lists are kept, including the transitive
-    dependencies listed by repositories with GitHub's Automatic Dependency Submission enabled
-    (e.g. Simplifier.Bcl). With -DirectOnly, each SBOM is reduced to the direct dependencies of
-    the repository: the packages the root package DEPENDS_ON.
+    The .deps.json files of the Release builds of the test projects are passed as the UnitTest
+    section: packages only the tests use are listed under "For unit testing".
 
-    The SBOM files are then passed to SPDXtoRST (https://github.com/FirelyTeam/SPDXtoRST),
-    which writes the rst include file.
+    Licenses are read from the .nuspec files in the local NuGet package cache first, so run this
+    script on the machine that made the builds.
 
-    Requires the GitHub CLI (gh), logged in with access to the FirelyTeam repositories, and the
+    Requires Release builds of Forge for the configurations listed in -Configurations, and the
     .NET SDK to run SPDXtoRST.
 
 .EXAMPLE
     ./tools/Update-Dependencies.ps1
 
 .EXAMPLE
-    ./tools/Update-Dependencies.ps1 -SbomDirectory K:\Dependencies\2026.3.0 -SpdxToRstPath K:\dev\Firely\SPDXtoRST
+    ./tools/Update-Dependencies.ps1 -ForgePath K:\dev\Firely\Forge -SpdxToRstPath K:\dev\Firely\SPDXtoRST
 #>
 [CmdletBinding()]
 param(
-    # Repositories to read SBOMs from, in the order they are passed to SPDXtoRST.
-    [string[]] $Repositories = @('Forge', 'Simplifier.Bcl', 'Simplifier.QualityControl', 'Simplifier.Connect'),
+    # Folder of the Forge repository clone that holds the builds.
+    [string] $ForgePath = (Join-Path $PSScriptRoot '..\..\Forge'),
 
-    [string] $Owner = 'FirelyTeam',
+    # Build configurations to read, one per FHIR version Forge is released for.
+    [string[]] $Configurations = @('ReleaseR3', 'ReleaseR4', 'ReleaseR4B', 'ReleaseR5'),
+
+    # Test projects whose packages are listed under "For unit testing".
+    [string[]] $TestProjects = @('Forge.Test.Common', 'Forge.Test.ViewModels'),
 
     # Folder of the SPDXtoRST project (a clone of FirelyTeam/SPDXtoRST).
     [string] $SpdxToRstPath = (Join-Path $PSScriptRoot '..\..\SPDXtoRST'),
 
-    # Where the downloaded SBOM files are kept. Defaults to a temporary folder.
-    [string] $SbomDirectory = (Join-Path ([IO.Path]::GetTempPath()) 'forge-sbom'),
-
     [string] $OutputFile = (Join-Path $PSScriptRoot '..\generated\dependencies.rstinc'),
 
     # Forge specific SPDXtoRST config, applied on top of SPDXtoRST's own config.json.
-    [string] $ConfigFile = (Join-Path $PSScriptRoot 'dependencies.config.json'),
-
-    # Keep only the direct dependencies of each repository and leave out transitive ones.
-    [switch] $DirectOnly
+    [string] $ConfigFile = (Join-Path $PSScriptRoot 'dependencies.config.json')
 )
 
 $ErrorActionPreference = 'Stop'
 
-if (-not (Get-Command gh -ErrorAction SilentlyContinue)) {
-    throw 'The GitHub CLI (gh) is required. See https://cli.github.com.'
-}
-
 $project = Join-Path $SpdxToRstPath 'SPDXtoRST.csproj'
 if (-not (Test-Path $project)) {
-    throw "SPDXtoRST project not found at '$project'. Clone https://github.com/$Owner/SPDXtoRST or pass -SpdxToRstPath."
+    throw "SPDXtoRST project not found at '$project'. Clone https://github.com/FirelyTeam/SPDXtoRST or pass -SpdxToRstPath."
 }
 
-New-Item -ItemType Directory -Force $SbomDirectory | Out-Null
+# Returns the newest <Filter> file of a project build. Forge.UI and Forge.Test.ViewModels name their
+# configurations e.g. ReleaseR4, Forge.Test.Common names the same configuration R4Release.
+function Find-DepsJson([string] $ProjectName, [string] $Filter, [string] $Configuration) {
+    $folders = @($Configuration, ($Configuration -replace '^Release(.+)$', '$1Release')) | Select-Object -Unique |
+        ForEach-Object { Join-Path $ForgePath "$ProjectName\bin\$_" }
 
-$files = foreach ($repository in $Repositories) {
-    Write-Host "Downloading SBOM of $Owner/$repository..."
+    $depsJson = Get-ChildItem -Path $folders -Filter $Filter -Recurse -ErrorAction SilentlyContinue |
+        Sort-Object LastWriteTime -Descending |
+        Select-Object -First 1
 
-    $json = gh api "repos/$Owner/$repository/dependency-graph/sbom"
-    if ($LASTEXITCODE -ne 0) {
-        throw "Could not download the SBOM of $Owner/$repository."
+    if (-not $depsJson) {
+        throw "No $Filter found for $Configuration under '$ForgePath\$ProjectName\bin'. Build Forge in the $Configuration configuration first."
     }
 
-    $sbom = ($json | ConvertFrom-Json -Depth 100).sbom
+    Write-Host ("{0,-11} {1,-32} (built {2:yyyy-MM-dd HH:mm})" -f $Configuration, $depsJson.Name, $depsJson.LastWriteTime)
+    $depsJson.FullName
+}
 
-    if ($DirectOnly) {
-        $root = ($sbom.relationships | Where-Object relationshipType -eq 'DESCRIBES' | Select-Object -First 1).relatedSpdxElement
-        $direct = @($sbom.relationships |
-            Where-Object { $_.relationshipType -eq 'DEPENDS_ON' -and $_.spdxElementId -eq $root } |
-            ForEach-Object relatedSpdxElement)
+$files = @(foreach ($configuration in $Configurations) {
+    Find-DepsJson 'Forge.UI' 'Forge.UI-*.deps.json' $configuration
+})
 
-        $total = $sbom.packages.Count
-        $sbom.packages = @($sbom.packages | Where-Object { $_.SPDXID -eq $root -or $direct -contains $_.SPDXID })
-        $sbom.relationships = @($sbom.relationships | Where-Object { $_.spdxElementId -eq $root })
-
-        if ($sbom.packages.Count -lt $total) {
-            Write-Host "  Kept $($sbom.packages.Count - 1) direct dependencies, skipped $($total - $sbom.packages.Count) transitive ones."
-        }
+$testFiles = @(foreach ($testProject in $TestProjects) {
+    foreach ($configuration in $Configurations) {
+        Find-DepsJson $testProject "$testProject.deps.json" $configuration
     }
+})
+$sections = @('--section', "UnitTest=$($testFiles -join [IO.Path]::PathSeparator)")
 
-    # GitHub fills in LicenseRef-github-* placeholders (e.g. LicenseRef-github-OTHER) where it found no
-    # SPDX license. Clear them so SPDXtoRST falls back to nuget metadata and Config.json, as for the
-    # SBOMs exported from the UI before GitHub added these placeholders.
-    foreach ($package in $sbom.packages) {
-        if ($package.licenseConcluded -like 'LicenseRef-github-*') {
-            $package.PSObject.Properties.Remove('licenseConcluded')
-        }
-    }
-
-    $file = Join-Path $SbomDirectory "$repository.json"
-    $sbom | ConvertTo-Json -Depth 100 | Set-Content -Path $file -Encoding utf8NoBOM
-    $file
+$branch = git -C $ForgePath branch --show-current 2>$null
+$commit = git -C $ForgePath log -1 --format='%h %cd' --date=short 2>$null
+if ($commit) {
+    Write-Host "Forge clone is on '$branch' at $commit. Make sure the builds above are from the release you document."
 }
 
 Write-Host 'Running SPDXtoRST...'
 $output = [IO.Path]::GetFullPath($OutputFile)
-dotnet run --project $project --configuration Release -- @files --config ([IO.Path]::GetFullPath($ConfigFile)) --output $output
+dotnet run --project $project --configuration Release -- @files @sections --config ([IO.Path]::GetFullPath($ConfigFile)) --show-version --output $output
 if ($LASTEXITCODE -ne 0) {
     throw "SPDXtoRST failed with exit code $LASTEXITCODE."
 }

@@ -4,16 +4,10 @@
       "Name": "Hl7.Fhir.R6",
       "License": "BSD-3-Clause",
       "Ignore": true
-    }
-  ],
-  "Sections": [
+    },
     {
-      "Name": "UnitTest",
-      "Packages": [
-        {
-          "Name": "Microsoft.ApplicationInsights"
-        }
-      ]
+      "Name": "^runtime\\..*$",
+      "Ignore": true
     }
   ]
 }
