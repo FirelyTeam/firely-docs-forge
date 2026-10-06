@@ -322,7 +322,7 @@ Exclude examples::
    !FHIR/examples/*
 
 .. note:: If you have one or more inclusion patterns specified then by default all files **not** matching
-   any of your inclusion patterns are excluded and therefor **not** uploaded to Simplifier.
+   any of your inclusion patterns are excluded and therefore **not** uploaded to Simplifier.
 
 The patterns that you can specify can use the following formats to match multiple files or directories.
 
