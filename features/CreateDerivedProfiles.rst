@@ -1,3 +1,5 @@
+.. _derived-profiles:
+
 Create Derived Profiles
 =======================
 
@@ -43,13 +45,13 @@ Adding a public package
 The following example adds the **hl7.fhir.us.core** package to the project.
 
 Select the ``Dependencies`` tab, click ``Public``, then type
-*hl7.fhir.us* in the **Search** field and finally click ``Search``.
+*us.core* in the **Search** field and finally click ``Search``.
 Select **hl7.fhir.us.core** in the list and then select package version
 **6.1.0**. Finally click ``Add`` to add the package to the project.
 
 .. figure:: ../images/DerivedAddPackage.png
    :alt: Add a core package
-   :width: 850
+   :width: 1297
 
 Adding a package from a feed
 ----------------------------
@@ -86,6 +88,47 @@ Click ``Open...`` to go to Simplfier and open the page for the selected feed.
    :alt: Simplifier feed
    :width: 1153
 
+.. _managing-package-versions:
+
+Managing package versions
+-------------------------
+
+Click **Installed** to see the packages your project depends on. The icon in front of each package shows its
+status, which is also shown in its tooltip:
+
+- |Package installed| **Installed**: your project depends on this package. Its name is shown in bold.
+- |Package installed| **Installed as dependency**: the package is installed because another package depends on it.
+- |Package missing| **Missing**: your project depends on this package, but it is not installed, e.g. because it
+  could not be downloaded.
+
+.. |Package installed| image:: ../images/PackageStatusInstalled.png
+.. |Package missing| image:: ../images/PackageStatusMissing.png
+
+In the **Public** and **Feeds** views, select a package and a version in the **Version** list, then click:
+
+- **Add** to add the selected version to your project. If your project already depends on another version of
+  this package, both versions are kept.
+- **Replace** to replace the installed version of the selected package with the selected version. This is
+  available when your project depends on one version of the package.
+- **Remove** to remove the selected version from your project. Other versions of the package stay.
+
+A package that is installed in more than one version is marked *(side by side)*. Its tooltip lists the
+installed versions. An unpinned reference resolves to the highest installed version. To use another
+version, pin the reference to that version (see :ref:`version-pinning`).
+
+.. note::
+  In *package.json*, Forge declares the second version of a package under an alias, because a package
+  name can only appear once in the dependencies:
+
+  .. code-block:: json
+
+     {
+       "dependencies": {
+         "hl7.fhir.us.core": "6.1.0",
+         "hl7.fhir.us.core-3.1.1@npm:hl7.fhir.us.core": "3.1.1"
+       }
+     }
+
 Project
 -------
 
@@ -110,6 +153,9 @@ Select the US Core Patient in the list and click ``Derive``.
 .. figure:: ../images/DerivedUSCorePatientProperties.png
    :alt: Derive profile properties
    :width: 1302
+
+When your project contains more than one version of the base profile, you can select the version to use and
+pin the reference to it. See :ref:`version-pinning`.
 
 Enter the name for the profile and click ``OK``. A new derived profile
 is created and opened. You can now make your own modifications.

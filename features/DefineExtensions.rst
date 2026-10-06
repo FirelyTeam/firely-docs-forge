@@ -16,7 +16,7 @@ in in the HL7 extension registry.
 
 .. figure:: ../images/PatientExtensionBirthPlace.png
    :alt: Editing an extension with Forge
-   :width: 1243
+   :width: 1302
 
 New extension
 -------------
@@ -80,18 +80,18 @@ to your project folder or add a package to your project folder.
    :width: 1123
 
 Select the element in the Element Tree of your profile where you want to
-add the extension. Then, click ``Extend`` which is shown in the tool
+add the extension. Then, click ``Extend...`` which is shown in the tool
 section above the element tree.
 
 .. figure:: ../images/SelectElement.png
    :alt: Adding an extension to a profile in Forge
    :width: 552
 
-Forge shows the extensions that are available in your project folder.
+Forge opens the **Add Extension** dialog, which shows the extensions that are available in your project folder.
 
 .. figure:: ../images/SelectExtension.png
    :alt: Adding an extension to a profile in Forge
-   :width: 1243
+   :width: 1302
 
 Note that you can only select extensions that are compatible with your
 context (e.g. when extending an AdverseEvent resource you can only
@@ -103,11 +103,47 @@ extensions by clicking ``Filter`` to turn off filtering.
    :alt: Showing only compatible extensions in Forge
    :width: 359
 
+Extension definitions for another FHIR version are shown disabled. Their tooltip explains why they cannot be
+selected, e.g. *This definition is targeting FHIR version R5, which is not supported in Forge for R4.*
+The **FHIR Version** column shows the FHIR release of each extension definition.
+
 Click ``OK`` to add the selected extension to your profile.
 
 .. figure:: ../images/ExtensionSelected.png
    :alt: Selected extension added to a profile
    :width: 370
+
+.. _extension-version-pinning:
+
+Selecting and pinning a version
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Your project can contain more than one version of the same extension definition, for example when two versions
+of the HL7 extensions package are installed side by side. The **Add Extension** dialog shows one row per
+extension definition. The **Available versions** column lists the versions in your project, starting with the
+version an unpinned reference resolves to. Its tooltip shows where each version comes from: the package or
+the file, and marks the version that is *Used when no version is pinned*.
+
+By default, Forge adds the extension with an unpinned reference: its canonical URL only. The reference then
+resolves to that marked version. To use a specific version:
+
+1. Select the extension definition.
+2. In the details panel, check **Enable version pinning** below **Canonical url**. Forge remembers this setting for
+   the next time.
+3. The label of the check box changes to **Pin to this version:** and a list of versions appears next to it. Select
+   the version.
+4. Click ``OK``. Forge adds the extension with the canonical URL followed by the version, e.g.
+   *http://hl7.org/fhir/StructureDefinition/artifact-contact|1.0.0*.
+
+The fields in the details panel describe the selected version. When the versions of an extension definition
+support different contexts, the row can be selected if any of its versions supports the selected element. Pin the
+version that does. In STU3, where versions cannot be pinned, only the version an unpinned reference resolves to counts.
+
+Version pinning is not available when you add an extension to the extension list of a resource, because the
+reference is then stored in **Extension.url**, which cannot contain a version. The dialog explains this below
+**Canonical url**. Version pinning is also not available in STU3: canonical pinning is not supported in STU3.
+
+See :ref:`version-pinning` for more about versions and pinned references.
 
 Add the extension to an element property
 ----------------------------------------
