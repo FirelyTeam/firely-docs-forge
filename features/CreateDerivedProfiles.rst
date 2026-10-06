@@ -59,7 +59,7 @@ Adding a package from a feed
 Package feeds allow organizations to manage private FHIR packages using controlled dependencies and distribution boundaries.
 See the `Simplifier documentation for more information <simplifier_docs:package_feeds>`_.
 
-Click ``Open...`` to go to Simplfier and open the **Feeds** tab of your Portal. This page
+Click ``Open...`` to go to Simplifier and open the **Feeds** tab of your Portal. This page
 lists all the feeds that you have access to.
 
 .. figure:: ../images/SimplifierFeeds.png
@@ -82,7 +82,7 @@ Click ``OK`` to select the feed.
 
 You can now add one or more packages from the selected feed to your project.
 
-Click ``Open...`` to go to Simplfier and open the page for the selected feed.
+Click ``Open...`` to go to Simplifier and open the page for the selected feed.
 
 .. figure:: ../images/SimplifierFeed.png
    :alt: Simplifier feed

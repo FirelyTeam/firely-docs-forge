@@ -12,7 +12,7 @@ mapping language that allow you to define and implement the actual
 mapping operations.
 
 From your project folder, go to ``New...`` and click
-``New Logical Model`` (or **Ctrl+M**) to create a new logical model.
+``New Logical Model...`` (or **Ctrl+M**) to create a new logical model.
 Enter a name for your logical model and click ``OK``.
 
 .. figure:: ../images/LogicalModel-Create.png

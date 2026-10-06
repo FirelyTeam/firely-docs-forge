@@ -113,7 +113,7 @@ In release notes and documentation, refer to the UI by the labels and titles For
 - Where the UI has no name for something, describe it in plain words the user can recognize on screen instead of inventing a term.
 - Spell and capitalize UI names exactly as shown. In the feature pages (`features/*.rst`), the markup depends on what the name is:
   - ``code`` style for things you click or choose: buttons, menu items, menus, tabs and views, e.g. click ``OK``, click ``Extend...``, the ``Dependencies`` tab, the ``Public`` view, the ``Options`` menu.
-  - **bold** for named parts of the window and for values: dialogs, panels, fields, options and check boxes, columns, toolbars and statuses, and values you select or type, e.g. the **Add Extension** dialog, the **Element Properties** panel, the **Search** field, **Enable version pinning**, the **Available versions** column, **hl7.fhir.us.core**.
+  - **bold** for named parts of the window and for values: dialogs, panels, fields, options and check boxes, columns, toolbars and statuses, and values you select or type, e.g. the **Add Extension** dialog, the **Element Properties** panel, the **Search** field, **Enable version pinning**, the **Available versions** column, **hl7.fhir.us.core**, and keyboard shortcuts such as **Ctrl+N**. Choices that are the values of an option stay bold even when the same choice is also a menu item, e.g. **When Constrained** (a value in the **Show element properties details** drop-down list and a command in the ``Options`` menu).
   - In the release notes, all UI names are **bold** (see *Release notes format*).
 
 ## Style

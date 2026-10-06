@@ -138,14 +138,14 @@ You have three options to specify what you would like to do:
 
 Click ``Advanced view`` to show a list of all conflicting file
 changes. When you have selected the option
-``Let me choose which files to keep`` you have two choices for each
+**Let me choose which file changes to keep** you have two choices for each
 listed file conflict:
 
 - **Select the file change from your project folder**
 
   The file from your local project folder will be taken. The file will
   be uploaded to Simplifier the next time you synchronize.
-- **Select the file change from Simplfier**
+- **Select the file change from Simplifier**
 
   The file from Simplifier is downloaded and replaces the file in your
   project folder.
@@ -252,7 +252,7 @@ three choices:
 
   The file from your local project folder will be uploaded to Simplifier
   and replaces the file on Simplifier.
-- **Select the file change from Simplfier**
+- **Select the file change from Simplifier**
 
   The file from Simplifier is downloaded and replaces the file in your
   project folder.
@@ -322,7 +322,7 @@ Exclude examples::
    !FHIR/examples/*
 
 .. note:: If you have one or more inclusion patterns specified then by default all files **not** matching
-   any of your inclusion patterns are excluded and therefor **not** uploaded to Simplfier.
+   any of your inclusion patterns are excluded and therefor **not** uploaded to Simplifier.
 
 The patterns that you can specify can use the following formats to match multiple files or directories.
 

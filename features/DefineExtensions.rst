@@ -22,7 +22,7 @@ New extension
 -------------
 
 If you cannot find an already defined extension you can make your own.
-From your project folder, go to ``New...`` and click ``New Extension``
+From your project folder, go to ``New...`` and click ``New Extension...``
 (or **Ctrl+E**) to create a new extension. Forge shows warning messages
 in the lower section of the your screen highlighting the need to provide
 context information for this new extension.
@@ -208,7 +208,7 @@ For simple extensions only the **value** field is available.
 Complex extensions contain elements that can either be value fields or child extension slices. 
 If an element has a maximum cardinality of 1 then the element is always shown even if it is optional (you can leave it empty). 
 If an element has a maximum cardinality higher than 1 then the element is a child extension slice and it will be listed in the
-``Add slice`` dropdown box. You can add a new child extension slice by selecting the appropriate
+``Add Slice`` dropdown box. You can add a new child extension slice by selecting the appropriate
 child extension slice name from the list.
 
 .. figure:: ../images/ExtensionComplex.png

@@ -65,7 +65,7 @@ XML and JSON viewer
 The ``XML`` and ``JSON`` tabs are used to view the XML and JSON serialization of the current profile. The tabs
 only show the differential. A snapshot can be obtained by saving your
 work after the option **Save snapshot component** is checked in the
-``Persistence`` tab in the ``Settings`` dialog (``Options`` menu).
+``Persistence`` tab in the **Application settings** dialog (``Options`` > ``Settings...``).
 
 .. figure:: ../images/ElementXml.png
    :alt: The Element XML overview in Forge
