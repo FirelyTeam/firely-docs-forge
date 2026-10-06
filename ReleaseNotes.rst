@@ -48,6 +48,8 @@ Bug fixes
 * The **Add Extension** dialog could not be opened when the project contained two resources with the same canonical url.
   Forge now opens the dialog and shows a warning.
 * Canonical urls in the **JSON** tab were not shown as links.
+* In a derived profile, the inherited slicing **Rules** value *Closed* could be saved as *Open* when you changed both a sliced element
+  (e.g. its cardinality) and one of its slices. Forge then reported that the slicing rules were less strict than those of the base profile.
 
 Release 2026.2.0
 ----------------
