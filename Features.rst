@@ -20,6 +20,7 @@ With Forge you can:
    features/DefineConstraints
    features/DefineExtensions
    features/DefineSlices
+   features/VersionPinning
    features/CreateDerivedProfiles
    features/CreateLogicalModels
    features/ForgeOptions

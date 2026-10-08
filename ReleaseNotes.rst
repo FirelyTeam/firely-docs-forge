@@ -7,6 +7,51 @@
 
    OldReleaseNotes
 
+Release 2026.3.0
+----------------
+Changes
+^^^^^^^
+* Upgrade to Firely .NET SDK 6.5.0 and Firely .NET Validator 3.3.1.
+* Added support for version-pinned canonical references (e.g. *http://example.org/fhir/StructureDefinition/my-extension|1.0.0*).
+  Previously the version was ignored. Forge now resolves the exact version from the project and its dependencies,
+  and reports the reference as unresolved when that version is not available. Canonical pinning is not supported in STU3.
+* A project can now have multiple versions of the same package as a dependency. In the **Dependencies** tab,
+  the toolbar and context menu now offer three commands:
+
+  - **Add** installs the selected version alongside any version already installed.
+  - **Replace** replaces the installed version with the selected version.
+  - **Remove** removes the selected version.
+
+  Packages installed in more than one version are marked *(side by side)* and list every installed version.
+* The **Create a new StructureDefinition** and **Add Extension** dialogs now show one row per definition
+  and an **Available versions** column. When a definition is available in more than one version, you can select the version
+  in the details panel and use **Enable version pinning** to pin the reference to that version.
+* Extension definitions for another FHIR version are now shown disabled in the **Add Extension** dialog, with the reason,
+  instead of being hidden. The **FHIR Version** column now shows the FHIR release (e.g. *STU3*, *R4*).
+* The extensions of the HL7 extension packages *hl7.fhir.uv.extensions.r3* and *hl7.fhir.uv.extensions.r4*
+  before version 5.2.0 are now listed in the **Add Extension** dialog. Their extension definitions declare FHIR version R5,
+  so Forge did not show them. Forge now uses the FHIR version of the package for such definitions.
+* Quality Control now reports files that it cannot validate, instead of skipping them silently.
+* Updated the built-in Quality Control rule sets:
+
+  - Added the *explicit-version* rule, which reports an informational message for each resource that specifies its own version.
+  - *package.json* files are now excluded in all folders, not only in the root folder.
+
+* Validation in Quality Control now resolves references to other resources in the project (e.g. examples), like Simplifier does.
+  Constraints that check the referenced resource, e.g. using *resolve()*, are now evaluated correctly.
+* Improved accessibility: screen readers now announce meaningful names for tabs, list rows, element tree items and dialog buttons.
+
+Bug fixes
+^^^^^^^^^
+* Validation in Quality Control reported false errors on *data-absent-reason* extensions.
+* When replacing a package dependency with another version failed, the package was removed from the project.
+* The **Add Extension** dialog could not be opened when the project contained two resources with the same canonical url.
+  Forge now opens the dialog and shows a warning.
+* Canonical urls in the **JSON** tab were not shown as links. In the **XML** tab, a canonical url with a *#fragment*
+  opened in the web browser instead of in Forge.
+* Fixed regression bug introduced in version 2026.1.0: in a derived profile, the inherited slicing **Rules** value *Closed*
+  could be saved as *Open* when you changed both a sliced element (e.g. its cardinality) and one of its slices. Forge then reported that the slicing rules were less strict than those of the base profile.
+
 Release 2026.2.0
 ----------------
 .. important::
@@ -406,32 +451,3 @@ Bug fixes
 * Keys - and * from the numeric keypad are now handled correctly when editing in a textbox.
 * Fixed various minor UI styling issues.
 * **[STU3]** Fixed various slice name issues when selecting/deselecting types in a choice type.
-
-Release 30.0
-------------
-Changes
-^^^^^^^
-* Upgrade to Firely .NET SDK 4.3.0.
-* R4B officially supported by Forge.
-* Added **Project** menu.
-* Redesigned **Option** menu: moved settings to **Settings** dialog.
-* Added option **Do this for all current items** for some dialogs:
-
-  - Save file changes: **Save** or **Discard**
-  - Update resource FHIR version: **Yes** or **No**
-* Added separate session message filter **Corrections** for messages related to corrections
-  that Forge makes when you open a resource.
-* **[R4]** Added **R4B Upgrade Analysis Wizard** in **Project** menu.
-* **[R4B]** Added **R4B Upgrade Wizard** in **Project** menu.
-* Forge documentation has been updated and a new page has been added with information on the `R4B Upgrade Wizard <features/R4BUpgradeWizard.html>`__.
-
-Bug fixes
-^^^^^^^^^
-* The resource resolver in Forge was not updated after saving modifications in a resource. 
-  This was noticeable when using quality control that reported an issue in a resource. After you fixed the issue
-  and ran quality control again the same issue would be be reported again.
-* Validation messages were not displayed in session message panel and folder item tooltip.
-* When package restore failed then no error message was shown to the user and the project dependencies were missing in the overview.
-* Opening a resource with no FHIR version resulted in an error message.
-* Saving all documents after duplicating a resource multiple times would result in an error message. 
-* Fixed various minor UI styling issues.

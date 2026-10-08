@@ -1,0 +1,13 @@
+{
+  "Packages": [
+    {
+      "Name": "Hl7.Fhir.R6",
+      "License": "BSD-3-Clause",
+      "Ignore": true
+    },
+    {
+      "Name": "^runtime\\..*$",
+      "Ignore": true
+    }
+  ]
+}

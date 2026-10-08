@@ -34,6 +34,15 @@ rules and the current progress.
 If the Quality Control process takes a very long time you can click
 ``Cancel`` to abort the operation.
 
+When validating, Quality Control resolves references to other resources in your project, such as examples,
+in the same way as Simplifier does. Constraints that check the referenced resource, e.g. using *resolve()*,
+are evaluated against that resource.
+
+Files that Quality Control cannot validate are reported as an error instead of being skipped:
+
+- *File not validated: it declares no FHIR version.*
+- *File not validated: it is targeting FHIR version {version}, which is not supported in Forge for {release}.*
+
 Running Forge validation
 ------------------------
 
