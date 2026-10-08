@@ -28,8 +28,9 @@ Changes
   in the details panel and use **Enable version pinning** to pin the reference to that version.
 * Extension definitions for another FHIR version are now shown disabled in the **Add Extension** dialog, with the reason,
   instead of being hidden. The **FHIR Version** column now shows the FHIR release (e.g. *STU3*, *R4*).
-* For artifacts in a package where the FHIR version of the artifact differs from the FHIR version of the package
-  (e.g. the HL7 extension packs), Forge now uses the FHIR version of the package.
+* The extensions of the HL7 extension packages *hl7.fhir.uv.extensions.r3* and *hl7.fhir.uv.extensions.r4*
+  before version 5.2.0 are now listed in the **Add Extension** dialog. Their extension definitions declare FHIR version R5,
+  so Forge did not show them. Forge now uses the FHIR version of the package for such definitions.
 * Quality Control now reports files that it cannot validate, instead of skipping them silently.
 * Updated the built-in Quality Control rule sets:
 
@@ -42,14 +43,14 @@ Changes
 
 Bug fixes
 ^^^^^^^^^
+* Validation in Quality Control reported false errors on *data-absent-reason* extensions.
 * When replacing a package dependency with another version failed, the package was removed from the project.
-* In the **Public** and **Feeds** views of the **Dependencies** tab, a package that was installed directly and also as a dependency of another package
-  in a higher version, showed the higher version and **Remove** was disabled.
 * The **Add Extension** dialog could not be opened when the project contained two resources with the same canonical url.
   Forge now opens the dialog and shows a warning.
-* Canonical urls in the **JSON** tab were not shown as links.
-* In a derived profile, the inherited slicing **Rules** value *Closed* could be saved as *Open* when you changed both a sliced element
-  (e.g. its cardinality) and one of its slices. Forge then reported that the slicing rules were less strict than those of the base profile.
+* Canonical urls in the **JSON** tab were not shown as links. In the **XML** tab, a canonical url with a *#fragment*
+  opened in the web browser instead of in Forge.
+* Fixed regression bug introduced in version 2026.1.0: in a derived profile, the inherited slicing **Rules** value *Closed*
+  could be saved as *Open* when you changed both a sliced element (e.g. its cardinality) and one of its slices. Forge then reported that the slicing rules were less strict than those of the base profile.
 
 Release 2026.2.0
 ----------------
