@@ -24,6 +24,7 @@ An **unpinned** reference does not have a version and resolves to the first defi
 A **pinned** reference has a version after a vertical bar, e.g.
 *http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|3.1.1*. It always resolves to that exact
 version, wherever it is found. A shorter version also matches, e.g. *|3.1* matches version 3.1.1.
+Version ranges are not supported: a reference such as *...|2.x* or *...|>=2.0.0* matches no version.
 If the pinned version is not available in your project, the reference does not resolve. Forge reports it like any
 other reference that cannot be resolved, e.g. when generating the snapshot or in Quality Control. Forge never uses
 another version instead.
@@ -35,7 +36,9 @@ You can type a pinned reference in a canonical field yourself, or let Forge writ
 extension definition, as described below.
 
 .. note::
-  Canonical pinning is not supported in STU3. In STU3 these references are URIs, which cannot contain a version.
+  Canonical pinning is not supported in STU3. STU3 defines these references as URIs and does not define a version
+  in them, so Forge for STU3 does not write pinned references. A pinned reference that you type yourself does
+  resolve in Forge, but other tools do not have to support it.
 
 Selecting a version
 -------------------
