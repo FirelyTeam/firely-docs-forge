@@ -26,6 +26,23 @@ necessary.
    administrator permissions. If you have insufficient permissions,
    please contact your system administrator.
 
+Microsoft Defender SmartScreen warning
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+When ClickOnce has finished the installation, it starts Forge, e.g. *Forge-R4.exe*. 
+Microsoft Defender SmartScreen can then show a **Windows protected your PC** message, 
+because it does not recognize this application yet.
+
+To continue:
+
+1. Click ``More info``.
+2. Check that the **Publisher** is **Firely B.V.**
+3. Click ``Run anyway``.
+
+.. image:: ./images/Smartscreen.png
+   :alt: Windows protected your PC
+   :width: 1000
+
 Installing on other operating systems
 -------------------------------------
 
