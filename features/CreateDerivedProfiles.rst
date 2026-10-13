@@ -129,6 +129,13 @@ version, pin the reference to that version (see :ref:`version-pinning`).
        }
      }
 
+The installed versions, including the packages your dependencies depend on, are listed in *fhirpkg.lock.json*.
+A *fhirpkg.lock.json* written by an earlier version of Forge, or by Simplifier, can list only one version of each
+package. When you open a project with such a lock file, Forge restores the packages once and writes a new lock file.
+The restore downloads packages, so it needs an internet connection. When the restore fails, e.g. because you are offline, Forge uses
+the existing lock file and shows a warning: a second version of a package may then be missing. Forge tries the
+restore again the next time you open the project.
+
 Project
 -------
 
