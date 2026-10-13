@@ -23,7 +23,7 @@ Changes
   - **Remove** removes the selected version.
 
   Packages installed in more than one version are marked *(side by side)* and list every installed version.
-* When you open a project whose *fhirpkg.lock.json* was written by an earlier version of Forge or by Simplifier,
+* When you open a project whose *fhirpkg.lock.json* was written by an earlier version of Forge,
   Forge now restores the packages of the project once, so that the lock file can list more than one version of a package.
   When the restore fails, Forge uses the existing *fhirpkg.lock.json* and shows a warning; 
   it tries the restore again the next time you open the project.
