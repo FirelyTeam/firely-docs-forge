@@ -11,7 +11,7 @@ Release 2026.3.0
 ----------------
 Changes
 ^^^^^^^
-* Upgrade to Firely .NET SDK 6.5.0 and Firely .NET Validator 3.3.1.
+* Upgrade to Firely .NET SDK 6.6.0 and Firely .NET Validator 3.5.0.
 * Added support for version-pinned canonical references (e.g. *http://example.org/fhir/StructureDefinition/my-extension|1.0.0*).
   Previously the version was ignored. Forge now resolves the exact version from the project and its dependencies,
   and reports the reference as unresolved when that version is not available. Canonical pinning is not supported in STU3.
@@ -23,6 +23,10 @@ Changes
   - **Remove** removes the selected version.
 
   Packages installed in more than one version are marked *(side by side)* and list every installed version.
+* When you open a project whose *fhirpkg.lock.json* was written by an earlier version of Forge or by Simplifier,
+  Forge now restores the packages of the project once, so that the lock file can list more than one version of a package.
+  When the restore fails, Forge uses the existing *fhirpkg.lock.json* and shows a warning; 
+  it tries the restore again the next time you open the project.
 * The **Create a new StructureDefinition** and **Add Extension** dialogs now show one row per definition
   and an **Available versions** column. When a definition is available in more than one version, you can select the version
   in the details panel and use **Enable version pinning** to pin the reference to that version.
