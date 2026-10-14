@@ -9,6 +9,11 @@
 
 Release 2026.3.0
 ----------------
+.. note::
+  Forge is now signed with a new code signing certificate. Until Windows recognizes it, Microsoft Defender SmartScreen
+  may show a **Windows protected your PC** message when you install or update Forge.
+  See :ref:`smartscreen-warning` for how to check the publisher and continue.
+
 Changes
 ^^^^^^^
 * Upgrade to Firely .NET SDK 6.6.0 and Firely .NET Validator 3.5.0.

@@ -26,6 +26,8 @@ necessary.
    administrator permissions. If you have insufficient permissions,
    please contact your system administrator.
 
+.. _smartscreen-warning:
+
 Microsoft Defender SmartScreen warning
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
